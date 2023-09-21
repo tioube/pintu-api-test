@@ -1,0 +1,30 @@
+Request method:	GET
+?Request URI:	https://www.mockachino.com/254fa463-9a2e-45/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+content-type: application/json
+<X-Cloud-Trace-Context: 8697d6543124b9c7c7d3e38fc908d720;o=1
+$Date: Thu, 21 Sep 2023 18:09:54 GMT
+Server: Google Frontend
+Content-Length: 84
+
+{
+    "users": [
+
+        {
+$            "first_name": "Barack",
+"            "last_name": "Obama",
+*            "date_of_birth": "1961-08-04"
+
+        }
+    ]
+}

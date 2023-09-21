@@ -1,0 +1,206 @@
+plugins {
+    id 'java'
+    id "java-library"
+    id 'io.qameta.allure-report' version '2.9.6'
+}
+
+group 'com.catalysttest'
+version '1.0-SNAPSHOT'
+
+
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    lombokVersion = "1.18.20"
+    restAssuredVersion = "4.4.0"
+    allureVersion = "2.17.3"
+    cucumberVersion = '7.2.3'
+    slackVersion = '1.20.2'
+}
+
+configurations {
+    compileOnly.extendsFrom annotationProcessor
+    testCompileOnly.extendsFrom compileOnly
+    testAnnotationProcessor.extendsFrom annotationProcessor
+    all {
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+    }
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+dependencies {
+    // lombok
+    compileOnly group: "org.projectlombok", name: "lombok", version: lombokVersion
+    annotationProcessor group: "org.projectlombok", name: "lombok", version: lombokVersion
+
+    // slack
+    implementation group: 'com.slack.api', name: 'slack-api-client', version: slackVersion
+
+    // awaitility
+    implementation group: "org.awaitility", name: "awaitility", version: "4.1.0"
+
+    // restassured
+    implementation group: 'io.rest-assured', name: 'rest-assured', version: restAssuredVersion
+    implementation group: 'io.rest-assured', name: 'json-schema-validator', version: restAssuredVersion
+
+    // alure
+    implementation group: 'io.qameta.allure', name: 'allure-testng', version: allureVersion
+    implementation group: 'io.qameta.allure', name: 'allure-cucumber7-jvm', version: allureVersion
+    implementation group: 'io.qameta.allure', name: 'allure-rest-assured', version: allureVersion
+
+    // opencsv
+    implementation group: 'com.opencsv', name: 'opencsv', version: '5.5.1'
+
+    // apache
+    implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+    implementation group: 'commons-dbutils', name: 'commons-dbutils', version: '1.7'
+    implementation group: 'org.apache.httpcomponents.core5', name: 'httpcore5', version: '5.1.1'
+
+    // faker
+    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+
+    // jsonpath
+    implementation group: 'com.jayway.jsonpath', name: 'json-path', version: '2.8.0'
+
+    // jedis
+    implementation group: 'redis.clients', name: 'jedis', version: '3.6.3'
+
+    // appium - will use later
+    // implementation group: 'io.appium', name: 'java-client', version: '7.5.1'
+
+    // webdriver - will use later
+    // implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.4.3'
+
+    // jsonsimple
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
+    // curl logger
+    implementation group: 'com.github.dzieciou.testing', name: 'curl-logger', version: '2.1.0'
+
+    // testng
+    implementation group: "org.testng", name: "testng", version: "7.0.0"
+
+    // mariadb + mysql
+    implementation group: "org.mariadb.jdbc", name: "mariadb-java-client", version: "2.7.2"
+
+    // postgress sql
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.5.0'
+
+    // spring
+//    implementation 'org.springframework.boot:spring-boot-starter'
+//    compileOnly 'org.projectlombok:lombok'
+//    annotationProcessor 'org.projectlombok:lombok'
+//    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // cucumber
+    compileOnly group: 'io.cucumber', name: 'cucumber-java', version: cucumberVersion
+    testImplementation group: 'io.cucumber', name: 'cucumber-java', version: cucumberVersion
+    compileOnly group: 'io.cucumber', name: 'cucumber-spring', version: cucumberVersion
+
+
+    //selenium
+    testImplementation 'io.cucumber:cucumber-java:7.6.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.6.0'
+    testImplementation 'junit:junit:4.13.2'
+
+    // This dependency is used by the application.
+    implementation 'com.google.guava:guava:30.1.1-jre'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.4.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.3.0'
+
+
+    // guava
+    implementation group: "com.google.guava", name: "guava", version: "30.1-jre"
+
+    // navixpath
+    implementation group: 'tech.navicore', name: 'navixpath', version: '1.0.0'
+
+    // okhttp
+    implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '4.9.3'
+
+}
+
+java {
+    sourceCompatibility = 11
+    targetCompatibility = 11
+}
+
+tasks.withType(Javadoc) {
+    failOnError = false
+}
+
+test {
+    useTestNG() {
+        if (System.properties.containsKey("suiteXmlFile")) {
+            suites System.properties.get("suiteXmlFile")
+        }
+    }
+    testLogging {
+        exceptionFormat "full"
+    }
+    options {
+        systemProperties(System.getProperties())
+    }
+    outputs.upToDateWhen { false } // always rerun the test
+    ignoreFailures = true
+}
+
+tasks.withType(JavaCompile) {
+    sourceCompatibility("11")
+    targetCompatibility("11")
+    options.encoding("UTF-8")
+}
+
+// https://stackoverflow.com/a/36130467 for test result log
+tasks.withType(Test) {
+    testLogging {
+        afterSuite { desc, result ->
+            if (!desc.parent) { // will match the outermost suite
+                def output = "Results: ${result.resultType} (${result.testCount} tests, ${result.successfulTestCount} passed, ${result.failedTestCount} failed, ${result.skippedTestCount} skipped)"
+                def startItem = '|  ', endItem = '  |'
+                def repeatLength = startItem.length() + output.length() + endItem.length()
+                println('\n' + ('-' * repeatLength) + '\n' + startItem + output + endItem + '\n' + ('-' * repeatLength))
+            }
+        }
+    }
+}
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+task cucumberCli() {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            def tags = getProperty("tags")
+            systemProperties(System.getProperties())
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin', 'pretty',
+                    '--plugin', 'html:build/test-results/html-report.html',
+                    '--plugin', 'json:build/test-results/json-report.json',
+                    '--plugin', 'io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm',
+                    '--glue', 'src/test/java/web',
+                    '--tags', tags,
+                    'src/test/resources']
+        }
+    }
+}
+
+
+tasks.register("sendReportToSlack", JavaExec) {
+    it.dependsOn = List.of("assemble")
+    it.classpath = files(
+            sourceSets.main.getRuntimeClasspath()
+    )
+    it.mainClass = "commons.SlackCI"
+}

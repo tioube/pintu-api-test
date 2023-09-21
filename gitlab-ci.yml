@@ -1,0 +1,57 @@
+image: gradle:7.4.2-jdk11
+
+variables:
+  RESULTS_REGEX: "|  Results: .*"
+  ON_DEMAND:
+    value: "true"
+    description: "Set this to false to only run the build job"
+  DEBUG:
+    value: "false"
+    description: "Set this to logs api request response"
+  CUSTOM_SUITE:
+    value: "src/test/resources/suites/simple.xml"
+    description: "Test suite name for on demand tests"
+  TEST_TYPE:
+    value: "smoke"
+    description: "smoke / functional"
+  ENV_NAME:
+    value: "dev"
+    description: "environment for test run"
+
+cache:
+  key: automation-test-be
+  paths:
+    - build
+    - .gradle
+
+build:
+  tags:
+    - qa
+  stage: build
+  script:
+    - ./gradlew publish -x test
+  only:
+    - master
+
+test:
+  variables:
+    ENV_NAME: "dev"
+  tags:
+    - coreloan
+    - $ENV_NAME
+  stage: test
+  script:
+    - ./gradlew test -DsuiteXmlFile=$TEST_SUITE -DtestEnv=$ENV_NAME --no-watch-fs | tee testlog
+    - ./gradlew allureReport
+    - mkdir allureReport
+    - mv build/reports/allure-report/allureReport/* allureReport
+  artifacts:
+    paths:
+      - allureReport
+      - build
+    expire_in: 1 week
+  only:
+    refs:
+      - schedules
+    variables:
+      - $TEST_TYPE == "functional"
