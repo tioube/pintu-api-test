@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
       "userId": {
-        "type": "integer"
+        "type": "string"
       },
       "id": {
         "type": "integer"

@@ -3,17 +3,12 @@ package rest;
 import com.jayway.jsonpath.JsonPath;
 import commons.Util;
 import configs.TestMasterConfigurations;
-import io.restassured.module.jsv.JsonSchemaValidator;
 import com.github.javafaker.Faker;
-import com.jayway.jsonpath.JsonPath.*;
 import org.testng.Assert;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import org.testng.annotations.Test;
 
 import java.io.*;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
 
 
 public class testRestAssured extends TestMasterConfigurations {
@@ -26,11 +21,12 @@ public class testRestAssured extends TestMasterConfigurations {
             if (schemaInputStream == null) {
                 throw new FileNotFoundException("Schema file not found");
             }
+            System.out.print("Checking Schema Should be True");
             Res.then().assertThat()
                     .body(matchesJsonSchema(schemaInputStream));
         } catch (Exception e) {
             e.printStackTrace();
-            Assert.fail("Exception occurred while validating JSON schema: " + e.getMessage());
+            Assert.fail("Error when Validating Scheme: " + e.getMessage());
         }
     }
 

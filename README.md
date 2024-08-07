@@ -38,7 +38,11 @@ Optional:
 
 Use following command-line to execute the test.
 
-    ./gradlew test -Dconfig=config/dev.yaml -DsuiteXmlFile=test-suite/example.xml
+    ./gradlew test -DtestEnv=dev
+
+Use following command for spesific class
+
+    ./gradlew test "rest.testRestAssured.getApi" -Ddebug=true -DtestEnv=dev
 
 This will run the example test suite. Change the config and suiteXmlFile as needed.
 
