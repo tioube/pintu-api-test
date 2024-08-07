@@ -157,9 +157,9 @@ tasks.withType(Javadoc) {
 
 test {
     useTestNG() {
-        if (System.properties.containsKey("suiteXmlFile")) {
-            suites System.properties.get("suiteXmlFile")
-        }
+//        if (System.properties.containsKey("suiteXmlFile")) {
+//            suites System.properties.get("suiteXmlFile")
+//        }
     }
     testLogging {
         exceptionFormat "full"

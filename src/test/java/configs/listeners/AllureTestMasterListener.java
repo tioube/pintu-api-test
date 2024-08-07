@@ -17,7 +17,7 @@ import org.testng.ITestContext;
 
 public class AllureTestMasterListener implements TestMasterListener {
 
-    List<String> testResultFlags = List.of("DB_ISSUE", "DUMMY_ISSUE", "VIRGOLAND_ISSUE",
+    List<String> testResultFlags = List.of("DB_ISSUE", "DUMMY_ISSUE", "DUMMY2_ISSUE",
             "depends on not");
 
     @Override
@@ -27,7 +27,7 @@ public class AllureTestMasterListener implements TestMasterListener {
     }
 
     private void writeEnvironmentFile() {
-        String urlString = Globals.getUrlCoreLoan();
+        String urlString = Globals.getUrlDev();
         String env;
         Matcher m = Pattern.compile(".*api-(.{3}).*").matcher(urlString);
         if (m.matches()) {

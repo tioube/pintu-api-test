@@ -15,11 +15,11 @@ db_config:
   global:
     num_of_attempt: 4
     timeout: 5
-    port: "3306"
-    username: "cmVhZF93cml0ZQ=="
+    port: ""
+    username: "=="
   clusters:
     user:
-      host: "MTAuMjU0LjAuMTk4"
-      password: "QzJMOE1rc0lscHkwelhadg=="
+      host: ""
+      password: ""
 
 

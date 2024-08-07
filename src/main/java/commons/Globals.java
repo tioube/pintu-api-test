@@ -18,7 +18,7 @@ public class Globals {
     @Getter
     private static boolean headless;
     @Getter
-    private static String urlCoreLoan;
+    private static String urlDev;
     @Getter
     private static String jsonSchema;
     @Getter
@@ -54,7 +54,7 @@ public class Globals {
             redisPassword = String.valueOf(yaml.fetchObject("redis.password"));
             // urls
             urlBrowserlessChrome = String.valueOf(yaml.fetchObject("urls.browserlessChrome"));
-            urlCoreLoan = String.valueOf(yaml.fetchObject("urls.virgo"));
+            urlDev = String.valueOf(yaml.fetchObject("urls.dev"));
             //jira
             jiraUrl = String.valueOf(yaml.fetchObject("jira.url"));
             jiraUsername = String.valueOf(yaml.fetchObject("jira.username"));
