@@ -2,9 +2,10 @@ plugins {
     id 'java'
     id "java-library"
     id 'io.qameta.allure-report' version '2.9.6'
+    id 'se.thinkcode.cucumber-runner' version '0.0.8'
 }
 
-group 'com.catalysttest'
+group 'com.pintu-assesment'
 version '1.0-SNAPSHOT'
 
 
@@ -12,6 +13,19 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
+
+
+cucumber {
+    if (this.hasProperty("env")) {
+        System.setProperty("spring.profiles.active", "$env")
+        println "using environment $env"
+    }
+    main = 'io.cucumber.core.cli.Main'
+    glue = 'classpath:com.capitalx.automation'
+    plugin = ['pretty', "json:build/cucumber.json", "html:build/result"]
+//    threads = 2
+}
+
 
 ext {
     lombokVersion = "1.18.20"
@@ -46,7 +60,7 @@ dependencies {
 
     // restassured
     implementation group: 'io.rest-assured', name: 'rest-assured', version: restAssuredVersion
-    implementation group: 'io.rest-assured', name: 'json-schema-validator', version: restAssuredVersion
+    implementation group: 'io.rest-assured', name: 'json-schema-validator', version: '5.3.1'
 
     // alure
     implementation group: 'io.qameta.allure', name: 'allure-testng', version: allureVersion
@@ -70,8 +84,15 @@ dependencies {
     // jedis
     implementation group: 'redis.clients', name: 'jedis', version: '3.6.3'
 
-    // appium - will use later
-    // implementation group: 'io.appium', name: 'java-client', version: '7.5.1'
+    //CUCUMBER + SELENIUM
+//    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+//    implementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.6.0'
+//    implementation group: 'io.cucumber', name: 'cucumber-java', version: '5.4.1'
+//    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '5.4.1'
+//    implementation group: 'io.appium', name: 'java-client', version: '7.3.0'
+//    implementation group: 'io.rest-assured', name: 'rest-assured', version: '4.3.0'
+//    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.2.2'
+
 
     // webdriver - will use later
     // implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.4.3'

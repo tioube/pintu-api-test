@@ -1,4 +1,4 @@
-# coreloan-test JAVA
+# api-test JAVA
 
 Repository for test automation scripts
 
