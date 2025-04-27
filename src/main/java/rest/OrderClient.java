@@ -19,7 +19,7 @@ import static io.restassured.RestAssured.given;
  */
 public class OrderClient {
     
-    private static final String BASE_URL = "https://testnet.binance.vision"; // Using testnet as specified by the user
+    private static final String BASE_URL = Globals.getSpotRestUrl(); // Using testnet as specified by the user
     
     /**
      * Place a market order on Binance

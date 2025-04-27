@@ -1,5 +1,6 @@
 package rest;
 
+import commons.Globals;
 import io.qameta.allure.Step;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -14,7 +15,7 @@ import java.util.function.Consumer;
 
 public class WebScoketTradeClient {
 
-    private static final String WS_BASE_URL = "wss://stream.binance.com:9443/ws/";
+    private static final String WS_BASE_URL = Globals.getSpotWssUrl();
     private OkHttpClient client;
     private WebSocket webSocket;
     private final JSONParser jsonParser = new JSONParser();

@@ -9,6 +9,8 @@ selenium:
 spot:
   apiKey: "YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI"
   apiSecret: "RY3kglpYpRiz76Ps47QgHIIu8G9UVX70QXZc7lfw6bFImd2B17pdlGxWScPj83c7"
+  restUrl: "https://testnet.binance.vision"
+  wssUrl: "wss://stream.binance.com:9443/ws/"
 
 redis:
   host: ""

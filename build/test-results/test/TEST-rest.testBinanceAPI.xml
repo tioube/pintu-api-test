@@ -1,0 +1,2503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rest.testBinanceAPI" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-04-27T18:10:07" hostname="Tio-Hizbullah.local" time="0.705">
+  <properties/>
+  <testcase name="testFetchAccountBalance" classname="rest.testBinanceAPI" time="0.224"/>
+  <testcase name="testFetchOpenOrders" classname="rest.testBinanceAPI" time="0.143"/>
+  <testcase name="testFetchOrderBook" classname="rest.testBinanceAPI" time="0.188"/>
+  <testcase name="testFetchTradeHistory" classname="rest.testBinanceAPI" time="0.149"/>
+  <system-out><![CDATA[Query string to sign: timestamp=1745777407612
+Secret key length: 64
+Generated signature: b9856dd1b6258fcefbbff0d3cca645dbf1d6ba8b84cf5e6dec058d9169922065
+Request URL: https://testnet.binance.vision/api/v3/account?timestamp=1745777407612&signature=b9856dd1b6258fcefbbff0d3cca645dbf1d6ba8b84cf5e6dec058d9169922065
+Request Headers: {X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI}
+Request method:	GET
+Request URI:	https://testnet.binance.vision/api/v3/account?timestamp=1745777407612&signature=b9856dd1b6258fcefbbff0d3cca645dbf1d6ba8b84cf5e6dec058d9169922065
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Received message: {"p":"94095.24000000","a":3551019191,"q":"0.00335000","s":"BTCUSDT","T":1745777407704,"e":"aggTrade","E":1745777407705,"f":4855242515,"l":4855242515,"m":false,"M":true}
+Received message: {"p":"94095.24000000","a":3551019191,"q":"0.00335000","s":"BTCUSDT","T":1745777407704,"e":"aggTrade","E":1745777407705,"f":4855242515,"l":4855242515,"m":false,"M":true}
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 3102
+Connection: keep-alive
+Date: Sun, 27 Apr 2025 18:10:07 GMT
+Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+x-mbx-uuid: fa1a9f25-7d4b-4fc9-ba80-c402e0ddef36
+x-mbx-used-weight: 22
+x-mbx-used-weight-1m: 22
+content-encoding: gzip
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'
+X-Content-Security-Policy: default-src 'self'
+X-WebKit-CSP: default-src 'self'
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+Via: 1.1 371f05083da358616e0006a1f34fdb7e.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+X-Amz-Cf-Id: TySKZCbDeQVUeRQOTiJBIUE49jTjCrr2t5bbA3DFGXQjikMVUODX7w==
+
+{
+    "makerCommission": 0,
+    "takerCommission": 0,
+    "buyerCommission": 0,
+    "sellerCommission": 0,
+    "commissionRates": {
+        "maker": "0.00000000",
+        "taker": "0.00000000",
+        "buyer": "0.00000000",
+        "seller": "0.00000000"
+    },
+    "canTrade": true,
+    "canWithdraw": true,
+    "canDeposit": true,
+    "brokered": false,
+    "requireSelfTradePrevention": false,
+    "preventSor": false,
+    "updateTime": 1745777086509,
+    "accountType": "SPOT",
+    "balances": [
+        {
+            "asset": "ETH",
+            "free": "1.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BTC",
+            "free": "1.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LTC",
+            "free": "5.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BNB",
+            "free": "16.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "USDT",
+            "free": "992.44115000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TRX",
+            "free": "2103.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "XRP",
+            "free": "230.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "NEO",
+            "free": "104.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "QTUM",
+            "free": "256.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "EOS",
+            "free": "603.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SNT",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "GAS",
+            "free": "238.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LRC",
+            "free": "5045.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ZRX",
+            "free": "2020.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "KNC",
+            "free": "1469.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "IOTA",
+            "free": "2838.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LINK",
+            "free": "35.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "XVG",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MTL",
+            "free": "708.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ETC",
+            "free": "29.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ZEC",
+            "free": "12.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DASH",
+            "free": "22.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "REQ",
+            "free": "4497.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "POWR",
+            "free": "3184.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ENJ",
+            "free": "6244.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "STORJ",
+            "free": "1904.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "KMD",
+            "free": "3460.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "NULS",
+            "free": "5009.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BAT",
+            "free": "3618.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LSK",
+            "free": "986.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MANA",
+            "free": "1973.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ADX",
+            "free": "4820.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ADA",
+            "free": "723.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "XLM",
+            "free": "1834.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ICX",
+            "free": "5341.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ELF",
+            "free": "2014.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "RLC",
+            "free": "421.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PIVX",
+            "free": "3580.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "STEEM",
+            "free": "3941.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ZIL",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ONT",
+            "free": "3562.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "WAN",
+            "free": "4919.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SYS",
+            "free": "12371.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TUSD",
+            "free": "10000.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ZEN",
+            "free": "56.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "THETA",
+            "free": "591.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "IOTX",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DATA",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SC",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DENT",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ARDR",
+            "free": "8844.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "HOT",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "VET",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "RVN",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "USDC",
+            "free": "10000.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ONG",
+            "free": "2673.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FET",
+            "free": "1068.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "IOST",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CELR",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ATOM",
+            "free": "110.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PHB",
+            "free": "1077.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TFUEL",
+            "free": "14480.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ONE",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ALGO",
+            "free": "2597.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DOGE",
+            "free": "2861.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DUSK",
+            "free": "6497.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ANKR",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "WIN",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "COS",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FUN",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CVC",
+            "free": "5549.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CHZ",
+            "free": "11552.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BAND",
+            "free": "694.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "XTZ",
+            "free": "747.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "HBAR",
+            "free": "2909.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "NKN",
+            "free": "12194.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "STX",
+            "free": "798.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "KAVA",
+            "free": "1254.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ARPA",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CTXC",
+            "free": "3592.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BCH",
+            "free": "1.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TROY",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FTT",
+            "free": "457.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TRY",
+            "free": "18466.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "EUR",
+            "free": "460.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "OGN",
+            "free": "8407.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BNT",
+            "free": "1180.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LTO",
+            "free": "9503.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MBL",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "COTI",
+            "free": "7067.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "STPT",
+            "free": "12580.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ZAR",
+            "free": "18466.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SOL",
+            "free": "3.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CTSI",
+            "free": "7727.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "HIVE",
+            "free": "2154.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CHR",
+            "free": "5183.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MDT",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "UAH",
+            "free": "18466.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "COMP",
+            "free": "11.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SXP",
+            "free": "2788.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SNX",
+            "free": "711.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "VTHO",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DGB",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MKR",
+            "free": "1.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "RUNE",
+            "free": "414.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DCR",
+            "free": "43.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FIO",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "AVA",
+            "free": "931.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "YFI",
+            "free": "1.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BAL",
+            "free": "372.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DAI",
+            "free": "10000.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "JST",
+            "free": "15536.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CRV",
+            "free": "920.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SAND",
+            "free": "1806.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "NMR",
+            "free": "63.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DOT",
+            "free": "119.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LUNA",
+            "free": "2691.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "RSR",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PAXG",
+            "free": "1.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TRB",
+            "free": "19.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "WBTC",
+            "free": "1.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SUSHI",
+            "free": "835.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "KSM",
+            "free": "31.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "EGLD",
+            "free": "30.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DIA",
+            "free": "1416.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "UMA",
+            "free": "423.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BEL",
+            "free": "676.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "WING",
+            "free": "162.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "UNI",
+            "free": "80.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "OXT",
+            "free": "7624.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SUN",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "AVAX",
+            "free": "25.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FLM",
+            "free": "18209.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SCRT",
+            "free": "2520.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CAKE",
+            "free": "262.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "UTK",
+            "free": "14526.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "XVS",
+            "free": "91.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ALPHA",
+            "free": "14244.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "VIDT",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BRL",
+            "free": "97.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "AAVE",
+            "free": "3.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "NEAR",
+            "free": "185.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FIL",
+            "free": "174.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "INJ",
+            "free": "55.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "AUDIO",
+            "free": "6892.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CTK",
+            "free": "1519.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "AXS",
+            "free": "171.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "HARD",
+            "free": "3241.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SLP",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "STRAX",
+            "free": "13164.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ROSE",
+            "free": "17833.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SKL",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "GLM",
+            "free": "1956.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "GRT",
+            "free": "5626.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "JUV",
+            "free": "450.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PSG",
+            "free": "224.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "1INCH",
+            "free": "2541.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "OG",
+            "free": "126.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ATM",
+            "free": "427.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ASR",
+            "free": "425.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CELO",
+            "free": "1475.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "RIF",
+            "free": "12388.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TRU",
+            "free": "14933.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CKB",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TWT",
+            "free": "593.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FIRO",
+            "free": "530.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SFP",
+            "free": "958.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DODO",
+            "free": "7925.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ACM",
+            "free": "563.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "AUCTION",
+            "free": "35.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PHA",
+            "free": "5102.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BADGER",
+            "free": "389.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FIS",
+            "free": "3614.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "OM",
+            "free": "79.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "POND",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DEGO",
+            "free": "314.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ALICE",
+            "free": "1139.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PERP",
+            "free": "1513.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SUPER",
+            "free": "910.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CFX",
+            "free": "5772.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TKO",
+            "free": "2748.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PUNDIX",
+            "free": "1850.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TLM",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BAR",
+            "free": "298.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FORTH",
+            "free": "221.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BAKE",
+            "free": "3935.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SHIB",
+            "free": "18446.00",
+            "locked": "0.00"
+        },
+        {
+            "asset": "ICP",
+            "free": "92.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "AR",
+            "free": "83.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MASK",
+            "free": "368.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LPT",
+            "free": "103.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ATA",
+            "free": "8616.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "GTC",
+            "free": "1676.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MLN",
+            "free": "43.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DEXE",
+            "free": "33.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "C98",
+            "free": "7946.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "QNT",
+            "free": "7.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FLOW",
+            "free": "1282.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MINA",
+            "free": "2060.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "RAY",
+            "free": "249.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FARM",
+            "free": "16.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ALPACA",
+            "free": "9355.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "QUICK",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MBOX",
+            "free": "7039.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "GHST",
+            "free": "903.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "WAXP",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "GNO",
+            "free": "4.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "XEC",
+            "free": "18446.00",
+            "locked": "0.00"
+        },
+        {
+            "asset": "DYDX",
+            "free": "783.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "IDEX",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "USDP",
+            "free": "500.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "GALA",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ILV",
+            "free": "38.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "YGG",
+            "free": "2708.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DF",
+            "free": "10072.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FIDA",
+            "free": "5278.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "AGLD",
+            "free": "585.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "RAD",
+            "free": "676.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BETA",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "RARE",
+            "free": "8966.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SSV",
+            "free": "75.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LAZIO",
+            "free": "501.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CHESS",
+            "free": "6720.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MOVR",
+            "free": "88.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CITY",
+            "free": "465.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ENS",
+            "free": "30.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "QI",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PORTO",
+            "free": "500.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "JASMY",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "AMP",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PYR",
+            "free": "402.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ALCX",
+            "free": "54.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SANTOS",
+            "free": "193.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BICO",
+            "free": "4462.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FLUX",
+            "free": "2084.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FXS",
+            "free": "260.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "VOXEL",
+            "free": "7364.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "HIGH",
+            "free": "960.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CVX",
+            "free": "223.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PEOPLE",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SPELL",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "JOE",
+            "free": "2937.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ACH",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "IMX",
+            "free": "949.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "GLMR",
+            "free": "6953.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LOKA",
+            "free": "5315.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "API3",
+            "free": "538.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BTTC",
+            "free": "18446.0",
+            "locked": "0.0"
+        },
+        {
+            "asset": "ACA",
+            "free": "14134.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "XNO",
+            "free": "560.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "WOO",
+            "free": "6682.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ALPINE",
+            "free": "614.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "T",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ASTR",
+            "free": "17371.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "GMT",
+            "free": "10444.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "KDA",
+            "free": "1229.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "APE",
+            "free": "1066.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BSW",
+            "free": "16174.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BIFI",
+            "free": "2.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "NEXO",
+            "free": "459.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "REI",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LDO",
+            "free": "565.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "OP",
+            "free": "671.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LEVER",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "STG",
+            "free": "2563.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LUNC",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "GMX",
+            "free": "42.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "POLYX",
+            "free": "3681.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "APT",
+            "free": "92.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PLN",
+            "free": "18466.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "OSMO",
+            "free": "1919.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "HFT",
+            "free": "8670.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "HOOK",
+            "free": "4064.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MAGIC",
+            "free": "4763.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "HIFI",
+            "free": "2366.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "RPL",
+            "free": "116.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PROS",
+            "free": "1448.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "RON",
+            "free": "18466.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "GNS",
+            "free": "377.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SYN",
+            "free": "3028.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "VIB",
+            "free": "13286.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LQTY",
+            "free": "769.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "USTC",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PROM",
+            "free": "84.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "QKC",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "UFT",
+            "free": "8098.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ID",
+            "free": "2415.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ARB",
+            "free": "1505.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "RDNT",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ARS",
+            "free": "18466.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "EDU",
+            "free": "4501.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SUI",
+            "free": "202.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PEPE",
+            "free": "18446.00",
+            "locked": "0.00"
+        },
+        {
+            "asset": "FLOKI",
+            "free": "18446.00",
+            "locked": "0.00"
+        },
+        {
+            "asset": "WBETH",
+            "free": "1.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MAV",
+            "free": "7993.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PENDLE",
+            "free": "155.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ARKM",
+            "free": "971.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "WLD",
+            "free": "632.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FDUSD",
+            "free": "10000.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SEI",
+            "free": "2848.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CYBER",
+            "free": "416.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ARK",
+            "free": "1675.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CREAM",
+            "free": "101.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "IQ",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "NTRN",
+            "free": "3761.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TIA",
+            "free": "157.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MEME",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ORDI",
+            "free": "67.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BEAMX",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "VIC",
+            "free": "2375.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BLUR",
+            "free": "4676.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "VANRY",
+            "free": "18257.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "AEUR",
+            "free": "500.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "JTO",
+            "free": "216.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "1000SATS",
+            "free": "18446.00",
+            "locked": "0.00"
+        },
+        {
+            "asset": "BONK",
+            "free": "18446.00",
+            "locked": "0.00"
+        },
+        {
+            "asset": "ACE",
+            "free": "853.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "NFP",
+            "free": "7372.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "AI",
+            "free": "3254.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "XAI",
+            "free": "8876.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MANTA",
+            "free": "2317.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ALT",
+            "free": "16340.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "JUP",
+            "free": "1199.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PYTH",
+            "free": "3449.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "RONIN",
+            "free": "692.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DYM",
+            "free": "1764.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PIXEL",
+            "free": "17851.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "STRK",
+            "free": "3427.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PORTAL",
+            "free": "6438.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PDA",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "AXL",
+            "free": "1348.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "WIF",
+            "free": "1190.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "METIS",
+            "free": "32.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "JPY",
+            "free": "18466.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "AEVO",
+            "free": "4682.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BOME",
+            "free": "18446.00",
+            "locked": "0.00"
+        },
+        {
+            "asset": "ETHFI",
+            "free": "883.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ENA",
+            "free": "1339.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "W",
+            "free": "6366.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TNSR",
+            "free": "3228.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SAGA",
+            "free": "1742.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MXN",
+            "free": "18466.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TAO",
+            "free": "2.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "OMNI",
+            "free": "200.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "REZ",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BB",
+            "free": "4126.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "NOT",
+            "free": "18446.00",
+            "locked": "0.00"
+        },
+        {
+            "asset": "COP",
+            "free": "18466.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "IO",
+            "free": "697.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ZK",
+            "free": "7699.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LISTA",
+            "free": "3066.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ZRO",
+            "free": "170.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "G",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BANANA",
+            "free": "26.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "RENDER",
+            "free": "133.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TON",
+            "free": "123.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "DOGS",
+            "free": "18446.00",
+            "locked": "0.00"
+        },
+        {
+            "asset": "EURI",
+            "free": "460.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SLF",
+            "free": "2315.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "POL",
+            "free": "2523.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "NEIRO",
+            "free": "18446.00",
+            "locked": "0.00"
+        },
+        {
+            "asset": "TURBO",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "1MBABYDOGE",
+            "free": "18446.00",
+            "locked": "0.00"
+        },
+        {
+            "asset": "CATI",
+            "free": "3613.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "HMSTR",
+            "free": "18446.00",
+            "locked": "0.00"
+        },
+        {
+            "asset": "EIGEN",
+            "free": "556.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BNSOL",
+            "free": "3.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SCR",
+            "free": "1845.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LUMIA",
+            "free": "1444.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "KAIA",
+            "free": "4601.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "COW",
+            "free": "1870.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CETUS",
+            "free": "4706.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PNUT",
+            "free": "3202.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ACT",
+            "free": "8924.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "USUAL",
+            "free": "4399.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "THE",
+            "free": "1849.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ACX",
+            "free": "2142.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ORCA",
+            "free": "207.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MOVE",
+            "free": "1236.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ME",
+            "free": "503.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "VELODROME",
+            "free": "9566.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "VANA",
+            "free": "87.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "1000CAT",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PENGU",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BIO",
+            "free": "6963.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "D",
+            "free": "10541.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "AIXBT",
+            "free": "5847.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CGPT",
+            "free": "6649.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "COOKIE",
+            "free": "4855.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "S",
+            "free": "978.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SOLV",
+            "free": "17028.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TRUMP",
+            "free": "47.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "ANIME",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BERA",
+            "free": "68.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "1000CHEEMS",
+            "free": "18446.00",
+            "locked": "0.00"
+        },
+        {
+            "asset": "TST",
+            "free": "7219.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "LAYER",
+            "free": "354.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "HEI",
+            "free": "1292.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "KAITO",
+            "free": "527.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "SHELL",
+            "free": "2760.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "RED",
+            "free": "1131.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "GPS",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "EPIC",
+            "free": "433.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BMT",
+            "free": "4449.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "FORM",
+            "free": "228.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "XUSD",
+            "free": "499.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "CZK",
+            "free": "18466.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "NIL",
+            "free": "1063.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "PARTI",
+            "free": "2627.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "MUBARAK",
+            "free": "12031.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "TUT",
+            "free": "17658.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BROCCOLI714",
+            "free": "15146.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "BANANAS31",
+            "free": "18446.00000000",
+            "locked": "0.00000000"
+        },
+        {
+            "asset": "GUN",
+            "free": "9323.00000000",
+            "locked": "0.00000000"
+        }
+    ],
+    "permissions": [
+        "SPOT"
+    ],
+    "uid": 1745572127670262723
+}
+Response Status: 200
+Response Body: {"makerCommission":0,"takerCommission":0,"buyerCommission":0,"sellerCommission":0,"commissionRates":{"maker":"0.00000000","taker":"0.00000000","buyer":"0.00000000","seller":"0.00000000"},"canTrade":true,"canWithdraw":true,"canDeposit":true,"brokered":false,"requireSelfTradePrevention":false,"preventSor":false,"updateTime":1745777086509,"accountType":"SPOT","balances":[{"asset":"ETH","free":"1.00000000","locked":"0.00000000"},{"asset":"BTC","free":"1.00000000","locked":"0.00000000"},{"asset":"LTC","free":"5.00000000","locked":"0.00000000"},{"asset":"BNB","free":"16.00000000","locked":"0.00000000"},{"asset":"USDT","free":"992.44115000","locked":"0.00000000"},{"asset":"TRX","free":"2103.00000000","locked":"0.00000000"},{"asset":"XRP","free":"230.00000000","locked":"0.00000000"},{"asset":"NEO","free":"104.00000000","locked":"0.00000000"},{"asset":"QTUM","free":"256.00000000","locked":"0.00000000"},{"asset":"EOS","free":"603.00000000","locked":"0.00000000"},{"asset":"SNT","free":"18446.00000000","locked":"0.00000000"},{"asset":"GAS","free":"238.00000000","locked":"0.00000000"},{"asset":"LRC","free":"5045.00000000","locked":"0.00000000"},{"asset":"ZRX","free":"2020.00000000","locked":"0.00000000"},{"asset":"KNC","free":"1469.00000000","locked":"0.00000000"},{"asset":"IOTA","free":"2838.00000000","locked":"0.00000000"},{"asset":"LINK","free":"35.00000000","locked":"0.00000000"},{"asset":"XVG","free":"18446.00000000","locked":"0.00000000"},{"asset":"MTL","free":"708.00000000","locked":"0.00000000"},{"asset":"ETC","free":"29.00000000","locked":"0.00000000"},{"asset":"ZEC","free":"12.00000000","locked":"0.00000000"},{"asset":"DASH","free":"22.00000000","locked":"0.00000000"},{"asset":"REQ","free":"4497.00000000","locked":"0.00000000"},{"asset":"POWR","free":"3184.00000000","locked":"0.00000000"},{"asset":"ENJ","free":"6244.00000000","locked":"0.00000000"},{"asset":"STORJ","free":"1904.00000000","locked":"0.00000000"},{"asset":"KMD","free":"3460.00000000","locked":"0.00000000"},{"asset":"NULS","free":"5009.00000000","locked":"0.00000000"},{"asset":"BAT","free":"3618.00000000","locked":"0.00000000"},{"asset":"LSK","free":"986.00000000","locked":"0.00000000"},{"asset":"MANA","free":"1973.00000000","locked":"0.00000000"},{"asset":"ADX","free":"4820.00000000","locked":"0.00000000"},{"asset":"ADA","free":"723.00000000","locked":"0.00000000"},{"asset":"XLM","free":"1834.00000000","locked":"0.00000000"},{"asset":"ICX","free":"5341.00000000","locked":"0.00000000"},{"asset":"ELF","free":"2014.00000000","locked":"0.00000000"},{"asset":"RLC","free":"421.00000000","locked":"0.00000000"},{"asset":"PIVX","free":"3580.00000000","locked":"0.00000000"},{"asset":"STEEM","free":"3941.00000000","locked":"0.00000000"},{"asset":"ZIL","free":"18446.00000000","locked":"0.00000000"},{"asset":"ONT","free":"3562.00000000","locked":"0.00000000"},{"asset":"WAN","free":"4919.00000000","locked":"0.00000000"},{"asset":"SYS","free":"12371.00000000","locked":"0.00000000"},{"asset":"TUSD","free":"10000.00000000","locked":"0.00000000"},{"asset":"ZEN","free":"56.00000000","locked":"0.00000000"},{"asset":"THETA","free":"591.00000000","locked":"0.00000000"},{"asset":"IOTX","free":"18446.00000000","locked":"0.00000000"},{"asset":"DATA","free":"18446.00000000","locked":"0.00000000"},{"asset":"SC","free":"18446.00000000","locked":"0.00000000"},{"asset":"DENT","free":"18446.00000000","locked":"0.00000000"},{"asset":"ARDR","free":"8844.00000000","locked":"0.00000000"},{"asset":"HOT","free":"18446.00000000","locked":"0.00000000"},{"asset":"VET","free":"18446.00000000","locked":"0.00000000"},{"asset":"RVN","free":"18446.00000000","locked":"0.00000000"},{"asset":"USDC","free":"10000.00000000","locked":"0.00000000"},{"asset":"ONG","free":"2673.00000000","locked":"0.00000000"},{"asset":"FET","free":"1068.00000000","locked":"0.00000000"},{"asset":"IOST","free":"18446.00000000","locked":"0.00000000"},{"asset":"CELR","free":"18446.00000000","locked":"0.00000000"},{"asset":"ATOM","free":"110.00000000","locked":"0.00000000"},{"asset":"PHB","free":"1077.00000000","locked":"0.00000000"},{"asset":"TFUEL","free":"14480.00000000","locked":"0.00000000"},{"asset":"ONE","free":"18446.00000000","locked":"0.00000000"},{"asset":"ALGO","free":"2597.00000000","locked":"0.00000000"},{"asset":"DOGE","free":"2861.00000000","locked":"0.00000000"},{"asset":"DUSK","free":"6497.00000000","locked":"0.00000000"},{"asset":"ANKR","free":"18446.00000000","locked":"0.00000000"},{"asset":"WIN","free":"18446.00000000","locked":"0.00000000"},{"asset":"COS","free":"18446.00000000","locked":"0.00000000"},{"asset":"FUN","free":"18446.00000000","locked":"0.00000000"},{"asset":"CVC","free":"5549.00000000","locked":"0.00000000"},{"asset":"CHZ","free":"11552.00000000","locked":"0.00000000"},{"asset":"BAND","free":"694.00000000","locked":"0.00000000"},{"asset":"XTZ","free":"747.00000000","locked":"0.00000000"},{"asset":"HBAR","free":"2909.00000000","locked":"0.00000000"},{"asset":"NKN","free":"12194.00000000","locked":"0.00000000"},{"asset":"STX","free":"798.00000000","locked":"0.00000000"},{"asset":"KAVA","free":"1254.00000000","locked":"0.00000000"},{"asset":"ARPA","free":"18446.00000000","locked":"0.00000000"},{"asset":"CTXC","free":"3592.00000000","locked":"0.00000000"},{"asset":"BCH","free":"1.00000000","locked":"0.00000000"},{"asset":"TROY","free":"18446.00000000","locked":"0.00000000"},{"asset":"FTT","free":"457.00000000","locked":"0.00000000"},{"asset":"TRY","free":"18466.00000000","locked":"0.00000000"},{"asset":"EUR","free":"460.00000000","locked":"0.00000000"},{"asset":"OGN","free":"8407.00000000","locked":"0.00000000"},{"asset":"BNT","free":"1180.00000000","locked":"0.00000000"},{"asset":"LTO","free":"9503.00000000","locked":"0.00000000"},{"asset":"MBL","free":"18446.00000000","locked":"0.00000000"},{"asset":"COTI","free":"7067.00000000","locked":"0.00000000"},{"asset":"STPT","free":"12580.00000000","locked":"0.00000000"},{"asset":"ZAR","free":"18466.00000000","locked":"0.00000000"},{"asset":"SOL","free":"3.00000000","locked":"0.00000000"},{"asset":"CTSI","free":"7727.00000000","locked":"0.00000000"},{"asset":"HIVE","free":"2154.00000000","locked":"0.00000000"},{"asset":"CHR","free":"5183.00000000","locked":"0.00000000"},{"asset":"MDT","free":"18446.00000000","locked":"0.00000000"},{"asset":"UAH","free":"18466.00000000","locked":"0.00000000"},{"asset":"COMP","free":"11.00000000","locked":"0.00000000"},{"asset":"SXP","free":"2788.00000000","locked":"0.00000000"},{"asset":"SNX","free":"711.00000000","locked":"0.00000000"},{"asset":"VTHO","free":"18446.00000000","locked":"0.00000000"},{"asset":"DGB","free":"18446.00000000","locked":"0.00000000"},{"asset":"MKR","free":"1.00000000","locked":"0.00000000"},{"asset":"RUNE","free":"414.00000000","locked":"0.00000000"},{"asset":"DCR","free":"43.00000000","locked":"0.00000000"},{"asset":"FIO","free":"18446.00000000","locked":"0.00000000"},{"asset":"AVA","free":"931.00000000","locked":"0.00000000"},{"asset":"YFI","free":"1.00000000","locked":"0.00000000"},{"asset":"BAL","free":"372.00000000","locked":"0.00000000"},{"asset":"DAI","free":"10000.00000000","locked":"0.00000000"},{"asset":"JST","free":"15536.00000000","locked":"0.00000000"},{"asset":"CRV","free":"920.00000000","locked":"0.00000000"},{"asset":"SAND","free":"1806.00000000","locked":"0.00000000"},{"asset":"NMR","free":"63.00000000","locked":"0.00000000"},{"asset":"DOT","free":"119.00000000","locked":"0.00000000"},{"asset":"LUNA","free":"2691.00000000","locked":"0.00000000"},{"asset":"RSR","free":"18446.00000000","locked":"0.00000000"},{"asset":"PAXG","free":"1.00000000","locked":"0.00000000"},{"asset":"TRB","free":"19.00000000","locked":"0.00000000"},{"asset":"WBTC","free":"1.00000000","locked":"0.00000000"},{"asset":"SUSHI","free":"835.00000000","locked":"0.00000000"},{"asset":"KSM","free":"31.00000000","locked":"0.00000000"},{"asset":"EGLD","free":"30.00000000","locked":"0.00000000"},{"asset":"DIA","free":"1416.00000000","locked":"0.00000000"},{"asset":"UMA","free":"423.00000000","locked":"0.00000000"},{"asset":"BEL","free":"676.00000000","locked":"0.00000000"},{"asset":"WING","free":"162.00000000","locked":"0.00000000"},{"asset":"UNI","free":"80.00000000","locked":"0.00000000"},{"asset":"OXT","free":"7624.00000000","locked":"0.00000000"},{"asset":"SUN","free":"18446.00000000","locked":"0.00000000"},{"asset":"AVAX","free":"25.00000000","locked":"0.00000000"},{"asset":"FLM","free":"18209.00000000","locked":"0.00000000"},{"asset":"SCRT","free":"2520.00000000","locked":"0.00000000"},{"asset":"CAKE","free":"262.00000000","locked":"0.00000000"},{"asset":"UTK","free":"14526.00000000","locked":"0.00000000"},{"asset":"XVS","free":"91.00000000","locked":"0.00000000"},{"asset":"ALPHA","free":"14244.00000000","locked":"0.00000000"},{"asset":"VIDT","free":"18446.00000000","locked":"0.00000000"},{"asset":"BRL","free":"97.00000000","locked":"0.00000000"},{"asset":"AAVE","free":"3.00000000","locked":"0.00000000"},{"asset":"NEAR","free":"185.00000000","locked":"0.00000000"},{"asset":"FIL","free":"174.00000000","locked":"0.00000000"},{"asset":"INJ","free":"55.00000000","locked":"0.00000000"},{"asset":"AUDIO","free":"6892.00000000","locked":"0.00000000"},{"asset":"CTK","free":"1519.00000000","locked":"0.00000000"},{"asset":"AXS","free":"171.00000000","locked":"0.00000000"},{"asset":"HARD","free":"3241.00000000","locked":"0.00000000"},{"asset":"SLP","free":"18446.00000000","locked":"0.00000000"},{"asset":"STRAX","free":"13164.00000000","locked":"0.00000000"},{"asset":"ROSE","free":"17833.00000000","locked":"0.00000000"},{"asset":"SKL","free":"18446.00000000","locked":"0.00000000"},{"asset":"GLM","free":"1956.00000000","locked":"0.00000000"},{"asset":"GRT","free":"5626.00000000","locked":"0.00000000"},{"asset":"JUV","free":"450.00000000","locked":"0.00000000"},{"asset":"PSG","free":"224.00000000","locked":"0.00000000"},{"asset":"1INCH","free":"2541.00000000","locked":"0.00000000"},{"asset":"OG","free":"126.00000000","locked":"0.00000000"},{"asset":"ATM","free":"427.00000000","locked":"0.00000000"},{"asset":"ASR","free":"425.00000000","locked":"0.00000000"},{"asset":"CELO","free":"1475.00000000","locked":"0.00000000"},{"asset":"RIF","free":"12388.00000000","locked":"0.00000000"},{"asset":"TRU","free":"14933.00000000","locked":"0.00000000"},{"asset":"CKB","free":"18446.00000000","locked":"0.00000000"},{"asset":"TWT","free":"593.00000000","locked":"0.00000000"},{"asset":"FIRO","free":"530.00000000","locked":"0.00000000"},{"asset":"SFP","free":"958.00000000","locked":"0.00000000"},{"asset":"DODO","free":"7925.00000000","locked":"0.00000000"},{"asset":"ACM","free":"563.00000000","locked":"0.00000000"},{"asset":"AUCTION","free":"35.00000000","locked":"0.00000000"},{"asset":"PHA","free":"5102.00000000","locked":"0.00000000"},{"asset":"BADGER","free":"389.00000000","locked":"0.00000000"},{"asset":"FIS","free":"3614.00000000","locked":"0.00000000"},{"asset":"OM","free":"79.00000000","locked":"0.00000000"},{"asset":"POND","free":"18446.00000000","locked":"0.00000000"},{"asset":"DEGO","free":"314.00000000","locked":"0.00000000"},{"asset":"ALICE","free":"1139.00000000","locked":"0.00000000"},{"asset":"PERP","free":"1513.00000000","locked":"0.00000000"},{"asset":"SUPER","free":"910.00000000","locked":"0.00000000"},{"asset":"CFX","free":"5772.00000000","locked":"0.00000000"},{"asset":"TKO","free":"2748.00000000","locked":"0.00000000"},{"asset":"PUNDIX","free":"1850.00000000","locked":"0.00000000"},{"asset":"TLM","free":"18446.00000000","locked":"0.00000000"},{"asset":"BAR","free":"298.00000000","locked":"0.00000000"},{"asset":"FORTH","free":"221.00000000","locked":"0.00000000"},{"asset":"BAKE","free":"3935.00000000","locked":"0.00000000"},{"asset":"SHIB","free":"18446.00","locked":"0.00"},{"asset":"ICP","free":"92.00000000","locked":"0.00000000"},{"asset":"AR","free":"83.00000000","locked":"0.00000000"},{"asset":"MASK","free":"368.00000000","locked":"0.00000000"},{"asset":"LPT","free":"103.00000000","locked":"0.00000000"},{"asset":"ATA","free":"8616.00000000","locked":"0.00000000"},{"asset":"GTC","free":"1676.00000000","locked":"0.00000000"},{"asset":"MLN","free":"43.00000000","locked":"0.00000000"},{"asset":"DEXE","free":"33.00000000","locked":"0.00000000"},{"asset":"C98","free":"7946.00000000","locked":"0.00000000"},{"asset":"QNT","free":"7.00000000","locked":"0.00000000"},{"asset":"FLOW","free":"1282.00000000","locked":"0.00000000"},{"asset":"MINA","free":"2060.00000000","locked":"0.00000000"},{"asset":"RAY","free":"249.00000000","locked":"0.00000000"},{"asset":"FARM","free":"16.00000000","locked":"0.00000000"},{"asset":"ALPACA","free":"9355.00000000","locked":"0.00000000"},{"asset":"QUICK","free":"18446.00000000","locked":"0.00000000"},{"asset":"MBOX","free":"7039.00000000","locked":"0.00000000"},{"asset":"GHST","free":"903.00000000","locked":"0.00000000"},{"asset":"WAXP","free":"18446.00000000","locked":"0.00000000"},{"asset":"GNO","free":"4.00000000","locked":"0.00000000"},{"asset":"XEC","free":"18446.00","locked":"0.00"},{"asset":"DYDX","free":"783.00000000","locked":"0.00000000"},{"asset":"IDEX","free":"18446.00000000","locked":"0.00000000"},{"asset":"USDP","free":"500.00000000","locked":"0.00000000"},{"asset":"GALA","free":"18446.00000000","locked":"0.00000000"},{"asset":"ILV","free":"38.00000000","locked":"0.00000000"},{"asset":"YGG","free":"2708.00000000","locked":"0.00000000"},{"asset":"DF","free":"10072.00000000","locked":"0.00000000"},{"asset":"FIDA","free":"5278.00000000","locked":"0.00000000"},{"asset":"AGLD","free":"585.00000000","locked":"0.00000000"},{"asset":"RAD","free":"676.00000000","locked":"0.00000000"},{"asset":"BETA","free":"18446.00000000","locked":"0.00000000"},{"asset":"RARE","free":"8966.00000000","locked":"0.00000000"},{"asset":"SSV","free":"75.00000000","locked":"0.00000000"},{"asset":"LAZIO","free":"501.00000000","locked":"0.00000000"},{"asset":"CHESS","free":"6720.00000000","locked":"0.00000000"},{"asset":"MOVR","free":"88.00000000","locked":"0.00000000"},{"asset":"CITY","free":"465.00000000","locked":"0.00000000"},{"asset":"ENS","free":"30.00000000","locked":"0.00000000"},{"asset":"QI","free":"18446.00000000","locked":"0.00000000"},{"asset":"PORTO","free":"500.00000000","locked":"0.00000000"},{"asset":"JASMY","free":"18446.00000000","locked":"0.00000000"},{"asset":"AMP","free":"18446.00000000","locked":"0.00000000"},{"asset":"PYR","free":"402.00000000","locked":"0.00000000"},{"asset":"ALCX","free":"54.00000000","locked":"0.00000000"},{"asset":"SANTOS","free":"193.00000000","locked":"0.00000000"},{"asset":"BICO","free":"4462.00000000","locked":"0.00000000"},{"asset":"FLUX","free":"2084.00000000","locked":"0.00000000"},{"asset":"FXS","free":"260.00000000","locked":"0.00000000"},{"asset":"VOXEL","free":"7364.00000000","locked":"0.00000000"},{"asset":"HIGH","free":"960.00000000","locked":"0.00000000"},{"asset":"CVX","free":"223.00000000","locked":"0.00000000"},{"asset":"PEOPLE","free":"18446.00000000","locked":"0.00000000"},{"asset":"SPELL","free":"18446.00000000","locked":"0.00000000"},{"asset":"JOE","free":"2937.00000000","locked":"0.00000000"},{"asset":"ACH","free":"18446.00000000","locked":"0.00000000"},{"asset":"IMX","free":"949.00000000","locked":"0.00000000"},{"asset":"GLMR","free":"6953.00000000","locked":"0.00000000"},{"asset":"LOKA","free":"5315.00000000","locked":"0.00000000"},{"asset":"API3","free":"538.00000000","locked":"0.00000000"},{"asset":"BTTC","free":"18446.0","locked":"0.0"},{"asset":"ACA","free":"14134.00000000","locked":"0.00000000"},{"asset":"XNO","free":"560.00000000","locked":"0.00000000"},{"asset":"WOO","free":"6682.00000000","locked":"0.00000000"},{"asset":"ALPINE","free":"614.00000000","locked":"0.00000000"},{"asset":"T","free":"18446.00000000","locked":"0.00000000"},{"asset":"ASTR","free":"17371.00000000","locked":"0.00000000"},{"asset":"GMT","free":"10444.00000000","locked":"0.00000000"},{"asset":"KDA","free":"1229.00000000","locked":"0.00000000"},{"asset":"APE","free":"1066.00000000","locked":"0.00000000"},{"asset":"BSW","free":"16174.00000000","locked":"0.00000000"},{"asset":"BIFI","free":"2.00000000","locked":"0.00000000"},{"asset":"NEXO","free":"459.00000000","locked":"0.00000000"},{"asset":"REI","free":"18446.00000000","locked":"0.00000000"},{"asset":"LDO","free":"565.00000000","locked":"0.00000000"},{"asset":"OP","free":"671.00000000","locked":"0.00000000"},{"asset":"LEVER","free":"18446.00000000","locked":"0.00000000"},{"asset":"STG","free":"2563.00000000","locked":"0.00000000"},{"asset":"LUNC","free":"18446.00000000","locked":"0.00000000"},{"asset":"GMX","free":"42.00000000","locked":"0.00000000"},{"asset":"POLYX","free":"3681.00000000","locked":"0.00000000"},{"asset":"APT","free":"92.00000000","locked":"0.00000000"},{"asset":"PLN","free":"18466.00000000","locked":"0.00000000"},{"asset":"OSMO","free":"1919.00000000","locked":"0.00000000"},{"asset":"HFT","free":"8670.00000000","locked":"0.00000000"},{"asset":"HOOK","free":"4064.00000000","locked":"0.00000000"},{"asset":"MAGIC","free":"4763.00000000","locked":"0.00000000"},{"asset":"HIFI","free":"2366.00000000","locked":"0.00000000"},{"asset":"RPL","free":"116.00000000","locked":"0.00000000"},{"asset":"PROS","free":"1448.00000000","locked":"0.00000000"},{"asset":"RON","free":"18466.00000000","locked":"0.00000000"},{"asset":"GNS","free":"377.00000000","locked":"0.00000000"},{"asset":"SYN","free":"3028.00000000","locked":"0.00000000"},{"asset":"VIB","free":"13286.00000000","locked":"0.00000000"},{"asset":"LQTY","free":"769.00000000","locked":"0.00000000"},{"asset":"USTC","free":"18446.00000000","locked":"0.00000000"},{"asset":"PROM","free":"84.00000000","locked":"0.00000000"},{"asset":"QKC","free":"18446.00000000","locked":"0.00000000"},{"asset":"UFT","free":"8098.00000000","locked":"0.00000000"},{"asset":"ID","free":"2415.00000000","locked":"0.00000000"},{"asset":"ARB","free":"1505.00000000","locked":"0.00000000"},{"asset":"RDNT","free":"18446.00000000","locked":"0.00000000"},{"asset":"ARS","free":"18466.00000000","locked":"0.00000000"},{"asset":"EDU","free":"4501.00000000","locked":"0.00000000"},{"asset":"SUI","free":"202.00000000","locked":"0.00000000"},{"asset":"PEPE","free":"18446.00","locked":"0.00"},{"asset":"FLOKI","free":"18446.00","locked":"0.00"},{"asset":"WBETH","free":"1.00000000","locked":"0.00000000"},{"asset":"MAV","free":"7993.00000000","locked":"0.00000000"},{"asset":"PENDLE","free":"155.00000000","locked":"0.00000000"},{"asset":"ARKM","free":"971.00000000","locked":"0.00000000"},{"asset":"WLD","free":"632.00000000","locked":"0.00000000"},{"asset":"FDUSD","free":"10000.00000000","locked":"0.00000000"},{"asset":"SEI","free":"2848.00000000","locked":"0.00000000"},{"asset":"CYBER","free":"416.00000000","locked":"0.00000000"},{"asset":"ARK","free":"1675.00000000","locked":"0.00000000"},{"asset":"CREAM","free":"101.00000000","locked":"0.00000000"},{"asset":"IQ","free":"18446.00000000","locked":"0.00000000"},{"asset":"NTRN","free":"3761.00000000","locked":"0.00000000"},{"asset":"TIA","free":"157.00000000","locked":"0.00000000"},{"asset":"MEME","free":"18446.00000000","locked":"0.00000000"},{"asset":"ORDI","free":"67.00000000","locked":"0.00000000"},{"asset":"BEAMX","free":"18446.00000000","locked":"0.00000000"},{"asset":"VIC","free":"2375.00000000","locked":"0.00000000"},{"asset":"BLUR","free":"4676.00000000","locked":"0.00000000"},{"asset":"VANRY","free":"18257.00000000","locked":"0.00000000"},{"asset":"AEUR","free":"500.00000000","locked":"0.00000000"},{"asset":"JTO","free":"216.00000000","locked":"0.00000000"},{"asset":"1000SATS","free":"18446.00","locked":"0.00"},{"asset":"BONK","free":"18446.00","locked":"0.00"},{"asset":"ACE","free":"853.00000000","locked":"0.00000000"},{"asset":"NFP","free":"7372.00000000","locked":"0.00000000"},{"asset":"AI","free":"3254.00000000","locked":"0.00000000"},{"asset":"XAI","free":"8876.00000000","locked":"0.00000000"},{"asset":"MANTA","free":"2317.00000000","locked":"0.00000000"},{"asset":"ALT","free":"16340.00000000","locked":"0.00000000"},{"asset":"JUP","free":"1199.00000000","locked":"0.00000000"},{"asset":"PYTH","free":"3449.00000000","locked":"0.00000000"},{"asset":"RONIN","free":"692.00000000","locked":"0.00000000"},{"asset":"DYM","free":"1764.00000000","locked":"0.00000000"},{"asset":"PIXEL","free":"17851.00000000","locked":"0.00000000"},{"asset":"STRK","free":"3427.00000000","locked":"0.00000000"},{"asset":"PORTAL","free":"6438.00000000","locked":"0.00000000"},{"asset":"PDA","free":"18446.00000000","locked":"0.00000000"},{"asset":"AXL","free":"1348.00000000","locked":"0.00000000"},{"asset":"WIF","free":"1190.00000000","locked":"0.00000000"},{"asset":"METIS","free":"32.00000000","locked":"0.00000000"},{"asset":"JPY","free":"18466.00000000","locked":"0.00000000"},{"asset":"AEVO","free":"4682.00000000","locked":"0.00000000"},{"asset":"BOME","free":"18446.00","locked":"0.00"},{"asset":"ETHFI","free":"883.00000000","locked":"0.00000000"},{"asset":"ENA","free":"1339.00000000","locked":"0.00000000"},{"asset":"W","free":"6366.00000000","locked":"0.00000000"},{"asset":"TNSR","free":"3228.00000000","locked":"0.00000000"},{"asset":"SAGA","free":"1742.00000000","locked":"0.00000000"},{"asset":"MXN","free":"18466.00000000","locked":"0.00000000"},{"asset":"TAO","free":"2.00000000","locked":"0.00000000"},{"asset":"OMNI","free":"200.00000000","locked":"0.00000000"},{"asset":"REZ","free":"18446.00000000","locked":"0.00000000"},{"asset":"BB","free":"4126.00000000","locked":"0.00000000"},{"asset":"NOT","free":"18446.00","locked":"0.00"},{"asset":"COP","free":"18466.00000000","locked":"0.00000000"},{"asset":"IO","free":"697.00000000","locked":"0.00000000"},{"asset":"ZK","free":"7699.00000000","locked":"0.00000000"},{"asset":"LISTA","free":"3066.00000000","locked":"0.00000000"},{"asset":"ZRO","free":"170.00000000","locked":"0.00000000"},{"asset":"G","free":"18446.00000000","locked":"0.00000000"},{"asset":"BANANA","free":"26.00000000","locked":"0.00000000"},{"asset":"RENDER","free":"133.00000000","locked":"0.00000000"},{"asset":"TON","free":"123.00000000","locked":"0.00000000"},{"asset":"DOGS","free":"18446.00","locked":"0.00"},{"asset":"EURI","free":"460.00000000","locked":"0.00000000"},{"asset":"SLF","free":"2315.00000000","locked":"0.00000000"},{"asset":"POL","free":"2523.00000000","locked":"0.00000000"},{"asset":"NEIRO","free":"18446.00","locked":"0.00"},{"asset":"TURBO","free":"18446.00000000","locked":"0.00000000"},{"asset":"1MBABYDOGE","free":"18446.00","locked":"0.00"},{"asset":"CATI","free":"3613.00000000","locked":"0.00000000"},{"asset":"HMSTR","free":"18446.00","locked":"0.00"},{"asset":"EIGEN","free":"556.00000000","locked":"0.00000000"},{"asset":"BNSOL","free":"3.00000000","locked":"0.00000000"},{"asset":"SCR","free":"1845.00000000","locked":"0.00000000"},{"asset":"LUMIA","free":"1444.00000000","locked":"0.00000000"},{"asset":"KAIA","free":"4601.00000000","locked":"0.00000000"},{"asset":"COW","free":"1870.00000000","locked":"0.00000000"},{"asset":"CETUS","free":"4706.00000000","locked":"0.00000000"},{"asset":"PNUT","free":"3202.00000000","locked":"0.00000000"},{"asset":"ACT","free":"8924.00000000","locked":"0.00000000"},{"asset":"USUAL","free":"4399.00000000","locked":"0.00000000"},{"asset":"THE","free":"1849.00000000","locked":"0.00000000"},{"asset":"ACX","free":"2142.00000000","locked":"0.00000000"},{"asset":"ORCA","free":"207.00000000","locked":"0.00000000"},{"asset":"MOVE","free":"1236.00000000","locked":"0.00000000"},{"asset":"ME","free":"503.00000000","locked":"0.00000000"},{"asset":"VELODROME","free":"9566.00000000","locked":"0.00000000"},{"asset":"VANA","free":"87.00000000","locked":"0.00000000"},{"asset":"1000CAT","free":"18446.00000000","locked":"0.00000000"},{"asset":"PENGU","free":"18446.00000000","locked":"0.00000000"},{"asset":"BIO","free":"6963.00000000","locked":"0.00000000"},{"asset":"D","free":"10541.00000000","locked":"0.00000000"},{"asset":"AIXBT","free":"5847.00000000","locked":"0.00000000"},{"asset":"CGPT","free":"6649.00000000","locked":"0.00000000"},{"asset":"COOKIE","free":"4855.00000000","locked":"0.00000000"},{"asset":"S","free":"978.00000000","locked":"0.00000000"},{"asset":"SOLV","free":"17028.00000000","locked":"0.00000000"},{"asset":"TRUMP","free":"47.00000000","locked":"0.00000000"},{"asset":"ANIME","free":"18446.00000000","locked":"0.00000000"},{"asset":"BERA","free":"68.00000000","locked":"0.00000000"},{"asset":"1000CHEEMS","free":"18446.00","locked":"0.00"},{"asset":"TST","free":"7219.00000000","locked":"0.00000000"},{"asset":"LAYER","free":"354.00000000","locked":"0.00000000"},{"asset":"HEI","free":"1292.00000000","locked":"0.00000000"},{"asset":"KAITO","free":"527.00000000","locked":"0.00000000"},{"asset":"SHELL","free":"2760.00000000","locked":"0.00000000"},{"asset":"RED","free":"1131.00000000","locked":"0.00000000"},{"asset":"GPS","free":"18446.00000000","locked":"0.00000000"},{"asset":"EPIC","free":"433.00000000","locked":"0.00000000"},{"asset":"BMT","free":"4449.00000000","locked":"0.00000000"},{"asset":"FORM","free":"228.00000000","locked":"0.00000000"},{"asset":"XUSD","free":"499.00000000","locked":"0.00000000"},{"asset":"CZK","free":"18466.00000000","locked":"0.00000000"},{"asset":"NIL","free":"1063.00000000","locked":"0.00000000"},{"asset":"PARTI","free":"2627.00000000","locked":"0.00000000"},{"asset":"MUBARAK","free":"12031.00000000","locked":"0.00000000"},{"asset":"TUT","free":"17658.00000000","locked":"0.00000000"},{"asset":"BROCCOLI714","free":"15146.00000000","locked":"0.00000000"},{"asset":"BANANAS31","free":"18446.00000000","locked":"0.00000000"},{"asset":"GUN","free":"9323.00000000","locked":"0.00000000"}],"permissions":["SPOT"],"uid":1745572127670262723}
+Query string to sign: symbol=BNBUSDT&timestamp=1745777407836
+Secret key length: 64
+Generated signature: 987aef3d82602885415e91fc6a0d5b6a71971a08731fb6b203329715fc90c833
+Request URL: https://testnet.binance.vision/api/v3/openOrders?symbol=BNBUSDT&timestamp=1745777407836&signature=987aef3d82602885415e91fc6a0d5b6a71971a08731fb6b203329715fc90c833
+Request Headers: {X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI}
+Request method:	GET
+Request URI:	https://testnet.binance.vision/api/v3/openOrders?symbol=BNBUSDT&timestamp=1745777407836&signature=987aef3d82602885415e91fc6a0d5b6a71971a08731fb6b203329715fc90c833
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Received message: {"p":"94095.23000000","a":3551019192,"q":"0.00014000","s":"BTCUSDT","T":1745777407897,"e":"aggTrade","E":1745777407898,"f":4855242516,"l":4855242516,"m":true,"M":true}
+Received message: {"p":"94095.23000000","a":3551019192,"q":"0.00014000","s":"BTCUSDT","T":1745777407897,"e":"aggTrade","E":1745777407898,"f":4855242516,"l":4855242516,"m":true,"M":true}
+Received message: {"a":[["94095.24000000","0.92171000"],["94095.25000000","0.00880000"],["94096.00000000","0.00216000"],["94096.05000000","0.00219000"],["94096.06000000","0.22916000"],["94096.67000000","0.00000000"],["94097.23000000","0.00000000"],["94097.27000000","0.00000000"],["94097.28000000","0.00000000"],["94097.61000000","0.00000000"],["94098.47000000","0.00000000"],["94098.67000000","0.00000000"],["94098.76000000","0.00000000"],["94098.81000000","0.00000000"],["94098.83000000","0.00283000"],["94099.99000000","0.18400000"],["94102.58000000","0.21381000"],["94106.36000000","0.66943000"],["94106.71000000","0.45148000"],["94106.72000000","0.00000000"],["94107.96000000","0.70109000"],["94109.09000000","2.34755000"],["94111.01000000","0.00000000"],["94111.77000000","0.00010000"],["94112.08000000","0.01355000"],["94113.44000000","0.00000000"],["94113.75000000","0.00000000"],["94118.98000000","0.56692000"],["94127.41000000","0.00000000"],["94142.09000000","0.00720000"],["94144.49000000","0.76453000"],["94146.28000000","1.66929000"],["94150.62000000","0.18352000"],["94157.39000000","0.76443000"],["94157.73000000","0.00000000"],["94160.73000000","0.00000000"],["94186.11000000","0.70935000"],["94189.48000000","0.00000000"],["94196.47000000","0.11499000"],["94196.49000000","0.11499000"],["94227.76000000","0.05797000"],["94228.32000000","0.00000000"],["94228.57000000","0.00124000"],["94233.65000000","0.05497000"],["94376.00000000","0.05560000"],["95095.00000000","0.10879000"],["95506.67000000","0.00100000"]],"b":[["94095.23000000","7.83867000"],["94095.22000000","1.19802000"],["94095.20000000","0.02018000"],["94095.10000000","0.02018000"],["94094.71000000","0.39186000"],["94094.00000000","0.04314000"],["94092.01000000","0.00006000"],["94092.00000000","0.04256000"],["94091.53000000","0.09415000"],["94091.46000000","0.00052000"],["94090.56000000","0.04632000"],["94090.54000000","0.21381000"],["94090.21000000","0.00006000"],["94088.90000000","0.01103000"],["94086.95000000","0.00000000"],["94085.06000000","0.00000000"],["94084.66000000","0.21381000"],["94084.65000000","0.54241000"],["94084.55000000","0.76903000"],["94083.76000000","1.05334000"],["94082.78000000","1.00000000"],["94081.91000000","0.00013000"],["94078.92000000","0.00000000"],["94075.25000000","0.00013000"],["94074.89000000","0.21381000"],["94073.03000000","0.00000000"],["94072.84000000","0.15900000"],["94071.78000000","0.00000000"],["94071.21000000","0.00000000"],["94071.11000000","0.00000000"],["94070.33000000","2.00000000"],["94067.00000000","0.53153000"],["94064.75000000","0.00000000"],["94046.31000000","0.00000000"],["94043.48000000","0.00000000"],["94041.27000000","1.34962000"],["94040.02000000","0.63736000"],["94038.76000000","0.03998000"],["94033.31000000","0.03422000"],["94031.71000000","0.00000000"],["94030.97000000","0.00000000"],["94029.19000000","0.00720000"],["94023.23000000","0.69814000"],["94022.83000000","0.03998000"],["94011.48000000","0.03998000"],["94011.08000000","0.00000000"],["93986.84000000","0.00106000"],["93981.15000000","0.00006000"],["93973.76000000","0.03998000"],["93970.78000000","0.03998000"],["93967.95000000","0.12000000"],["93967.09000000","0.43063000"],["93966.09000000","0.03998000"],["93940.09000000","0.00000000"],["93794.54000000","0.10633000"],["93779.11000000","0.00000000"],["93549.48000000","0.10633000"],["93541.27000000","0.00000000"],["92683.80000000","0.00000000"],["92577.49000000","0.02106000"],["92500.00000000","20.15475000"],["89390.47000000","0.00010000"],["89300.00000000","0.68201000"],["85858.57000000","0.00007000"],["85573.99000000","0.00007000"],["85289.41000000","0.00007000"],["85004.82000000","0.00007000"],["84685.00000000","0.00000000"],["79000.00000000","27.02843000"],["75276.19000000","0.00052000"],["33000.00000000","2.70601000"]],"s":"BTCUSDT","e":"depthUpdate","E":1745777408014,"U":67663542388,"u":67663542613}
+Received message: {"a":[["94095.24000000","0.92171000"],["94095.25000000","0.00880000"],["94096.00000000","0.00216000"],["94096.05000000","0.00219000"],["94096.06000000","0.22916000"],["94096.67000000","0.00000000"],["94097.23000000","0.00000000"],["94097.27000000","0.00000000"],["94097.28000000","0.00000000"],["94097.61000000","0.00000000"],["94098.47000000","0.00000000"],["94098.67000000","0.00000000"],["94098.76000000","0.00000000"],["94098.81000000","0.00000000"],["94098.83000000","0.00283000"],["94099.99000000","0.18400000"],["94102.58000000","0.21381000"],["94106.36000000","0.66943000"],["94106.71000000","0.45148000"],["94106.72000000","0.00000000"],["94107.96000000","0.70109000"],["94109.09000000","2.34755000"],["94111.01000000","0.00000000"],["94111.77000000","0.00010000"],["94112.08000000","0.01355000"],["94113.44000000","0.00000000"],["94113.75000000","0.00000000"],["94118.98000000","0.56692000"],["94127.41000000","0.00000000"],["94142.09000000","0.00720000"],["94144.49000000","0.76453000"],["94146.28000000","1.66929000"],["94150.62000000","0.18352000"],["94157.39000000","0.76443000"],["94157.73000000","0.00000000"],["94160.73000000","0.00000000"],["94186.11000000","0.70935000"],["94189.48000000","0.00000000"],["94196.47000000","0.11499000"],["94196.49000000","0.11499000"],["94227.76000000","0.05797000"],["94228.32000000","0.00000000"],["94228.57000000","0.00124000"],["94233.65000000","0.05497000"],["94376.00000000","0.05560000"],["95095.00000000","0.10879000"],["95506.67000000","0.00100000"]],"b":[["94095.23000000","7.83867000"],["94095.22000000","1.19802000"],["94095.20000000","0.02018000"],["94095.10000000","0.02018000"],["94094.71000000","0.39186000"],["94094.00000000","0.04314000"],["94092.01000000","0.00006000"],["94092.00000000","0.04256000"],["94091.53000000","0.09415000"],["94091.46000000","0.00052000"],["94090.56000000","0.04632000"],["94090.54000000","0.21381000"],["94090.21000000","0.00006000"],["94088.90000000","0.01103000"],["94086.95000000","0.00000000"],["94085.06000000","0.00000000"],["94084.66000000","0.21381000"],["94084.65000000","0.54241000"],["94084.55000000","0.76903000"],["94083.76000000","1.05334000"],["94082.78000000","1.00000000"],["94081.91000000","0.00013000"],["94078.92000000","0.00000000"],["94075.25000000","0.00013000"],["94074.89000000","0.21381000"],["94073.03000000","0.00000000"],["94072.84000000","0.15900000"],["94071.78000000","0.00000000"],["94071.21000000","0.00000000"],["94071.11000000","0.00000000"],["94070.33000000","2.00000000"],["94067.00000000","0.53153000"],["94064.75000000","0.00000000"],["94046.31000000","0.00000000"],["94043.48000000","0.00000000"],["94041.27000000","1.34962000"],["94040.02000000","0.63736000"],["94038.76000000","0.03998000"],["94033.31000000","0.03422000"],["94031.71000000","0.00000000"],["94030.97000000","0.00000000"],["94029.19000000","0.00720000"],["94023.23000000","0.69814000"],["94022.83000000","0.03998000"],["94011.48000000","0.03998000"],["94011.08000000","0.00000000"],["93986.84000000","0.00106000"],["93981.15000000","0.00006000"],["93973.76000000","0.03998000"],["93970.78000000","0.03998000"],["93967.95000000","0.12000000"],["93967.09000000","0.43063000"],["93966.09000000","0.03998000"],["93940.09000000","0.00000000"],["93794.54000000","0.10633000"],["93779.11000000","0.00000000"],["93549.48000000","0.10633000"],["93541.27000000","0.00000000"],["92683.80000000","0.00000000"],["92577.49000000","0.02106000"],["92500.00000000","20.15475000"],["89390.47000000","0.00010000"],["89300.00000000","0.68201000"],["85858.57000000","0.00007000"],["85573.99000000","0.00007000"],["85289.41000000","0.00007000"],["85004.82000000","0.00007000"],["84685.00000000","0.00000000"],["79000.00000000","27.02843000"],["75276.19000000","0.00052000"],["33000.00000000","2.70601000"]],"s":"BTCUSDT","e":"depthUpdate","E":1745777408014,"U":67663542388,"u":67663542613}
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 2
+Connection: keep-alive
+Date: Sun, 27 Apr 2025 18:10:08 GMT
+Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+x-mbx-uuid: fa1a9f25-7d4b-4fc9-ba80-c402e0ddef36
+x-mbx-used-weight: 28
+x-mbx-used-weight-1m: 28
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'
+X-Content-Security-Policy: default-src 'self'
+X-WebKit-CSP: default-src 'self'
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+Via: 1.1 729399d6290e74ddd43cb2da1cab5266.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+X-Amz-Cf-Id: 592RbZX0LWj-bCtsD9OLjU_U4lFqwTcf9sV-95zORf7Qv0Tw4kR5CQ==
+
+[
+    
+]
+Response Status: 200
+Response Body: []
+Request URL: https://testnet.binance.vision/api/v3/depth?limit=5&symbol=BNBUSDT
+Request method:	GET
+Request URI:	https://testnet.binance.vision/api/v3/depth?limit=5&symbol=BNBUSDT
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 155
+Connection: keep-alive
+Date: Sun, 27 Apr 2025 18:10:08 GMT
+Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+x-mbx-uuid: fa1a9f25-7d4b-4fc9-ba80-c402e0ddef36
+x-mbx-used-weight: 33
+x-mbx-used-weight-1m: 33
+content-encoding: gzip
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'
+X-Content-Security-Policy: default-src 'self'
+X-WebKit-CSP: default-src 'self'
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+Via: 1.1 8b193b33626543d66ce5f5750c8af41a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+X-Amz-Cf-Id: n9gphHp2LzKCjiTM07kAhHEkm2GqB6ekOwFYqd7CvQcPj2EGiXxWNA==
+
+{
+    "lastUpdateId": 7886342,
+    "bids": [
+        [
+            "602.66000000",
+            "16.10400000"
+        ],
+        [
+            "602.65000000",
+            "14.66100000"
+        ],
+        [
+            "602.64000000",
+            "13.06800000"
+        ],
+        [
+            "602.60000000",
+            "16.38000000"
+        ],
+        [
+            "602.58000000",
+            "13.31000000"
+        ]
+    ],
+    "asks": [
+        [
+            "602.67000000",
+            "16.28600000"
+        ],
+        [
+            "602.68000000",
+            "15.57300000"
+        ],
+        [
+            "602.70000000",
+            "11.93000000"
+        ],
+        [
+            "602.71000000",
+            "16.50100000"
+        ],
+        [
+            "602.79000000",
+            "15.23000000"
+        ]
+    ]
+}
+Response Status: 200
+Response Body: {"lastUpdateId":7886342,"bids":[["602.66000000","16.10400000"],["602.65000000","14.66100000"],["602.64000000","13.06800000"],["602.60000000","16.38000000"],["602.58000000","13.31000000"]],"asks":[["602.67000000","16.28600000"],["602.68000000","15.57300000"],["602.70000000","11.93000000"],["602.71000000","16.50100000"],["602.79000000","15.23000000"]]}
+Query string to sign: limit=10&symbol=BNBUSDT&timestamp=1745777408168
+Secret key length: 64
+Generated signature: 753702985369b1a7deaa3e8b855ab56a84b9a01872d9b74a573f85c57cb73cd3
+Request URL: https://testnet.binance.vision/api/v3/myTrades?limit=10&symbol=BNBUSDT&timestamp=1745777408168&signature=753702985369b1a7deaa3e8b855ab56a84b9a01872d9b74a573f85c57cb73cd3
+Request Headers: {X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI}
+Request method:	GET
+Request URI:	https://testnet.binance.vision/api/v3/myTrades?limit=10&symbol=BNBUSDT&timestamp=1745777408168&signature=753702985369b1a7deaa3e8b855ab56a84b9a01872d9b74a573f85c57cb73cd3
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Received message: {"p":"94095.23000000","a":3551019193,"q":"0.00115000","s":"BTCUSDT","T":1745777408360,"e":"aggTrade","E":1745777408360,"f":4855242517,"l":4855242517,"m":true,"M":true}
+Received message: {"p":"94095.23000000","a":3551019193,"q":"0.00115000","s":"BTCUSDT","T":1745777408360,"e":"aggTrade","E":1745777408360,"f":4855242517,"l":4855242517,"m":true,"M":true}
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 417
+Connection: keep-alive
+Date: Sun, 27 Apr 2025 18:10:08 GMT
+Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+x-mbx-uuid: 7d724de9-8f3e-4f37-9f6c-5a45d70c2992
+x-mbx-used-weight: 53
+x-mbx-used-weight-1m: 53
+content-encoding: gzip
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'
+X-Content-Security-Policy: default-src 'self'
+X-WebKit-CSP: default-src 'self'
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+Via: 1.1 37bf70171215d870fd5bb56cab5030c4.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+X-Amz-Cf-Id: chjqOz96ekXLMRphJO4iIdVDhJM-gUCqpIrluCq9oLCG-jETvHXUQA==
+
+[
+    {
+        "symbol": "BNBUSDT",
+        "id": 740867,
+        "orderId": 4517891,
+        "orderListId": -1,
+        "price": "599.69000000",
+        "qty": "1.00000000",
+        "quoteQty": "599.69000000",
+        "commission": "0.00000000",
+        "commissionAsset": "BNB",
+        "time": 1745772659882,
+        "isBuyer": true,
+        "isMaker": false,
+        "isBestMatch": true
+    },
+    {
+        "symbol": "BNBUSDT",
+        "id": 740869,
+        "orderId": 4517941,
+        "orderListId": -1,
+        "price": "599.68000000",
+        "qty": "1.00000000",
+        "quoteQty": "599.68000000",
+        "commission": "0.00000000",
+        "commissionAsset": "USDT",
+        "time": 1745772680395,
+        "isBuyer": false,
+        "isMaker": false,
+        "isBestMatch": true
+    },
+    {
+        "symbol": "BNBUSDT",
+        "id": 740870,
+        "orderId": 4518038,
+        "orderListId": -1,
+        "price": "599.62000000",
+        "qty": "1.00000000",
+        "quoteQty": "599.62000000",
+        "commission": "0.00000000",
+        "commissionAsset": "USDT",
+        "time": 1745772724458,
+        "isBuyer": false,
+        "isMaker": false,
+        "isBestMatch": true
+    },
+    {
+        "symbol": "BNBUSDT",
+        "id": 740884,
+        "orderId": 4518162,
+        "orderListId": -1,
+        "price": "599.69000000",
+        "qty": "1.00000000",
+        "quoteQty": "599.69000000",
+        "commission": "0.00000000",
+        "commissionAsset": "USDT",
+        "time": 1745772776970,
+        "isBuyer": false,
+        "isMaker": false,
+        "isBestMatch": true
+    },
+    {
+        "symbol": "BNBUSDT",
+        "id": 741540,
+        "orderId": 4523023,
+        "orderListId": -1,
+        "price": "600.96000000",
+        "qty": "1.00000000",
+        "quoteQty": "600.96000000",
+        "commission": "0.00000000",
+        "commissionAsset": "BNB",
+        "time": 1745775226625,
+        "isBuyer": true,
+        "isMaker": false,
+        "isBestMatch": true
+    },
+    {
+        "symbol": "BNBUSDT",
+        "id": 741584,
+        "orderId": 4523813,
+        "orderListId": -1,
+        "price": "600.88000000",
+        "qty": "1.00000000",
+        "quoteQty": "600.88000000",
+        "commission": "0.00000000",
+        "commissionAsset": "BNB",
+        "time": 1745775614923,
+        "isBuyer": true,
+        "isMaker": false,
+        "isBestMatch": true
+    },
+    {
+        "symbol": "BNBUSDT",
+        "id": 741654,
+        "orderId": 4524786,
+        "orderListId": -1,
+        "price": "601.10000000",
+        "qty": "1.00000000",
+        "quoteQty": "601.10000000",
+        "commission": "0.00000000",
+        "commissionAsset": "BNB",
+        "time": 1745776092221,
+        "isBuyer": true,
+        "isMaker": false,
+        "isBestMatch": true
+    },
+    {
+        "symbol": "BNBUSDT",
+        "id": 741688,
+        "orderId": 4525524,
+        "orderListId": -1,
+        "price": "601.24000000",
+        "qty": "1.00000000",
+        "quoteQty": "601.24000000",
+        "commission": "0.00000000",
+        "commissionAsset": "USDT",
+        "time": 1745776382089,
+        "isBuyer": false,
+        "isMaker": false,
+        "isBestMatch": true
+    },
+    {
+        "symbol": "BNBUSDT",
+        "id": 741786,
+        "orderId": 4527068,
+        "orderListId": -1,
+        "price": "601.79000000",
+        "qty": "1.00000000",
+        "quoteQty": "601.79000000",
+        "commission": "0.00000000",
+        "commissionAsset": "USDT",
+        "time": 1745777081090,
+        "isBuyer": false,
+        "isMaker": false,
+        "isBestMatch": true
+    },
+    {
+        "symbol": "BNBUSDT",
+        "id": 741787,
+        "orderId": 4527076,
+        "orderListId": -1,
+        "price": "601.80000000",
+        "qty": "1.00000000",
+        "quoteQty": "601.80000000",
+        "commission": "0.00000000",
+        "commissionAsset": "BNB",
+        "time": 1745777086509,
+        "isBuyer": true,
+        "isMaker": false,
+        "isBestMatch": true
+    }
+]
+Response Status: 200
+Response Body: [{"symbol":"BNBUSDT","id":740867,"orderId":4517891,"orderListId":-1,"price":"599.69000000","qty":"1.00000000","quoteQty":"599.69000000","commission":"0.00000000","commissionAsset":"BNB","time":1745772659882,"isBuyer":true,"isMaker":false,"isBestMatch":true},{"symbol":"BNBUSDT","id":740869,"orderId":4517941,"orderListId":-1,"price":"599.68000000","qty":"1.00000000","quoteQty":"599.68000000","commission":"0.00000000","commissionAsset":"USDT","time":1745772680395,"isBuyer":false,"isMaker":false,"isBestMatch":true},{"symbol":"BNBUSDT","id":740870,"orderId":4518038,"orderListId":-1,"price":"599.62000000","qty":"1.00000000","quoteQty":"599.62000000","commission":"0.00000000","commissionAsset":"USDT","time":1745772724458,"isBuyer":false,"isMaker":false,"isBestMatch":true},{"symbol":"BNBUSDT","id":740884,"orderId":4518162,"orderListId":-1,"price":"599.69000000","qty":"1.00000000","quoteQty":"599.69000000","commission":"0.00000000","commissionAsset":"USDT","time":1745772776970,"isBuyer":false,"isMaker":false,"isBestMatch":true},{"symbol":"BNBUSDT","id":741540,"orderId":4523023,"orderListId":-1,"price":"600.96000000","qty":"1.00000000","quoteQty":"600.96000000","commission":"0.00000000","commissionAsset":"BNB","time":1745775226625,"isBuyer":true,"isMaker":false,"isBestMatch":true},{"symbol":"BNBUSDT","id":741584,"orderId":4523813,"orderListId":-1,"price":"600.88000000","qty":"1.00000000","quoteQty":"600.88000000","commission":"0.00000000","commissionAsset":"BNB","time":1745775614923,"isBuyer":true,"isMaker":false,"isBestMatch":true},{"symbol":"BNBUSDT","id":741654,"orderId":4524786,"orderListId":-1,"price":"601.10000000","qty":"1.00000000","quoteQty":"601.10000000","commission":"0.00000000","commissionAsset":"BNB","time":1745776092221,"isBuyer":true,"isMaker":false,"isBestMatch":true},{"symbol":"BNBUSDT","id":741688,"orderId":4525524,"orderListId":-1,"price":"601.24000000","qty":"1.00000000","quoteQty":"601.24000000","commission":"0.00000000","commissionAsset":"USDT","time":1745776382089,"isBuyer":false,"isMaker":false,"isBestMatch":true},{"symbol":"BNBUSDT","id":741786,"orderId":4527068,"orderListId":-1,"price":"601.79000000","qty":"1.00000000","quoteQty":"601.79000000","commission":"0.00000000","commissionAsset":"USDT","time":1745777081090,"isBuyer":false,"isMaker":false,"isBestMatch":true},{"symbol":"BNBUSDT","id":741787,"orderId":4527076,"orderListId":-1,"price":"601.80000000","qty":"1.00000000","quoteQty":"601.80000000","commission":"0.00000000","commissionAsset":"BNB","time":1745777086509,"isBuyer":true,"isMaker":false,"isBestMatch":true}]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

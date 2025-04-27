@@ -8,6 +8,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -42,47 +45,68 @@ public class testWebSocketTrade extends TestMasterConfigurations {
     @Severity(SeverityLevel.CRITICAL)
     @Story("Subscribe to Trade stream")
     @Description("This test subscribes to the Trade stream for a symbol and verifies that updates are received.")
+    @Issue("BINANCE-125")
+    @TmsLink("TC-458")
+    @Owner("QA Team")
+    @Lead("Automation Team")
     public void testSubscribeToTradeStream() throws InterruptedException {
-        // Create a latch to wait for the message
-        CountDownLatch latch = new CountDownLatch(1);
+        // Create a latch to wait for the test completion
+        CountDownLatch testCompletionLatch = new CountDownLatch(1);
         
-        // Create atomic references to store the received data
-        AtomicBoolean messageReceived = new AtomicBoolean(false);
-        AtomicReference<JSONObject> receivedData = new AtomicReference<>();
+        // Create a list to store all received messages
+        List<JSONObject> receivedMessages = Collections.synchronizedList(new ArrayList<>());
         
         Allure.step("Subscribing to Trade stream for " + testSymbol, () -> {
             // Subscribe to the Trade stream
             tradeClient.subscribeToTradeStream(testSymbol, data -> {
-                // Store the received data
-                receivedData.set(data);
-                messageReceived.set(true);
+                // Add the received data to our list
+                receivedMessages.add(data);
+                System.out.println("Received trade message: " + data);
                 
-                // Count down the latch
-                latch.countDown();
+                // Note: We don't count down the latch here as we want to collect all messages
             });
         });
         
-        Allure.step("Waiting for Trade update", () -> {
-            // Wait for the message (with timeout)
-            boolean received = latch.await(30, TimeUnit.SECONDS);
+        // Wait for some time to collect messages (we'll use a timeout instead of waiting for a specific event)
+        Allure.step("Collecting trade messages for 30 seconds", () -> {
+            try {
+                // Wait for 5 seconds to collect messages
+                Thread.sleep(5000);
+                
+                // Count down the test completion latch to signal we're done collecting messages
+                testCompletionLatch.countDown();
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                throw new RuntimeException("Thread was interrupted while waiting for messages", e);
+            }
+        });
+        
+        // Wait for the test to complete
+        testCompletionLatch.await();
+        
+        Allure.step("Processing collected trade messages", () -> {
+            // Verify that at least one message was received
+            Assert.assertFalse(receivedMessages.isEmpty(), "Should receive at least one trade message");
             
-            // Verify that a message was received
-            Assert.assertTrue(received, "Should receive a message within the timeout");
-            Assert.assertTrue(messageReceived.get(), "Should receive a message");
+            // Process all received messages
+            for (int i = 0; i < receivedMessages.size(); i++) {
+                JSONObject data = receivedMessages.get(i);
+                Assert.assertNotNull(data, "Received data should not be null");
+                
+                // Verify the trade data fields for each message
+                Assert.assertTrue(data.containsKey("e"), "Message should contain event type");
+                Assert.assertEquals(data.get("e"), "trade", "Event type should be 'trade'");
+                Assert.assertTrue(data.containsKey("s"), "Message should contain symbol");
+                Assert.assertTrue(data.containsKey("p"), "Message should contain price");
+                Assert.assertTrue(data.containsKey("q"), "Message should contain quantity");
+                
+                // Attach each message to the Allure report
+                Allure.addAttachment("Trade Update " + (i + 1), "application/json", data.toJSONString());
+            }
             
-            // Verify the message structure
-            JSONObject data = receivedData.get();
-            Assert.assertNotNull(data, "Received data should not be null");
-            
-            // Verify the trade data fields
-            Assert.assertTrue(data.containsKey("e"), "Message should contain event type");
-            Assert.assertEquals(data.get("e"), "trade", "Event type should be 'trade'");
-            Assert.assertTrue(data.containsKey("s"), "Message should contain symbol");
-            Assert.assertTrue(data.containsKey("p"), "Message should contain price");
-            Assert.assertTrue(data.containsKey("q"), "Message should contain quantity");
-            
-            // Attach the received data to the Allure report
-            Allure.addAttachment("Trade Update", "application/json", data.toJSONString());
+            // Add a summary of the number of messages received
+            Allure.addAttachment("Trade Summary", "text/plain",
+                "Received " + receivedMessages.size() + " trade updates for symbol " + testSymbol);
         });
     }
     

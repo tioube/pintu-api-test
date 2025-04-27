@@ -21,8 +21,8 @@ import static io.restassured.RestAssured.given;
  */
 public class WebSocketUserDataClient {
     
-    private static final String REST_BASE_URL = "https://testnet.binance.vision";
-    private static final String WS_BASE_URL = "wss://stream.binance.com:9443/ws/";
+    private static final String REST_BASE_URL = Globals.getSpotRestUrl();
+    private static final String WS_BASE_URL = Globals.getSpotWssUrl();
     private OkHttpClient client;
     private WebSocket webSocket;
     private final JSONParser jsonParser = new JSONParser();

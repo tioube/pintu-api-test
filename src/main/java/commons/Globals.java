@@ -44,6 +44,13 @@ public class Globals {
     @Setter
     @Getter
     private static String spotSecretKey;
+    @Setter
+    @Getter
+    private static String spotRestUrl;
+    @Setter
+    @Getter
+    private static String spotWssUrl;
+
 
     public static void setEnvironment(String configYaml) {
         try {
@@ -66,6 +73,8 @@ public class Globals {
             jiraAPIToken = String.valueOf(yaml.fetchObject("jira.token"));
             spotApiKey = String.valueOf(yaml.fetchObject("spot.apiKey"));
             spotSecretKey = String.valueOf(yaml.fetchObject("spot.apiSecret"));
+            spotRestUrl= String.valueOf(yaml.fetchObject("spot.restUrl"));
+            spotWssUrl = String.valueOf(yaml.fetchObject("spot.wssUrl"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             throw new PreconditionException("[CONFIG_FILE_ISSUE]" + e.getMessage());

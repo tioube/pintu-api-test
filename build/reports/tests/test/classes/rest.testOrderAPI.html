@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class rest.testOrderAPI</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class rest.testOrderAPI</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/rest.html">rest</a> &gt; testOrderAPI</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.313s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testPlaceMarketOrder</td>
+<td class="success">0.313s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Query string to sign: quantity=1.0&amp;side=BUY&amp;symbol=BNBUSDT&amp;timestamp=1745777408318&amp;type=MARKET
+Secret key length: 64
+Generated signature: cc3327539efeced322cd50c594a2fc5531ce6ecae6550240be38a73db2b907b4
+Request URL: https://testnet.binance.vision/api/v3/order?quantity=1.0&amp;side=BUY&amp;symbol=BNBUSDT&amp;timestamp=1745777408318&amp;type=MARKET&amp;signature=cc3327539efeced322cd50c594a2fc5531ce6ecae6550240be38a73db2b907b4
+Request Headers: {X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI}
+Request method:	POST
+Request URI:	https://testnet.binance.vision/api/v3/order?quantity=1.0&amp;side=BUY&amp;symbol=BNBUSDT&amp;timestamp=1745777408318&amp;type=MARKET&amp;signature=cc3327539efeced322cd50c594a2fc5531ce6ecae6550240be38a73db2b907b4
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Received message: {&quot;p&quot;:&quot;94095.23000000&quot;,&quot;a&quot;:3551019194,&quot;q&quot;:&quot;0.00093000&quot;,&quot;s&quot;:&quot;BTCUSDT&quot;,&quot;T&quot;:1745777408459,&quot;e&quot;:&quot;aggTrade&quot;,&quot;E&quot;:1745777408459,&quot;f&quot;:4855242518,&quot;l&quot;:4855242518,&quot;m&quot;:true,&quot;M&quot;:true}
+Received message: {&quot;p&quot;:&quot;94095.23000000&quot;,&quot;a&quot;:3551019194,&quot;q&quot;:&quot;0.00093000&quot;,&quot;s&quot;:&quot;BTCUSDT&quot;,&quot;T&quot;:1745777408459,&quot;e&quot;:&quot;aggTrade&quot;,&quot;E&quot;:1745777408459,&quot;f&quot;:4855242518,&quot;l&quot;:4855242518,&quot;m&quot;:true,&quot;M&quot;:true}
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 322
+Connection: keep-alive
+Date: Sun, 27 Apr 2025 18:10:08 GMT
+Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+x-mbx-uuid: 7d724de9-8f3e-4f37-9f6c-5a45d70c2992
+x-mbx-used-weight: 54
+x-mbx-used-weight-1m: 54
+x-mbx-order-count-10s: 1
+x-mbx-order-count-1d: 1
+content-encoding: gzip
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'
+X-Content-Security-Policy: default-src 'self'
+X-WebKit-CSP: default-src 'self'
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+Via: 1.1 688d077d459126044c73cddb0faa7b3c.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+X-Amz-Cf-Id: pouJmYtIZFrvCi_XM6QA6hcuAb-uDeljhIIi0Ptyl-UIzxpM7-B-yQ==
+
+{
+    &quot;symbol&quot;: &quot;BNBUSDT&quot;,
+    &quot;orderId&quot;: 4527797,
+    &quot;orderListId&quot;: -1,
+    &quot;clientOrderId&quot;: &quot;KHbl3XEPHWIu3BPZANA0Jp&quot;,
+    &quot;transactTime&quot;: 1745777408510,
+    &quot;price&quot;: &quot;0.00000000&quot;,
+    &quot;origQty&quot;: &quot;1.00000000&quot;,
+    &quot;executedQty&quot;: &quot;1.00000000&quot;,
+    &quot;origQuoteOrderQty&quot;: &quot;0.00000000&quot;,
+    &quot;cummulativeQuoteQty&quot;: &quot;602.67000000&quot;,
+    &quot;status&quot;: &quot;FILLED&quot;,
+    &quot;timeInForce&quot;: &quot;GTC&quot;,
+    &quot;type&quot;: &quot;MARKET&quot;,
+    &quot;side&quot;: &quot;BUY&quot;,
+    &quot;workingTime&quot;: 1745777408510,
+    &quot;fills&quot;: [
+        {
+            &quot;price&quot;: &quot;602.67000000&quot;,
+            &quot;qty&quot;: &quot;1.00000000&quot;,
+            &quot;commission&quot;: &quot;0.00000000&quot;,
+            &quot;commissionAsset&quot;: &quot;BNB&quot;,
+            &quot;tradeId&quot;: 741861
+        }
+    ],
+    &quot;selfTradePreventionMode&quot;: &quot;EXPIRE_MAKER&quot;
+}
+Response Status: 200
+Response Body: {&quot;symbol&quot;:&quot;BNBUSDT&quot;,&quot;orderId&quot;:4527797,&quot;orderListId&quot;:-1,&quot;clientOrderId&quot;:&quot;KHbl3XEPHWIu3BPZANA0Jp&quot;,&quot;transactTime&quot;:1745777408510,&quot;price&quot;:&quot;0.00000000&quot;,&quot;origQty&quot;:&quot;1.00000000&quot;,&quot;executedQty&quot;:&quot;1.00000000&quot;,&quot;origQuoteOrderQty&quot;:&quot;0.00000000&quot;,&quot;cummulativeQuoteQty&quot;:&quot;602.67000000&quot;,&quot;status&quot;:&quot;FILLED&quot;,&quot;timeInForce&quot;:&quot;GTC&quot;,&quot;type&quot;:&quot;MARKET&quot;,&quot;side&quot;:&quot;BUY&quot;,&quot;workingTime&quot;:1745777408510,&quot;fills&quot;:[{&quot;price&quot;:&quot;602.67000000&quot;,&quot;qty&quot;:&quot;1.00000000&quot;,&quot;commission&quot;:&quot;0.00000000&quot;,&quot;commissionAsset&quot;:&quot;BNB&quot;,&quot;tradeId&quot;:741861}],&quot;selfTradePreventionMode&quot;:&quot;EXPIRE_MAKER&quot;}
+Query string to sign: orderId=4527797&amp;symbol=BNBUSDT&amp;timestamp=1745777408466
+Secret key length: 64
+Generated signature: 2f3ea4030191d4210cecdbd9e25e622cece3738c78143f22b1377f3cc2f1468a
+Request URL: https://testnet.binance.vision/api/v3/order?orderId=4527797&amp;symbol=BNBUSDT&amp;timestamp=1745777408466&amp;signature=2f3ea4030191d4210cecdbd9e25e622cece3738c78143f22b1377f3cc2f1468a
+Request Headers: {X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI}
+Request method:	GET
+Request URI:	https://testnet.binance.vision/api/v3/order?orderId=4527797&amp;symbol=BNBUSDT&amp;timestamp=1745777408466&amp;signature=2f3ea4030191d4210cecdbd9e25e622cece3738c78143f22b1377f3cc2f1468a
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Received message: {&quot;p&quot;:&quot;94095.24000000&quot;,&quot;a&quot;:3551019195,&quot;q&quot;:&quot;0.00021000&quot;,&quot;s&quot;:&quot;BTCUSDT&quot;,&quot;T&quot;:1745777408602,&quot;e&quot;:&quot;aggTrade&quot;,&quot;E&quot;:1745777408602,&quot;f&quot;:4855242519,&quot;l&quot;:4855242519,&quot;m&quot;:false,&quot;M&quot;:true}
+Received message: {&quot;p&quot;:&quot;94095.24000000&quot;,&quot;a&quot;:3551019195,&quot;q&quot;:&quot;0.00021000&quot;,&quot;s&quot;:&quot;BTCUSDT&quot;,&quot;T&quot;:1745777408602,&quot;e&quot;:&quot;aggTrade&quot;,&quot;E&quot;:1745777408602,&quot;f&quot;:4855242519,&quot;l&quot;:4855242519,&quot;m&quot;:false,&quot;M&quot;:true}
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 297
+Connection: keep-alive
+Date: Sun, 27 Apr 2025 18:10:08 GMT
+Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+x-mbx-uuid: 7d724de9-8f3e-4f37-9f6c-5a45d70c2992
+x-mbx-used-weight: 58
+x-mbx-used-weight-1m: 58
+content-encoding: gzip
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'
+X-Content-Security-Policy: default-src 'self'
+X-WebKit-CSP: default-src 'self'
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+Via: 1.1 8d08de7fce6cdb6f648bade508fa2926.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+X-Amz-Cf-Id: iRacQU1irRoGLQzYcq4AYJIDBMHguOReI1y_kE0JlzUjQgKQGZXtyA==
+
+{
+    &quot;symbol&quot;: &quot;BNBUSDT&quot;,
+    &quot;orderId&quot;: 4527797,
+    &quot;orderListId&quot;: -1,
+    &quot;clientOrderId&quot;: &quot;KHbl3XEPHWIu3BPZANA0Jp&quot;,
+    &quot;price&quot;: &quot;0.00000000&quot;,
+    &quot;origQty&quot;: &quot;1.00000000&quot;,
+    &quot;executedQty&quot;: &quot;1.00000000&quot;,
+    &quot;cummulativeQuoteQty&quot;: &quot;602.67000000&quot;,
+    &quot;status&quot;: &quot;FILLED&quot;,
+    &quot;timeInForce&quot;: &quot;GTC&quot;,
+    &quot;type&quot;: &quot;MARKET&quot;,
+    &quot;side&quot;: &quot;BUY&quot;,
+    &quot;stopPrice&quot;: &quot;0.00000000&quot;,
+    &quot;icebergQty&quot;: &quot;0.00000000&quot;,
+    &quot;time&quot;: 1745777408510,
+    &quot;updateTime&quot;: 1745777408510,
+    &quot;isWorking&quot;: true,
+    &quot;workingTime&quot;: 1745777408510,
+    &quot;origQuoteOrderQty&quot;: &quot;0.00000000&quot;,
+    &quot;selfTradePreventionMode&quot;: &quot;EXPIRE_MAKER&quot;
+}
+Response Status: 200
+Response Body: {&quot;symbol&quot;:&quot;BNBUSDT&quot;,&quot;orderId&quot;:4527797,&quot;orderListId&quot;:-1,&quot;clientOrderId&quot;:&quot;KHbl3XEPHWIu3BPZANA0Jp&quot;,&quot;price&quot;:&quot;0.00000000&quot;,&quot;origQty&quot;:&quot;1.00000000&quot;,&quot;executedQty&quot;:&quot;1.00000000&quot;,&quot;cummulativeQuoteQty&quot;:&quot;602.67000000&quot;,&quot;status&quot;:&quot;FILLED&quot;,&quot;timeInForce&quot;:&quot;GTC&quot;,&quot;type&quot;:&quot;MARKET&quot;,&quot;side&quot;:&quot;BUY&quot;,&quot;stopPrice&quot;:&quot;0.00000000&quot;,&quot;icebergQty&quot;:&quot;0.00000000&quot;,&quot;time&quot;:1745777408510,&quot;updateTime&quot;:1745777408510,&quot;isWorking&quot;:true,&quot;workingTime&quot;:1745777408510,&quot;origQuoteOrderQty&quot;:&quot;0.00000000&quot;,&quot;selfTradePreventionMode&quot;:&quot;EXPIRE_MAKER&quot;}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at Apr 28, 2025, 1:11:10 AM</p>
+</div>
+</div>
+</body>
+</html>

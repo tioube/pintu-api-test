@@ -87,6 +87,10 @@ public class testWebSocketUserData extends TestMasterConfigurations {
     @Severity(SeverityLevel.CRITICAL)
     @Story("Subscribe to User Data stream")
     @Description("This test subscribes to the User Data stream and verifies that updates are received.")
+    @Issue("BINANCE-123")
+    @TmsLink("TC-456")
+    @Owner("QA Team")
+    @Lead("Automation Team")
     public void testSubscribeToUserDataStream() throws InterruptedException {
         // Create a latch to wait for the test completion
         CountDownLatch testCompletionLatch = new CountDownLatch(1);
@@ -131,7 +135,7 @@ public class testWebSocketUserData extends TestMasterConfigurations {
         // Wait for some time to collect messages (we'll use a timeout instead of waiting for a specific event)
         Allure.step("Collecting messages for 5 seconds", () -> {
             try {
-                // Wait for 30 seconds to collect messages
+                // Wait for 5 seconds to collect messages
                 Thread.sleep(5000);
                 
                 // Count down the test completion latch to signal we're done collecting messages
@@ -156,6 +160,10 @@ public class testWebSocketUserData extends TestMasterConfigurations {
                 
                 // Attach each message to the Allure report
                 Allure.addAttachment("User Data Update " + (i + 1), "application/json", data.toJSONString());
+                
+                // Add a summary of the number of messages received
+                Allure.addAttachment("User Data Summary", "text/plain",
+                    "Received " + receivedMessages.size() + " user data updates");
             }
         });
 

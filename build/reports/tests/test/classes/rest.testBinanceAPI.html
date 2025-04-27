@@ -1,0 +1,2613 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class rest.testBinanceAPI</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class rest.testBinanceAPI</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/rest.html">rest</a> &gt; testBinanceAPI</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.704s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testFetchAccountBalance</td>
+<td class="success">0.224s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchOpenOrders</td>
+<td class="success">0.143s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchOrderBook</td>
+<td class="success">0.188s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchTradeHistory</td>
+<td class="success">0.149s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Query string to sign: timestamp=1745777407612
+Secret key length: 64
+Generated signature: b9856dd1b6258fcefbbff0d3cca645dbf1d6ba8b84cf5e6dec058d9169922065
+Request URL: https://testnet.binance.vision/api/v3/account?timestamp=1745777407612&amp;signature=b9856dd1b6258fcefbbff0d3cca645dbf1d6ba8b84cf5e6dec058d9169922065
+Request Headers: {X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI}
+Request method:	GET
+Request URI:	https://testnet.binance.vision/api/v3/account?timestamp=1745777407612&amp;signature=b9856dd1b6258fcefbbff0d3cca645dbf1d6ba8b84cf5e6dec058d9169922065
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Received message: {&quot;p&quot;:&quot;94095.24000000&quot;,&quot;a&quot;:3551019191,&quot;q&quot;:&quot;0.00335000&quot;,&quot;s&quot;:&quot;BTCUSDT&quot;,&quot;T&quot;:1745777407704,&quot;e&quot;:&quot;aggTrade&quot;,&quot;E&quot;:1745777407705,&quot;f&quot;:4855242515,&quot;l&quot;:4855242515,&quot;m&quot;:false,&quot;M&quot;:true}
+Received message: {&quot;p&quot;:&quot;94095.24000000&quot;,&quot;a&quot;:3551019191,&quot;q&quot;:&quot;0.00335000&quot;,&quot;s&quot;:&quot;BTCUSDT&quot;,&quot;T&quot;:1745777407704,&quot;e&quot;:&quot;aggTrade&quot;,&quot;E&quot;:1745777407705,&quot;f&quot;:4855242515,&quot;l&quot;:4855242515,&quot;m&quot;:false,&quot;M&quot;:true}
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 3102
+Connection: keep-alive
+Date: Sun, 27 Apr 2025 18:10:07 GMT
+Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+x-mbx-uuid: fa1a9f25-7d4b-4fc9-ba80-c402e0ddef36
+x-mbx-used-weight: 22
+x-mbx-used-weight-1m: 22
+content-encoding: gzip
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'
+X-Content-Security-Policy: default-src 'self'
+X-WebKit-CSP: default-src 'self'
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+Via: 1.1 371f05083da358616e0006a1f34fdb7e.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+X-Amz-Cf-Id: TySKZCbDeQVUeRQOTiJBIUE49jTjCrr2t5bbA3DFGXQjikMVUODX7w==
+
+{
+    &quot;makerCommission&quot;: 0,
+    &quot;takerCommission&quot;: 0,
+    &quot;buyerCommission&quot;: 0,
+    &quot;sellerCommission&quot;: 0,
+    &quot;commissionRates&quot;: {
+        &quot;maker&quot;: &quot;0.00000000&quot;,
+        &quot;taker&quot;: &quot;0.00000000&quot;,
+        &quot;buyer&quot;: &quot;0.00000000&quot;,
+        &quot;seller&quot;: &quot;0.00000000&quot;
+    },
+    &quot;canTrade&quot;: true,
+    &quot;canWithdraw&quot;: true,
+    &quot;canDeposit&quot;: true,
+    &quot;brokered&quot;: false,
+    &quot;requireSelfTradePrevention&quot;: false,
+    &quot;preventSor&quot;: false,
+    &quot;updateTime&quot;: 1745777086509,
+    &quot;accountType&quot;: &quot;SPOT&quot;,
+    &quot;balances&quot;: [
+        {
+            &quot;asset&quot;: &quot;ETH&quot;,
+            &quot;free&quot;: &quot;1.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BTC&quot;,
+            &quot;free&quot;: &quot;1.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LTC&quot;,
+            &quot;free&quot;: &quot;5.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BNB&quot;,
+            &quot;free&quot;: &quot;16.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;USDT&quot;,
+            &quot;free&quot;: &quot;992.44115000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TRX&quot;,
+            &quot;free&quot;: &quot;2103.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;XRP&quot;,
+            &quot;free&quot;: &quot;230.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;NEO&quot;,
+            &quot;free&quot;: &quot;104.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;QTUM&quot;,
+            &quot;free&quot;: &quot;256.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;EOS&quot;,
+            &quot;free&quot;: &quot;603.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SNT&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;GAS&quot;,
+            &quot;free&quot;: &quot;238.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LRC&quot;,
+            &quot;free&quot;: &quot;5045.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ZRX&quot;,
+            &quot;free&quot;: &quot;2020.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;KNC&quot;,
+            &quot;free&quot;: &quot;1469.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;IOTA&quot;,
+            &quot;free&quot;: &quot;2838.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LINK&quot;,
+            &quot;free&quot;: &quot;35.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;XVG&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MTL&quot;,
+            &quot;free&quot;: &quot;708.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ETC&quot;,
+            &quot;free&quot;: &quot;29.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ZEC&quot;,
+            &quot;free&quot;: &quot;12.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DASH&quot;,
+            &quot;free&quot;: &quot;22.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;REQ&quot;,
+            &quot;free&quot;: &quot;4497.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;POWR&quot;,
+            &quot;free&quot;: &quot;3184.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ENJ&quot;,
+            &quot;free&quot;: &quot;6244.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;STORJ&quot;,
+            &quot;free&quot;: &quot;1904.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;KMD&quot;,
+            &quot;free&quot;: &quot;3460.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;NULS&quot;,
+            &quot;free&quot;: &quot;5009.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BAT&quot;,
+            &quot;free&quot;: &quot;3618.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LSK&quot;,
+            &quot;free&quot;: &quot;986.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MANA&quot;,
+            &quot;free&quot;: &quot;1973.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ADX&quot;,
+            &quot;free&quot;: &quot;4820.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ADA&quot;,
+            &quot;free&quot;: &quot;723.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;XLM&quot;,
+            &quot;free&quot;: &quot;1834.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ICX&quot;,
+            &quot;free&quot;: &quot;5341.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ELF&quot;,
+            &quot;free&quot;: &quot;2014.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;RLC&quot;,
+            &quot;free&quot;: &quot;421.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PIVX&quot;,
+            &quot;free&quot;: &quot;3580.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;STEEM&quot;,
+            &quot;free&quot;: &quot;3941.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ZIL&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ONT&quot;,
+            &quot;free&quot;: &quot;3562.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;WAN&quot;,
+            &quot;free&quot;: &quot;4919.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SYS&quot;,
+            &quot;free&quot;: &quot;12371.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TUSD&quot;,
+            &quot;free&quot;: &quot;10000.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ZEN&quot;,
+            &quot;free&quot;: &quot;56.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;THETA&quot;,
+            &quot;free&quot;: &quot;591.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;IOTX&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DATA&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SC&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DENT&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ARDR&quot;,
+            &quot;free&quot;: &quot;8844.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;HOT&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;VET&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;RVN&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;USDC&quot;,
+            &quot;free&quot;: &quot;10000.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ONG&quot;,
+            &quot;free&quot;: &quot;2673.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FET&quot;,
+            &quot;free&quot;: &quot;1068.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;IOST&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CELR&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ATOM&quot;,
+            &quot;free&quot;: &quot;110.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PHB&quot;,
+            &quot;free&quot;: &quot;1077.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TFUEL&quot;,
+            &quot;free&quot;: &quot;14480.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ONE&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ALGO&quot;,
+            &quot;free&quot;: &quot;2597.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DOGE&quot;,
+            &quot;free&quot;: &quot;2861.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DUSK&quot;,
+            &quot;free&quot;: &quot;6497.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ANKR&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;WIN&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;COS&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FUN&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CVC&quot;,
+            &quot;free&quot;: &quot;5549.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CHZ&quot;,
+            &quot;free&quot;: &quot;11552.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BAND&quot;,
+            &quot;free&quot;: &quot;694.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;XTZ&quot;,
+            &quot;free&quot;: &quot;747.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;HBAR&quot;,
+            &quot;free&quot;: &quot;2909.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;NKN&quot;,
+            &quot;free&quot;: &quot;12194.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;STX&quot;,
+            &quot;free&quot;: &quot;798.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;KAVA&quot;,
+            &quot;free&quot;: &quot;1254.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ARPA&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CTXC&quot;,
+            &quot;free&quot;: &quot;3592.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BCH&quot;,
+            &quot;free&quot;: &quot;1.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TROY&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FTT&quot;,
+            &quot;free&quot;: &quot;457.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TRY&quot;,
+            &quot;free&quot;: &quot;18466.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;EUR&quot;,
+            &quot;free&quot;: &quot;460.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;OGN&quot;,
+            &quot;free&quot;: &quot;8407.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BNT&quot;,
+            &quot;free&quot;: &quot;1180.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LTO&quot;,
+            &quot;free&quot;: &quot;9503.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MBL&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;COTI&quot;,
+            &quot;free&quot;: &quot;7067.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;STPT&quot;,
+            &quot;free&quot;: &quot;12580.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ZAR&quot;,
+            &quot;free&quot;: &quot;18466.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SOL&quot;,
+            &quot;free&quot;: &quot;3.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CTSI&quot;,
+            &quot;free&quot;: &quot;7727.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;HIVE&quot;,
+            &quot;free&quot;: &quot;2154.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CHR&quot;,
+            &quot;free&quot;: &quot;5183.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MDT&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;UAH&quot;,
+            &quot;free&quot;: &quot;18466.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;COMP&quot;,
+            &quot;free&quot;: &quot;11.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SXP&quot;,
+            &quot;free&quot;: &quot;2788.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SNX&quot;,
+            &quot;free&quot;: &quot;711.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;VTHO&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DGB&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MKR&quot;,
+            &quot;free&quot;: &quot;1.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;RUNE&quot;,
+            &quot;free&quot;: &quot;414.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DCR&quot;,
+            &quot;free&quot;: &quot;43.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FIO&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;AVA&quot;,
+            &quot;free&quot;: &quot;931.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;YFI&quot;,
+            &quot;free&quot;: &quot;1.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BAL&quot;,
+            &quot;free&quot;: &quot;372.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DAI&quot;,
+            &quot;free&quot;: &quot;10000.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;JST&quot;,
+            &quot;free&quot;: &quot;15536.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CRV&quot;,
+            &quot;free&quot;: &quot;920.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SAND&quot;,
+            &quot;free&quot;: &quot;1806.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;NMR&quot;,
+            &quot;free&quot;: &quot;63.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DOT&quot;,
+            &quot;free&quot;: &quot;119.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LUNA&quot;,
+            &quot;free&quot;: &quot;2691.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;RSR&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PAXG&quot;,
+            &quot;free&quot;: &quot;1.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TRB&quot;,
+            &quot;free&quot;: &quot;19.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;WBTC&quot;,
+            &quot;free&quot;: &quot;1.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SUSHI&quot;,
+            &quot;free&quot;: &quot;835.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;KSM&quot;,
+            &quot;free&quot;: &quot;31.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;EGLD&quot;,
+            &quot;free&quot;: &quot;30.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DIA&quot;,
+            &quot;free&quot;: &quot;1416.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;UMA&quot;,
+            &quot;free&quot;: &quot;423.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BEL&quot;,
+            &quot;free&quot;: &quot;676.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;WING&quot;,
+            &quot;free&quot;: &quot;162.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;UNI&quot;,
+            &quot;free&quot;: &quot;80.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;OXT&quot;,
+            &quot;free&quot;: &quot;7624.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SUN&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;AVAX&quot;,
+            &quot;free&quot;: &quot;25.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FLM&quot;,
+            &quot;free&quot;: &quot;18209.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SCRT&quot;,
+            &quot;free&quot;: &quot;2520.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CAKE&quot;,
+            &quot;free&quot;: &quot;262.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;UTK&quot;,
+            &quot;free&quot;: &quot;14526.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;XVS&quot;,
+            &quot;free&quot;: &quot;91.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ALPHA&quot;,
+            &quot;free&quot;: &quot;14244.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;VIDT&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BRL&quot;,
+            &quot;free&quot;: &quot;97.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;AAVE&quot;,
+            &quot;free&quot;: &quot;3.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;NEAR&quot;,
+            &quot;free&quot;: &quot;185.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FIL&quot;,
+            &quot;free&quot;: &quot;174.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;INJ&quot;,
+            &quot;free&quot;: &quot;55.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;AUDIO&quot;,
+            &quot;free&quot;: &quot;6892.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CTK&quot;,
+            &quot;free&quot;: &quot;1519.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;AXS&quot;,
+            &quot;free&quot;: &quot;171.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;HARD&quot;,
+            &quot;free&quot;: &quot;3241.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SLP&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;STRAX&quot;,
+            &quot;free&quot;: &quot;13164.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ROSE&quot;,
+            &quot;free&quot;: &quot;17833.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SKL&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;GLM&quot;,
+            &quot;free&quot;: &quot;1956.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;GRT&quot;,
+            &quot;free&quot;: &quot;5626.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;JUV&quot;,
+            &quot;free&quot;: &quot;450.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PSG&quot;,
+            &quot;free&quot;: &quot;224.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;1INCH&quot;,
+            &quot;free&quot;: &quot;2541.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;OG&quot;,
+            &quot;free&quot;: &quot;126.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ATM&quot;,
+            &quot;free&quot;: &quot;427.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ASR&quot;,
+            &quot;free&quot;: &quot;425.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CELO&quot;,
+            &quot;free&quot;: &quot;1475.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;RIF&quot;,
+            &quot;free&quot;: &quot;12388.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TRU&quot;,
+            &quot;free&quot;: &quot;14933.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CKB&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TWT&quot;,
+            &quot;free&quot;: &quot;593.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FIRO&quot;,
+            &quot;free&quot;: &quot;530.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SFP&quot;,
+            &quot;free&quot;: &quot;958.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DODO&quot;,
+            &quot;free&quot;: &quot;7925.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ACM&quot;,
+            &quot;free&quot;: &quot;563.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;AUCTION&quot;,
+            &quot;free&quot;: &quot;35.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PHA&quot;,
+            &quot;free&quot;: &quot;5102.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BADGER&quot;,
+            &quot;free&quot;: &quot;389.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FIS&quot;,
+            &quot;free&quot;: &quot;3614.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;OM&quot;,
+            &quot;free&quot;: &quot;79.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;POND&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DEGO&quot;,
+            &quot;free&quot;: &quot;314.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ALICE&quot;,
+            &quot;free&quot;: &quot;1139.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PERP&quot;,
+            &quot;free&quot;: &quot;1513.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SUPER&quot;,
+            &quot;free&quot;: &quot;910.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CFX&quot;,
+            &quot;free&quot;: &quot;5772.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TKO&quot;,
+            &quot;free&quot;: &quot;2748.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PUNDIX&quot;,
+            &quot;free&quot;: &quot;1850.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TLM&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BAR&quot;,
+            &quot;free&quot;: &quot;298.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FORTH&quot;,
+            &quot;free&quot;: &quot;221.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BAKE&quot;,
+            &quot;free&quot;: &quot;3935.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SHIB&quot;,
+            &quot;free&quot;: &quot;18446.00&quot;,
+            &quot;locked&quot;: &quot;0.00&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ICP&quot;,
+            &quot;free&quot;: &quot;92.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;AR&quot;,
+            &quot;free&quot;: &quot;83.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MASK&quot;,
+            &quot;free&quot;: &quot;368.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LPT&quot;,
+            &quot;free&quot;: &quot;103.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ATA&quot;,
+            &quot;free&quot;: &quot;8616.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;GTC&quot;,
+            &quot;free&quot;: &quot;1676.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MLN&quot;,
+            &quot;free&quot;: &quot;43.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DEXE&quot;,
+            &quot;free&quot;: &quot;33.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;C98&quot;,
+            &quot;free&quot;: &quot;7946.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;QNT&quot;,
+            &quot;free&quot;: &quot;7.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FLOW&quot;,
+            &quot;free&quot;: &quot;1282.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MINA&quot;,
+            &quot;free&quot;: &quot;2060.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;RAY&quot;,
+            &quot;free&quot;: &quot;249.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FARM&quot;,
+            &quot;free&quot;: &quot;16.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ALPACA&quot;,
+            &quot;free&quot;: &quot;9355.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;QUICK&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MBOX&quot;,
+            &quot;free&quot;: &quot;7039.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;GHST&quot;,
+            &quot;free&quot;: &quot;903.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;WAXP&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;GNO&quot;,
+            &quot;free&quot;: &quot;4.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;XEC&quot;,
+            &quot;free&quot;: &quot;18446.00&quot;,
+            &quot;locked&quot;: &quot;0.00&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DYDX&quot;,
+            &quot;free&quot;: &quot;783.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;IDEX&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;USDP&quot;,
+            &quot;free&quot;: &quot;500.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;GALA&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ILV&quot;,
+            &quot;free&quot;: &quot;38.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;YGG&quot;,
+            &quot;free&quot;: &quot;2708.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DF&quot;,
+            &quot;free&quot;: &quot;10072.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FIDA&quot;,
+            &quot;free&quot;: &quot;5278.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;AGLD&quot;,
+            &quot;free&quot;: &quot;585.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;RAD&quot;,
+            &quot;free&quot;: &quot;676.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BETA&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;RARE&quot;,
+            &quot;free&quot;: &quot;8966.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SSV&quot;,
+            &quot;free&quot;: &quot;75.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LAZIO&quot;,
+            &quot;free&quot;: &quot;501.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CHESS&quot;,
+            &quot;free&quot;: &quot;6720.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MOVR&quot;,
+            &quot;free&quot;: &quot;88.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CITY&quot;,
+            &quot;free&quot;: &quot;465.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ENS&quot;,
+            &quot;free&quot;: &quot;30.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;QI&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PORTO&quot;,
+            &quot;free&quot;: &quot;500.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;JASMY&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;AMP&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PYR&quot;,
+            &quot;free&quot;: &quot;402.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ALCX&quot;,
+            &quot;free&quot;: &quot;54.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SANTOS&quot;,
+            &quot;free&quot;: &quot;193.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BICO&quot;,
+            &quot;free&quot;: &quot;4462.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FLUX&quot;,
+            &quot;free&quot;: &quot;2084.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FXS&quot;,
+            &quot;free&quot;: &quot;260.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;VOXEL&quot;,
+            &quot;free&quot;: &quot;7364.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;HIGH&quot;,
+            &quot;free&quot;: &quot;960.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CVX&quot;,
+            &quot;free&quot;: &quot;223.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PEOPLE&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SPELL&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;JOE&quot;,
+            &quot;free&quot;: &quot;2937.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ACH&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;IMX&quot;,
+            &quot;free&quot;: &quot;949.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;GLMR&quot;,
+            &quot;free&quot;: &quot;6953.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LOKA&quot;,
+            &quot;free&quot;: &quot;5315.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;API3&quot;,
+            &quot;free&quot;: &quot;538.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BTTC&quot;,
+            &quot;free&quot;: &quot;18446.0&quot;,
+            &quot;locked&quot;: &quot;0.0&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ACA&quot;,
+            &quot;free&quot;: &quot;14134.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;XNO&quot;,
+            &quot;free&quot;: &quot;560.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;WOO&quot;,
+            &quot;free&quot;: &quot;6682.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ALPINE&quot;,
+            &quot;free&quot;: &quot;614.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;T&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ASTR&quot;,
+            &quot;free&quot;: &quot;17371.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;GMT&quot;,
+            &quot;free&quot;: &quot;10444.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;KDA&quot;,
+            &quot;free&quot;: &quot;1229.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;APE&quot;,
+            &quot;free&quot;: &quot;1066.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BSW&quot;,
+            &quot;free&quot;: &quot;16174.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BIFI&quot;,
+            &quot;free&quot;: &quot;2.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;NEXO&quot;,
+            &quot;free&quot;: &quot;459.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;REI&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LDO&quot;,
+            &quot;free&quot;: &quot;565.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;OP&quot;,
+            &quot;free&quot;: &quot;671.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LEVER&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;STG&quot;,
+            &quot;free&quot;: &quot;2563.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LUNC&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;GMX&quot;,
+            &quot;free&quot;: &quot;42.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;POLYX&quot;,
+            &quot;free&quot;: &quot;3681.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;APT&quot;,
+            &quot;free&quot;: &quot;92.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PLN&quot;,
+            &quot;free&quot;: &quot;18466.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;OSMO&quot;,
+            &quot;free&quot;: &quot;1919.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;HFT&quot;,
+            &quot;free&quot;: &quot;8670.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;HOOK&quot;,
+            &quot;free&quot;: &quot;4064.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MAGIC&quot;,
+            &quot;free&quot;: &quot;4763.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;HIFI&quot;,
+            &quot;free&quot;: &quot;2366.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;RPL&quot;,
+            &quot;free&quot;: &quot;116.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PROS&quot;,
+            &quot;free&quot;: &quot;1448.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;RON&quot;,
+            &quot;free&quot;: &quot;18466.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;GNS&quot;,
+            &quot;free&quot;: &quot;377.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SYN&quot;,
+            &quot;free&quot;: &quot;3028.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;VIB&quot;,
+            &quot;free&quot;: &quot;13286.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LQTY&quot;,
+            &quot;free&quot;: &quot;769.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;USTC&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PROM&quot;,
+            &quot;free&quot;: &quot;84.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;QKC&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;UFT&quot;,
+            &quot;free&quot;: &quot;8098.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ID&quot;,
+            &quot;free&quot;: &quot;2415.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ARB&quot;,
+            &quot;free&quot;: &quot;1505.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;RDNT&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ARS&quot;,
+            &quot;free&quot;: &quot;18466.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;EDU&quot;,
+            &quot;free&quot;: &quot;4501.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SUI&quot;,
+            &quot;free&quot;: &quot;202.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PEPE&quot;,
+            &quot;free&quot;: &quot;18446.00&quot;,
+            &quot;locked&quot;: &quot;0.00&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FLOKI&quot;,
+            &quot;free&quot;: &quot;18446.00&quot;,
+            &quot;locked&quot;: &quot;0.00&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;WBETH&quot;,
+            &quot;free&quot;: &quot;1.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MAV&quot;,
+            &quot;free&quot;: &quot;7993.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PENDLE&quot;,
+            &quot;free&quot;: &quot;155.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ARKM&quot;,
+            &quot;free&quot;: &quot;971.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;WLD&quot;,
+            &quot;free&quot;: &quot;632.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FDUSD&quot;,
+            &quot;free&quot;: &quot;10000.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SEI&quot;,
+            &quot;free&quot;: &quot;2848.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CYBER&quot;,
+            &quot;free&quot;: &quot;416.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ARK&quot;,
+            &quot;free&quot;: &quot;1675.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CREAM&quot;,
+            &quot;free&quot;: &quot;101.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;IQ&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;NTRN&quot;,
+            &quot;free&quot;: &quot;3761.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TIA&quot;,
+            &quot;free&quot;: &quot;157.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MEME&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ORDI&quot;,
+            &quot;free&quot;: &quot;67.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BEAMX&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;VIC&quot;,
+            &quot;free&quot;: &quot;2375.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BLUR&quot;,
+            &quot;free&quot;: &quot;4676.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;VANRY&quot;,
+            &quot;free&quot;: &quot;18257.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;AEUR&quot;,
+            &quot;free&quot;: &quot;500.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;JTO&quot;,
+            &quot;free&quot;: &quot;216.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;1000SATS&quot;,
+            &quot;free&quot;: &quot;18446.00&quot;,
+            &quot;locked&quot;: &quot;0.00&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BONK&quot;,
+            &quot;free&quot;: &quot;18446.00&quot;,
+            &quot;locked&quot;: &quot;0.00&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ACE&quot;,
+            &quot;free&quot;: &quot;853.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;NFP&quot;,
+            &quot;free&quot;: &quot;7372.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;AI&quot;,
+            &quot;free&quot;: &quot;3254.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;XAI&quot;,
+            &quot;free&quot;: &quot;8876.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MANTA&quot;,
+            &quot;free&quot;: &quot;2317.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ALT&quot;,
+            &quot;free&quot;: &quot;16340.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;JUP&quot;,
+            &quot;free&quot;: &quot;1199.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PYTH&quot;,
+            &quot;free&quot;: &quot;3449.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;RONIN&quot;,
+            &quot;free&quot;: &quot;692.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DYM&quot;,
+            &quot;free&quot;: &quot;1764.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PIXEL&quot;,
+            &quot;free&quot;: &quot;17851.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;STRK&quot;,
+            &quot;free&quot;: &quot;3427.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PORTAL&quot;,
+            &quot;free&quot;: &quot;6438.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PDA&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;AXL&quot;,
+            &quot;free&quot;: &quot;1348.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;WIF&quot;,
+            &quot;free&quot;: &quot;1190.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;METIS&quot;,
+            &quot;free&quot;: &quot;32.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;JPY&quot;,
+            &quot;free&quot;: &quot;18466.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;AEVO&quot;,
+            &quot;free&quot;: &quot;4682.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BOME&quot;,
+            &quot;free&quot;: &quot;18446.00&quot;,
+            &quot;locked&quot;: &quot;0.00&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ETHFI&quot;,
+            &quot;free&quot;: &quot;883.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ENA&quot;,
+            &quot;free&quot;: &quot;1339.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;W&quot;,
+            &quot;free&quot;: &quot;6366.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TNSR&quot;,
+            &quot;free&quot;: &quot;3228.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SAGA&quot;,
+            &quot;free&quot;: &quot;1742.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MXN&quot;,
+            &quot;free&quot;: &quot;18466.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TAO&quot;,
+            &quot;free&quot;: &quot;2.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;OMNI&quot;,
+            &quot;free&quot;: &quot;200.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;REZ&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BB&quot;,
+            &quot;free&quot;: &quot;4126.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;NOT&quot;,
+            &quot;free&quot;: &quot;18446.00&quot;,
+            &quot;locked&quot;: &quot;0.00&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;COP&quot;,
+            &quot;free&quot;: &quot;18466.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;IO&quot;,
+            &quot;free&quot;: &quot;697.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ZK&quot;,
+            &quot;free&quot;: &quot;7699.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LISTA&quot;,
+            &quot;free&quot;: &quot;3066.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ZRO&quot;,
+            &quot;free&quot;: &quot;170.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;G&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BANANA&quot;,
+            &quot;free&quot;: &quot;26.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;RENDER&quot;,
+            &quot;free&quot;: &quot;133.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TON&quot;,
+            &quot;free&quot;: &quot;123.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;DOGS&quot;,
+            &quot;free&quot;: &quot;18446.00&quot;,
+            &quot;locked&quot;: &quot;0.00&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;EURI&quot;,
+            &quot;free&quot;: &quot;460.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SLF&quot;,
+            &quot;free&quot;: &quot;2315.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;POL&quot;,
+            &quot;free&quot;: &quot;2523.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;NEIRO&quot;,
+            &quot;free&quot;: &quot;18446.00&quot;,
+            &quot;locked&quot;: &quot;0.00&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TURBO&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;1MBABYDOGE&quot;,
+            &quot;free&quot;: &quot;18446.00&quot;,
+            &quot;locked&quot;: &quot;0.00&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CATI&quot;,
+            &quot;free&quot;: &quot;3613.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;HMSTR&quot;,
+            &quot;free&quot;: &quot;18446.00&quot;,
+            &quot;locked&quot;: &quot;0.00&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;EIGEN&quot;,
+            &quot;free&quot;: &quot;556.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BNSOL&quot;,
+            &quot;free&quot;: &quot;3.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SCR&quot;,
+            &quot;free&quot;: &quot;1845.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LUMIA&quot;,
+            &quot;free&quot;: &quot;1444.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;KAIA&quot;,
+            &quot;free&quot;: &quot;4601.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;COW&quot;,
+            &quot;free&quot;: &quot;1870.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CETUS&quot;,
+            &quot;free&quot;: &quot;4706.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PNUT&quot;,
+            &quot;free&quot;: &quot;3202.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ACT&quot;,
+            &quot;free&quot;: &quot;8924.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;USUAL&quot;,
+            &quot;free&quot;: &quot;4399.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;THE&quot;,
+            &quot;free&quot;: &quot;1849.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ACX&quot;,
+            &quot;free&quot;: &quot;2142.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ORCA&quot;,
+            &quot;free&quot;: &quot;207.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MOVE&quot;,
+            &quot;free&quot;: &quot;1236.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ME&quot;,
+            &quot;free&quot;: &quot;503.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;VELODROME&quot;,
+            &quot;free&quot;: &quot;9566.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;VANA&quot;,
+            &quot;free&quot;: &quot;87.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;1000CAT&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PENGU&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BIO&quot;,
+            &quot;free&quot;: &quot;6963.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;D&quot;,
+            &quot;free&quot;: &quot;10541.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;AIXBT&quot;,
+            &quot;free&quot;: &quot;5847.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CGPT&quot;,
+            &quot;free&quot;: &quot;6649.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;COOKIE&quot;,
+            &quot;free&quot;: &quot;4855.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;S&quot;,
+            &quot;free&quot;: &quot;978.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SOLV&quot;,
+            &quot;free&quot;: &quot;17028.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TRUMP&quot;,
+            &quot;free&quot;: &quot;47.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;ANIME&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BERA&quot;,
+            &quot;free&quot;: &quot;68.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;1000CHEEMS&quot;,
+            &quot;free&quot;: &quot;18446.00&quot;,
+            &quot;locked&quot;: &quot;0.00&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TST&quot;,
+            &quot;free&quot;: &quot;7219.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;LAYER&quot;,
+            &quot;free&quot;: &quot;354.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;HEI&quot;,
+            &quot;free&quot;: &quot;1292.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;KAITO&quot;,
+            &quot;free&quot;: &quot;527.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;SHELL&quot;,
+            &quot;free&quot;: &quot;2760.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;RED&quot;,
+            &quot;free&quot;: &quot;1131.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;GPS&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;EPIC&quot;,
+            &quot;free&quot;: &quot;433.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BMT&quot;,
+            &quot;free&quot;: &quot;4449.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;FORM&quot;,
+            &quot;free&quot;: &quot;228.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;XUSD&quot;,
+            &quot;free&quot;: &quot;499.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;CZK&quot;,
+            &quot;free&quot;: &quot;18466.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;NIL&quot;,
+            &quot;free&quot;: &quot;1063.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;PARTI&quot;,
+            &quot;free&quot;: &quot;2627.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;MUBARAK&quot;,
+            &quot;free&quot;: &quot;12031.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;TUT&quot;,
+            &quot;free&quot;: &quot;17658.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BROCCOLI714&quot;,
+            &quot;free&quot;: &quot;15146.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;BANANAS31&quot;,
+            &quot;free&quot;: &quot;18446.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        },
+        {
+            &quot;asset&quot;: &quot;GUN&quot;,
+            &quot;free&quot;: &quot;9323.00000000&quot;,
+            &quot;locked&quot;: &quot;0.00000000&quot;
+        }
+    ],
+    &quot;permissions&quot;: [
+        &quot;SPOT&quot;
+    ],
+    &quot;uid&quot;: 1745572127670262723
+}
+Response Status: 200
+Response Body: {&quot;makerCommission&quot;:0,&quot;takerCommission&quot;:0,&quot;buyerCommission&quot;:0,&quot;sellerCommission&quot;:0,&quot;commissionRates&quot;:{&quot;maker&quot;:&quot;0.00000000&quot;,&quot;taker&quot;:&quot;0.00000000&quot;,&quot;buyer&quot;:&quot;0.00000000&quot;,&quot;seller&quot;:&quot;0.00000000&quot;},&quot;canTrade&quot;:true,&quot;canWithdraw&quot;:true,&quot;canDeposit&quot;:true,&quot;brokered&quot;:false,&quot;requireSelfTradePrevention&quot;:false,&quot;preventSor&quot;:false,&quot;updateTime&quot;:1745777086509,&quot;accountType&quot;:&quot;SPOT&quot;,&quot;balances&quot;:[{&quot;asset&quot;:&quot;ETH&quot;,&quot;free&quot;:&quot;1.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BTC&quot;,&quot;free&quot;:&quot;1.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LTC&quot;,&quot;free&quot;:&quot;5.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BNB&quot;,&quot;free&quot;:&quot;16.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;USDT&quot;,&quot;free&quot;:&quot;992.44115000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TRX&quot;,&quot;free&quot;:&quot;2103.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;XRP&quot;,&quot;free&quot;:&quot;230.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;NEO&quot;,&quot;free&quot;:&quot;104.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;QTUM&quot;,&quot;free&quot;:&quot;256.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;EOS&quot;,&quot;free&quot;:&quot;603.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SNT&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;GAS&quot;,&quot;free&quot;:&quot;238.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LRC&quot;,&quot;free&quot;:&quot;5045.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ZRX&quot;,&quot;free&quot;:&quot;2020.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;KNC&quot;,&quot;free&quot;:&quot;1469.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;IOTA&quot;,&quot;free&quot;:&quot;2838.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LINK&quot;,&quot;free&quot;:&quot;35.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;XVG&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MTL&quot;,&quot;free&quot;:&quot;708.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ETC&quot;,&quot;free&quot;:&quot;29.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ZEC&quot;,&quot;free&quot;:&quot;12.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DASH&quot;,&quot;free&quot;:&quot;22.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;REQ&quot;,&quot;free&quot;:&quot;4497.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;POWR&quot;,&quot;free&quot;:&quot;3184.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ENJ&quot;,&quot;free&quot;:&quot;6244.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;STORJ&quot;,&quot;free&quot;:&quot;1904.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;KMD&quot;,&quot;free&quot;:&quot;3460.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;NULS&quot;,&quot;free&quot;:&quot;5009.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BAT&quot;,&quot;free&quot;:&quot;3618.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LSK&quot;,&quot;free&quot;:&quot;986.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MANA&quot;,&quot;free&quot;:&quot;1973.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ADX&quot;,&quot;free&quot;:&quot;4820.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ADA&quot;,&quot;free&quot;:&quot;723.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;XLM&quot;,&quot;free&quot;:&quot;1834.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ICX&quot;,&quot;free&quot;:&quot;5341.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ELF&quot;,&quot;free&quot;:&quot;2014.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;RLC&quot;,&quot;free&quot;:&quot;421.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PIVX&quot;,&quot;free&quot;:&quot;3580.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;STEEM&quot;,&quot;free&quot;:&quot;3941.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ZIL&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ONT&quot;,&quot;free&quot;:&quot;3562.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;WAN&quot;,&quot;free&quot;:&quot;4919.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SYS&quot;,&quot;free&quot;:&quot;12371.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TUSD&quot;,&quot;free&quot;:&quot;10000.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ZEN&quot;,&quot;free&quot;:&quot;56.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;THETA&quot;,&quot;free&quot;:&quot;591.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;IOTX&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DATA&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SC&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DENT&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ARDR&quot;,&quot;free&quot;:&quot;8844.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;HOT&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;VET&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;RVN&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;USDC&quot;,&quot;free&quot;:&quot;10000.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ONG&quot;,&quot;free&quot;:&quot;2673.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FET&quot;,&quot;free&quot;:&quot;1068.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;IOST&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CELR&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ATOM&quot;,&quot;free&quot;:&quot;110.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PHB&quot;,&quot;free&quot;:&quot;1077.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TFUEL&quot;,&quot;free&quot;:&quot;14480.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ONE&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ALGO&quot;,&quot;free&quot;:&quot;2597.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DOGE&quot;,&quot;free&quot;:&quot;2861.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DUSK&quot;,&quot;free&quot;:&quot;6497.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ANKR&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;WIN&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;COS&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FUN&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CVC&quot;,&quot;free&quot;:&quot;5549.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CHZ&quot;,&quot;free&quot;:&quot;11552.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BAND&quot;,&quot;free&quot;:&quot;694.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;XTZ&quot;,&quot;free&quot;:&quot;747.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;HBAR&quot;,&quot;free&quot;:&quot;2909.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;NKN&quot;,&quot;free&quot;:&quot;12194.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;STX&quot;,&quot;free&quot;:&quot;798.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;KAVA&quot;,&quot;free&quot;:&quot;1254.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ARPA&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CTXC&quot;,&quot;free&quot;:&quot;3592.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BCH&quot;,&quot;free&quot;:&quot;1.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TROY&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FTT&quot;,&quot;free&quot;:&quot;457.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TRY&quot;,&quot;free&quot;:&quot;18466.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;EUR&quot;,&quot;free&quot;:&quot;460.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;OGN&quot;,&quot;free&quot;:&quot;8407.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BNT&quot;,&quot;free&quot;:&quot;1180.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LTO&quot;,&quot;free&quot;:&quot;9503.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MBL&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;COTI&quot;,&quot;free&quot;:&quot;7067.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;STPT&quot;,&quot;free&quot;:&quot;12580.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ZAR&quot;,&quot;free&quot;:&quot;18466.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SOL&quot;,&quot;free&quot;:&quot;3.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CTSI&quot;,&quot;free&quot;:&quot;7727.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;HIVE&quot;,&quot;free&quot;:&quot;2154.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CHR&quot;,&quot;free&quot;:&quot;5183.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MDT&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;UAH&quot;,&quot;free&quot;:&quot;18466.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;COMP&quot;,&quot;free&quot;:&quot;11.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SXP&quot;,&quot;free&quot;:&quot;2788.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SNX&quot;,&quot;free&quot;:&quot;711.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;VTHO&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DGB&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MKR&quot;,&quot;free&quot;:&quot;1.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;RUNE&quot;,&quot;free&quot;:&quot;414.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DCR&quot;,&quot;free&quot;:&quot;43.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FIO&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;AVA&quot;,&quot;free&quot;:&quot;931.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;YFI&quot;,&quot;free&quot;:&quot;1.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BAL&quot;,&quot;free&quot;:&quot;372.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DAI&quot;,&quot;free&quot;:&quot;10000.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;JST&quot;,&quot;free&quot;:&quot;15536.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CRV&quot;,&quot;free&quot;:&quot;920.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SAND&quot;,&quot;free&quot;:&quot;1806.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;NMR&quot;,&quot;free&quot;:&quot;63.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DOT&quot;,&quot;free&quot;:&quot;119.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LUNA&quot;,&quot;free&quot;:&quot;2691.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;RSR&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PAXG&quot;,&quot;free&quot;:&quot;1.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TRB&quot;,&quot;free&quot;:&quot;19.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;WBTC&quot;,&quot;free&quot;:&quot;1.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SUSHI&quot;,&quot;free&quot;:&quot;835.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;KSM&quot;,&quot;free&quot;:&quot;31.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;EGLD&quot;,&quot;free&quot;:&quot;30.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DIA&quot;,&quot;free&quot;:&quot;1416.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;UMA&quot;,&quot;free&quot;:&quot;423.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BEL&quot;,&quot;free&quot;:&quot;676.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;WING&quot;,&quot;free&quot;:&quot;162.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;UNI&quot;,&quot;free&quot;:&quot;80.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;OXT&quot;,&quot;free&quot;:&quot;7624.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SUN&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;AVAX&quot;,&quot;free&quot;:&quot;25.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FLM&quot;,&quot;free&quot;:&quot;18209.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SCRT&quot;,&quot;free&quot;:&quot;2520.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CAKE&quot;,&quot;free&quot;:&quot;262.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;UTK&quot;,&quot;free&quot;:&quot;14526.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;XVS&quot;,&quot;free&quot;:&quot;91.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ALPHA&quot;,&quot;free&quot;:&quot;14244.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;VIDT&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BRL&quot;,&quot;free&quot;:&quot;97.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;AAVE&quot;,&quot;free&quot;:&quot;3.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;NEAR&quot;,&quot;free&quot;:&quot;185.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FIL&quot;,&quot;free&quot;:&quot;174.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;INJ&quot;,&quot;free&quot;:&quot;55.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;AUDIO&quot;,&quot;free&quot;:&quot;6892.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CTK&quot;,&quot;free&quot;:&quot;1519.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;AXS&quot;,&quot;free&quot;:&quot;171.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;HARD&quot;,&quot;free&quot;:&quot;3241.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SLP&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;STRAX&quot;,&quot;free&quot;:&quot;13164.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ROSE&quot;,&quot;free&quot;:&quot;17833.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SKL&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;GLM&quot;,&quot;free&quot;:&quot;1956.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;GRT&quot;,&quot;free&quot;:&quot;5626.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;JUV&quot;,&quot;free&quot;:&quot;450.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PSG&quot;,&quot;free&quot;:&quot;224.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;1INCH&quot;,&quot;free&quot;:&quot;2541.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;OG&quot;,&quot;free&quot;:&quot;126.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ATM&quot;,&quot;free&quot;:&quot;427.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ASR&quot;,&quot;free&quot;:&quot;425.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CELO&quot;,&quot;free&quot;:&quot;1475.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;RIF&quot;,&quot;free&quot;:&quot;12388.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TRU&quot;,&quot;free&quot;:&quot;14933.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CKB&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TWT&quot;,&quot;free&quot;:&quot;593.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FIRO&quot;,&quot;free&quot;:&quot;530.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SFP&quot;,&quot;free&quot;:&quot;958.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DODO&quot;,&quot;free&quot;:&quot;7925.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ACM&quot;,&quot;free&quot;:&quot;563.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;AUCTION&quot;,&quot;free&quot;:&quot;35.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PHA&quot;,&quot;free&quot;:&quot;5102.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BADGER&quot;,&quot;free&quot;:&quot;389.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FIS&quot;,&quot;free&quot;:&quot;3614.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;OM&quot;,&quot;free&quot;:&quot;79.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;POND&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DEGO&quot;,&quot;free&quot;:&quot;314.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ALICE&quot;,&quot;free&quot;:&quot;1139.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PERP&quot;,&quot;free&quot;:&quot;1513.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SUPER&quot;,&quot;free&quot;:&quot;910.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CFX&quot;,&quot;free&quot;:&quot;5772.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TKO&quot;,&quot;free&quot;:&quot;2748.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PUNDIX&quot;,&quot;free&quot;:&quot;1850.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TLM&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BAR&quot;,&quot;free&quot;:&quot;298.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FORTH&quot;,&quot;free&quot;:&quot;221.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BAKE&quot;,&quot;free&quot;:&quot;3935.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SHIB&quot;,&quot;free&quot;:&quot;18446.00&quot;,&quot;locked&quot;:&quot;0.00&quot;},{&quot;asset&quot;:&quot;ICP&quot;,&quot;free&quot;:&quot;92.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;AR&quot;,&quot;free&quot;:&quot;83.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MASK&quot;,&quot;free&quot;:&quot;368.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LPT&quot;,&quot;free&quot;:&quot;103.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ATA&quot;,&quot;free&quot;:&quot;8616.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;GTC&quot;,&quot;free&quot;:&quot;1676.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MLN&quot;,&quot;free&quot;:&quot;43.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DEXE&quot;,&quot;free&quot;:&quot;33.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;C98&quot;,&quot;free&quot;:&quot;7946.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;QNT&quot;,&quot;free&quot;:&quot;7.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FLOW&quot;,&quot;free&quot;:&quot;1282.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MINA&quot;,&quot;free&quot;:&quot;2060.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;RAY&quot;,&quot;free&quot;:&quot;249.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FARM&quot;,&quot;free&quot;:&quot;16.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ALPACA&quot;,&quot;free&quot;:&quot;9355.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;QUICK&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MBOX&quot;,&quot;free&quot;:&quot;7039.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;GHST&quot;,&quot;free&quot;:&quot;903.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;WAXP&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;GNO&quot;,&quot;free&quot;:&quot;4.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;XEC&quot;,&quot;free&quot;:&quot;18446.00&quot;,&quot;locked&quot;:&quot;0.00&quot;},{&quot;asset&quot;:&quot;DYDX&quot;,&quot;free&quot;:&quot;783.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;IDEX&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;USDP&quot;,&quot;free&quot;:&quot;500.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;GALA&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ILV&quot;,&quot;free&quot;:&quot;38.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;YGG&quot;,&quot;free&quot;:&quot;2708.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DF&quot;,&quot;free&quot;:&quot;10072.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FIDA&quot;,&quot;free&quot;:&quot;5278.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;AGLD&quot;,&quot;free&quot;:&quot;585.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;RAD&quot;,&quot;free&quot;:&quot;676.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BETA&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;RARE&quot;,&quot;free&quot;:&quot;8966.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SSV&quot;,&quot;free&quot;:&quot;75.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LAZIO&quot;,&quot;free&quot;:&quot;501.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CHESS&quot;,&quot;free&quot;:&quot;6720.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MOVR&quot;,&quot;free&quot;:&quot;88.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CITY&quot;,&quot;free&quot;:&quot;465.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ENS&quot;,&quot;free&quot;:&quot;30.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;QI&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PORTO&quot;,&quot;free&quot;:&quot;500.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;JASMY&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;AMP&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PYR&quot;,&quot;free&quot;:&quot;402.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ALCX&quot;,&quot;free&quot;:&quot;54.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SANTOS&quot;,&quot;free&quot;:&quot;193.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BICO&quot;,&quot;free&quot;:&quot;4462.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FLUX&quot;,&quot;free&quot;:&quot;2084.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FXS&quot;,&quot;free&quot;:&quot;260.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;VOXEL&quot;,&quot;free&quot;:&quot;7364.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;HIGH&quot;,&quot;free&quot;:&quot;960.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CVX&quot;,&quot;free&quot;:&quot;223.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PEOPLE&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SPELL&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;JOE&quot;,&quot;free&quot;:&quot;2937.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ACH&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;IMX&quot;,&quot;free&quot;:&quot;949.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;GLMR&quot;,&quot;free&quot;:&quot;6953.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LOKA&quot;,&quot;free&quot;:&quot;5315.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;API3&quot;,&quot;free&quot;:&quot;538.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BTTC&quot;,&quot;free&quot;:&quot;18446.0&quot;,&quot;locked&quot;:&quot;0.0&quot;},{&quot;asset&quot;:&quot;ACA&quot;,&quot;free&quot;:&quot;14134.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;XNO&quot;,&quot;free&quot;:&quot;560.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;WOO&quot;,&quot;free&quot;:&quot;6682.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ALPINE&quot;,&quot;free&quot;:&quot;614.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;T&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ASTR&quot;,&quot;free&quot;:&quot;17371.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;GMT&quot;,&quot;free&quot;:&quot;10444.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;KDA&quot;,&quot;free&quot;:&quot;1229.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;APE&quot;,&quot;free&quot;:&quot;1066.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BSW&quot;,&quot;free&quot;:&quot;16174.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BIFI&quot;,&quot;free&quot;:&quot;2.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;NEXO&quot;,&quot;free&quot;:&quot;459.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;REI&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LDO&quot;,&quot;free&quot;:&quot;565.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;OP&quot;,&quot;free&quot;:&quot;671.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LEVER&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;STG&quot;,&quot;free&quot;:&quot;2563.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LUNC&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;GMX&quot;,&quot;free&quot;:&quot;42.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;POLYX&quot;,&quot;free&quot;:&quot;3681.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;APT&quot;,&quot;free&quot;:&quot;92.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PLN&quot;,&quot;free&quot;:&quot;18466.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;OSMO&quot;,&quot;free&quot;:&quot;1919.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;HFT&quot;,&quot;free&quot;:&quot;8670.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;HOOK&quot;,&quot;free&quot;:&quot;4064.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MAGIC&quot;,&quot;free&quot;:&quot;4763.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;HIFI&quot;,&quot;free&quot;:&quot;2366.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;RPL&quot;,&quot;free&quot;:&quot;116.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PROS&quot;,&quot;free&quot;:&quot;1448.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;RON&quot;,&quot;free&quot;:&quot;18466.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;GNS&quot;,&quot;free&quot;:&quot;377.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SYN&quot;,&quot;free&quot;:&quot;3028.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;VIB&quot;,&quot;free&quot;:&quot;13286.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LQTY&quot;,&quot;free&quot;:&quot;769.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;USTC&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PROM&quot;,&quot;free&quot;:&quot;84.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;QKC&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;UFT&quot;,&quot;free&quot;:&quot;8098.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ID&quot;,&quot;free&quot;:&quot;2415.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ARB&quot;,&quot;free&quot;:&quot;1505.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;RDNT&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ARS&quot;,&quot;free&quot;:&quot;18466.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;EDU&quot;,&quot;free&quot;:&quot;4501.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SUI&quot;,&quot;free&quot;:&quot;202.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PEPE&quot;,&quot;free&quot;:&quot;18446.00&quot;,&quot;locked&quot;:&quot;0.00&quot;},{&quot;asset&quot;:&quot;FLOKI&quot;,&quot;free&quot;:&quot;18446.00&quot;,&quot;locked&quot;:&quot;0.00&quot;},{&quot;asset&quot;:&quot;WBETH&quot;,&quot;free&quot;:&quot;1.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MAV&quot;,&quot;free&quot;:&quot;7993.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PENDLE&quot;,&quot;free&quot;:&quot;155.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ARKM&quot;,&quot;free&quot;:&quot;971.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;WLD&quot;,&quot;free&quot;:&quot;632.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FDUSD&quot;,&quot;free&quot;:&quot;10000.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SEI&quot;,&quot;free&quot;:&quot;2848.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CYBER&quot;,&quot;free&quot;:&quot;416.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ARK&quot;,&quot;free&quot;:&quot;1675.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CREAM&quot;,&quot;free&quot;:&quot;101.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;IQ&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;NTRN&quot;,&quot;free&quot;:&quot;3761.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TIA&quot;,&quot;free&quot;:&quot;157.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MEME&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ORDI&quot;,&quot;free&quot;:&quot;67.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BEAMX&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;VIC&quot;,&quot;free&quot;:&quot;2375.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BLUR&quot;,&quot;free&quot;:&quot;4676.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;VANRY&quot;,&quot;free&quot;:&quot;18257.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;AEUR&quot;,&quot;free&quot;:&quot;500.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;JTO&quot;,&quot;free&quot;:&quot;216.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;1000SATS&quot;,&quot;free&quot;:&quot;18446.00&quot;,&quot;locked&quot;:&quot;0.00&quot;},{&quot;asset&quot;:&quot;BONK&quot;,&quot;free&quot;:&quot;18446.00&quot;,&quot;locked&quot;:&quot;0.00&quot;},{&quot;asset&quot;:&quot;ACE&quot;,&quot;free&quot;:&quot;853.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;NFP&quot;,&quot;free&quot;:&quot;7372.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;AI&quot;,&quot;free&quot;:&quot;3254.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;XAI&quot;,&quot;free&quot;:&quot;8876.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MANTA&quot;,&quot;free&quot;:&quot;2317.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ALT&quot;,&quot;free&quot;:&quot;16340.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;JUP&quot;,&quot;free&quot;:&quot;1199.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PYTH&quot;,&quot;free&quot;:&quot;3449.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;RONIN&quot;,&quot;free&quot;:&quot;692.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DYM&quot;,&quot;free&quot;:&quot;1764.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PIXEL&quot;,&quot;free&quot;:&quot;17851.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;STRK&quot;,&quot;free&quot;:&quot;3427.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PORTAL&quot;,&quot;free&quot;:&quot;6438.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PDA&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;AXL&quot;,&quot;free&quot;:&quot;1348.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;WIF&quot;,&quot;free&quot;:&quot;1190.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;METIS&quot;,&quot;free&quot;:&quot;32.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;JPY&quot;,&quot;free&quot;:&quot;18466.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;AEVO&quot;,&quot;free&quot;:&quot;4682.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BOME&quot;,&quot;free&quot;:&quot;18446.00&quot;,&quot;locked&quot;:&quot;0.00&quot;},{&quot;asset&quot;:&quot;ETHFI&quot;,&quot;free&quot;:&quot;883.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ENA&quot;,&quot;free&quot;:&quot;1339.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;W&quot;,&quot;free&quot;:&quot;6366.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TNSR&quot;,&quot;free&quot;:&quot;3228.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SAGA&quot;,&quot;free&quot;:&quot;1742.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MXN&quot;,&quot;free&quot;:&quot;18466.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TAO&quot;,&quot;free&quot;:&quot;2.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;OMNI&quot;,&quot;free&quot;:&quot;200.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;REZ&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BB&quot;,&quot;free&quot;:&quot;4126.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;NOT&quot;,&quot;free&quot;:&quot;18446.00&quot;,&quot;locked&quot;:&quot;0.00&quot;},{&quot;asset&quot;:&quot;COP&quot;,&quot;free&quot;:&quot;18466.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;IO&quot;,&quot;free&quot;:&quot;697.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ZK&quot;,&quot;free&quot;:&quot;7699.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LISTA&quot;,&quot;free&quot;:&quot;3066.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ZRO&quot;,&quot;free&quot;:&quot;170.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;G&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BANANA&quot;,&quot;free&quot;:&quot;26.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;RENDER&quot;,&quot;free&quot;:&quot;133.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TON&quot;,&quot;free&quot;:&quot;123.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;DOGS&quot;,&quot;free&quot;:&quot;18446.00&quot;,&quot;locked&quot;:&quot;0.00&quot;},{&quot;asset&quot;:&quot;EURI&quot;,&quot;free&quot;:&quot;460.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SLF&quot;,&quot;free&quot;:&quot;2315.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;POL&quot;,&quot;free&quot;:&quot;2523.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;NEIRO&quot;,&quot;free&quot;:&quot;18446.00&quot;,&quot;locked&quot;:&quot;0.00&quot;},{&quot;asset&quot;:&quot;TURBO&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;1MBABYDOGE&quot;,&quot;free&quot;:&quot;18446.00&quot;,&quot;locked&quot;:&quot;0.00&quot;},{&quot;asset&quot;:&quot;CATI&quot;,&quot;free&quot;:&quot;3613.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;HMSTR&quot;,&quot;free&quot;:&quot;18446.00&quot;,&quot;locked&quot;:&quot;0.00&quot;},{&quot;asset&quot;:&quot;EIGEN&quot;,&quot;free&quot;:&quot;556.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BNSOL&quot;,&quot;free&quot;:&quot;3.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SCR&quot;,&quot;free&quot;:&quot;1845.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LUMIA&quot;,&quot;free&quot;:&quot;1444.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;KAIA&quot;,&quot;free&quot;:&quot;4601.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;COW&quot;,&quot;free&quot;:&quot;1870.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CETUS&quot;,&quot;free&quot;:&quot;4706.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PNUT&quot;,&quot;free&quot;:&quot;3202.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ACT&quot;,&quot;free&quot;:&quot;8924.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;USUAL&quot;,&quot;free&quot;:&quot;4399.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;THE&quot;,&quot;free&quot;:&quot;1849.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ACX&quot;,&quot;free&quot;:&quot;2142.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ORCA&quot;,&quot;free&quot;:&quot;207.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MOVE&quot;,&quot;free&quot;:&quot;1236.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ME&quot;,&quot;free&quot;:&quot;503.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;VELODROME&quot;,&quot;free&quot;:&quot;9566.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;VANA&quot;,&quot;free&quot;:&quot;87.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;1000CAT&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PENGU&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BIO&quot;,&quot;free&quot;:&quot;6963.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;D&quot;,&quot;free&quot;:&quot;10541.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;AIXBT&quot;,&quot;free&quot;:&quot;5847.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CGPT&quot;,&quot;free&quot;:&quot;6649.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;COOKIE&quot;,&quot;free&quot;:&quot;4855.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;S&quot;,&quot;free&quot;:&quot;978.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SOLV&quot;,&quot;free&quot;:&quot;17028.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TRUMP&quot;,&quot;free&quot;:&quot;47.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;ANIME&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BERA&quot;,&quot;free&quot;:&quot;68.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;1000CHEEMS&quot;,&quot;free&quot;:&quot;18446.00&quot;,&quot;locked&quot;:&quot;0.00&quot;},{&quot;asset&quot;:&quot;TST&quot;,&quot;free&quot;:&quot;7219.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;LAYER&quot;,&quot;free&quot;:&quot;354.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;HEI&quot;,&quot;free&quot;:&quot;1292.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;KAITO&quot;,&quot;free&quot;:&quot;527.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;SHELL&quot;,&quot;free&quot;:&quot;2760.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;RED&quot;,&quot;free&quot;:&quot;1131.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;GPS&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;EPIC&quot;,&quot;free&quot;:&quot;433.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BMT&quot;,&quot;free&quot;:&quot;4449.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;FORM&quot;,&quot;free&quot;:&quot;228.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;XUSD&quot;,&quot;free&quot;:&quot;499.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;CZK&quot;,&quot;free&quot;:&quot;18466.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;NIL&quot;,&quot;free&quot;:&quot;1063.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;PARTI&quot;,&quot;free&quot;:&quot;2627.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;MUBARAK&quot;,&quot;free&quot;:&quot;12031.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;TUT&quot;,&quot;free&quot;:&quot;17658.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BROCCOLI714&quot;,&quot;free&quot;:&quot;15146.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;BANANAS31&quot;,&quot;free&quot;:&quot;18446.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;},{&quot;asset&quot;:&quot;GUN&quot;,&quot;free&quot;:&quot;9323.00000000&quot;,&quot;locked&quot;:&quot;0.00000000&quot;}],&quot;permissions&quot;:[&quot;SPOT&quot;],&quot;uid&quot;:1745572127670262723}
+Query string to sign: symbol=BNBUSDT&amp;timestamp=1745777407836
+Secret key length: 64
+Generated signature: 987aef3d82602885415e91fc6a0d5b6a71971a08731fb6b203329715fc90c833
+Request URL: https://testnet.binance.vision/api/v3/openOrders?symbol=BNBUSDT&amp;timestamp=1745777407836&amp;signature=987aef3d82602885415e91fc6a0d5b6a71971a08731fb6b203329715fc90c833
+Request Headers: {X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI}
+Request method:	GET
+Request URI:	https://testnet.binance.vision/api/v3/openOrders?symbol=BNBUSDT&amp;timestamp=1745777407836&amp;signature=987aef3d82602885415e91fc6a0d5b6a71971a08731fb6b203329715fc90c833
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Received message: {&quot;p&quot;:&quot;94095.23000000&quot;,&quot;a&quot;:3551019192,&quot;q&quot;:&quot;0.00014000&quot;,&quot;s&quot;:&quot;BTCUSDT&quot;,&quot;T&quot;:1745777407897,&quot;e&quot;:&quot;aggTrade&quot;,&quot;E&quot;:1745777407898,&quot;f&quot;:4855242516,&quot;l&quot;:4855242516,&quot;m&quot;:true,&quot;M&quot;:true}
+Received message: {&quot;p&quot;:&quot;94095.23000000&quot;,&quot;a&quot;:3551019192,&quot;q&quot;:&quot;0.00014000&quot;,&quot;s&quot;:&quot;BTCUSDT&quot;,&quot;T&quot;:1745777407897,&quot;e&quot;:&quot;aggTrade&quot;,&quot;E&quot;:1745777407898,&quot;f&quot;:4855242516,&quot;l&quot;:4855242516,&quot;m&quot;:true,&quot;M&quot;:true}
+Received message: {&quot;a&quot;:[[&quot;94095.24000000&quot;,&quot;0.92171000&quot;],[&quot;94095.25000000&quot;,&quot;0.00880000&quot;],[&quot;94096.00000000&quot;,&quot;0.00216000&quot;],[&quot;94096.05000000&quot;,&quot;0.00219000&quot;],[&quot;94096.06000000&quot;,&quot;0.22916000&quot;],[&quot;94096.67000000&quot;,&quot;0.00000000&quot;],[&quot;94097.23000000&quot;,&quot;0.00000000&quot;],[&quot;94097.27000000&quot;,&quot;0.00000000&quot;],[&quot;94097.28000000&quot;,&quot;0.00000000&quot;],[&quot;94097.61000000&quot;,&quot;0.00000000&quot;],[&quot;94098.47000000&quot;,&quot;0.00000000&quot;],[&quot;94098.67000000&quot;,&quot;0.00000000&quot;],[&quot;94098.76000000&quot;,&quot;0.00000000&quot;],[&quot;94098.81000000&quot;,&quot;0.00000000&quot;],[&quot;94098.83000000&quot;,&quot;0.00283000&quot;],[&quot;94099.99000000&quot;,&quot;0.18400000&quot;],[&quot;94102.58000000&quot;,&quot;0.21381000&quot;],[&quot;94106.36000000&quot;,&quot;0.66943000&quot;],[&quot;94106.71000000&quot;,&quot;0.45148000&quot;],[&quot;94106.72000000&quot;,&quot;0.00000000&quot;],[&quot;94107.96000000&quot;,&quot;0.70109000&quot;],[&quot;94109.09000000&quot;,&quot;2.34755000&quot;],[&quot;94111.01000000&quot;,&quot;0.00000000&quot;],[&quot;94111.77000000&quot;,&quot;0.00010000&quot;],[&quot;94112.08000000&quot;,&quot;0.01355000&quot;],[&quot;94113.44000000&quot;,&quot;0.00000000&quot;],[&quot;94113.75000000&quot;,&quot;0.00000000&quot;],[&quot;94118.98000000&quot;,&quot;0.56692000&quot;],[&quot;94127.41000000&quot;,&quot;0.00000000&quot;],[&quot;94142.09000000&quot;,&quot;0.00720000&quot;],[&quot;94144.49000000&quot;,&quot;0.76453000&quot;],[&quot;94146.28000000&quot;,&quot;1.66929000&quot;],[&quot;94150.62000000&quot;,&quot;0.18352000&quot;],[&quot;94157.39000000&quot;,&quot;0.76443000&quot;],[&quot;94157.73000000&quot;,&quot;0.00000000&quot;],[&quot;94160.73000000&quot;,&quot;0.00000000&quot;],[&quot;94186.11000000&quot;,&quot;0.70935000&quot;],[&quot;94189.48000000&quot;,&quot;0.00000000&quot;],[&quot;94196.47000000&quot;,&quot;0.11499000&quot;],[&quot;94196.49000000&quot;,&quot;0.11499000&quot;],[&quot;94227.76000000&quot;,&quot;0.05797000&quot;],[&quot;94228.32000000&quot;,&quot;0.00000000&quot;],[&quot;94228.57000000&quot;,&quot;0.00124000&quot;],[&quot;94233.65000000&quot;,&quot;0.05497000&quot;],[&quot;94376.00000000&quot;,&quot;0.05560000&quot;],[&quot;95095.00000000&quot;,&quot;0.10879000&quot;],[&quot;95506.67000000&quot;,&quot;0.00100000&quot;]],&quot;b&quot;:[[&quot;94095.23000000&quot;,&quot;7.83867000&quot;],[&quot;94095.22000000&quot;,&quot;1.19802000&quot;],[&quot;94095.20000000&quot;,&quot;0.02018000&quot;],[&quot;94095.10000000&quot;,&quot;0.02018000&quot;],[&quot;94094.71000000&quot;,&quot;0.39186000&quot;],[&quot;94094.00000000&quot;,&quot;0.04314000&quot;],[&quot;94092.01000000&quot;,&quot;0.00006000&quot;],[&quot;94092.00000000&quot;,&quot;0.04256000&quot;],[&quot;94091.53000000&quot;,&quot;0.09415000&quot;],[&quot;94091.46000000&quot;,&quot;0.00052000&quot;],[&quot;94090.56000000&quot;,&quot;0.04632000&quot;],[&quot;94090.54000000&quot;,&quot;0.21381000&quot;],[&quot;94090.21000000&quot;,&quot;0.00006000&quot;],[&quot;94088.90000000&quot;,&quot;0.01103000&quot;],[&quot;94086.95000000&quot;,&quot;0.00000000&quot;],[&quot;94085.06000000&quot;,&quot;0.00000000&quot;],[&quot;94084.66000000&quot;,&quot;0.21381000&quot;],[&quot;94084.65000000&quot;,&quot;0.54241000&quot;],[&quot;94084.55000000&quot;,&quot;0.76903000&quot;],[&quot;94083.76000000&quot;,&quot;1.05334000&quot;],[&quot;94082.78000000&quot;,&quot;1.00000000&quot;],[&quot;94081.91000000&quot;,&quot;0.00013000&quot;],[&quot;94078.92000000&quot;,&quot;0.00000000&quot;],[&quot;94075.25000000&quot;,&quot;0.00013000&quot;],[&quot;94074.89000000&quot;,&quot;0.21381000&quot;],[&quot;94073.03000000&quot;,&quot;0.00000000&quot;],[&quot;94072.84000000&quot;,&quot;0.15900000&quot;],[&quot;94071.78000000&quot;,&quot;0.00000000&quot;],[&quot;94071.21000000&quot;,&quot;0.00000000&quot;],[&quot;94071.11000000&quot;,&quot;0.00000000&quot;],[&quot;94070.33000000&quot;,&quot;2.00000000&quot;],[&quot;94067.00000000&quot;,&quot;0.53153000&quot;],[&quot;94064.75000000&quot;,&quot;0.00000000&quot;],[&quot;94046.31000000&quot;,&quot;0.00000000&quot;],[&quot;94043.48000000&quot;,&quot;0.00000000&quot;],[&quot;94041.27000000&quot;,&quot;1.34962000&quot;],[&quot;94040.02000000&quot;,&quot;0.63736000&quot;],[&quot;94038.76000000&quot;,&quot;0.03998000&quot;],[&quot;94033.31000000&quot;,&quot;0.03422000&quot;],[&quot;94031.71000000&quot;,&quot;0.00000000&quot;],[&quot;94030.97000000&quot;,&quot;0.00000000&quot;],[&quot;94029.19000000&quot;,&quot;0.00720000&quot;],[&quot;94023.23000000&quot;,&quot;0.69814000&quot;],[&quot;94022.83000000&quot;,&quot;0.03998000&quot;],[&quot;94011.48000000&quot;,&quot;0.03998000&quot;],[&quot;94011.08000000&quot;,&quot;0.00000000&quot;],[&quot;93986.84000000&quot;,&quot;0.00106000&quot;],[&quot;93981.15000000&quot;,&quot;0.00006000&quot;],[&quot;93973.76000000&quot;,&quot;0.03998000&quot;],[&quot;93970.78000000&quot;,&quot;0.03998000&quot;],[&quot;93967.95000000&quot;,&quot;0.12000000&quot;],[&quot;93967.09000000&quot;,&quot;0.43063000&quot;],[&quot;93966.09000000&quot;,&quot;0.03998000&quot;],[&quot;93940.09000000&quot;,&quot;0.00000000&quot;],[&quot;93794.54000000&quot;,&quot;0.10633000&quot;],[&quot;93779.11000000&quot;,&quot;0.00000000&quot;],[&quot;93549.48000000&quot;,&quot;0.10633000&quot;],[&quot;93541.27000000&quot;,&quot;0.00000000&quot;],[&quot;92683.80000000&quot;,&quot;0.00000000&quot;],[&quot;92577.49000000&quot;,&quot;0.02106000&quot;],[&quot;92500.00000000&quot;,&quot;20.15475000&quot;],[&quot;89390.47000000&quot;,&quot;0.00010000&quot;],[&quot;89300.00000000&quot;,&quot;0.68201000&quot;],[&quot;85858.57000000&quot;,&quot;0.00007000&quot;],[&quot;85573.99000000&quot;,&quot;0.00007000&quot;],[&quot;85289.41000000&quot;,&quot;0.00007000&quot;],[&quot;85004.82000000&quot;,&quot;0.00007000&quot;],[&quot;84685.00000000&quot;,&quot;0.00000000&quot;],[&quot;79000.00000000&quot;,&quot;27.02843000&quot;],[&quot;75276.19000000&quot;,&quot;0.00052000&quot;],[&quot;33000.00000000&quot;,&quot;2.70601000&quot;]],&quot;s&quot;:&quot;BTCUSDT&quot;,&quot;e&quot;:&quot;depthUpdate&quot;,&quot;E&quot;:1745777408014,&quot;U&quot;:67663542388,&quot;u&quot;:67663542613}
+Received message: {&quot;a&quot;:[[&quot;94095.24000000&quot;,&quot;0.92171000&quot;],[&quot;94095.25000000&quot;,&quot;0.00880000&quot;],[&quot;94096.00000000&quot;,&quot;0.00216000&quot;],[&quot;94096.05000000&quot;,&quot;0.00219000&quot;],[&quot;94096.06000000&quot;,&quot;0.22916000&quot;],[&quot;94096.67000000&quot;,&quot;0.00000000&quot;],[&quot;94097.23000000&quot;,&quot;0.00000000&quot;],[&quot;94097.27000000&quot;,&quot;0.00000000&quot;],[&quot;94097.28000000&quot;,&quot;0.00000000&quot;],[&quot;94097.61000000&quot;,&quot;0.00000000&quot;],[&quot;94098.47000000&quot;,&quot;0.00000000&quot;],[&quot;94098.67000000&quot;,&quot;0.00000000&quot;],[&quot;94098.76000000&quot;,&quot;0.00000000&quot;],[&quot;94098.81000000&quot;,&quot;0.00000000&quot;],[&quot;94098.83000000&quot;,&quot;0.00283000&quot;],[&quot;94099.99000000&quot;,&quot;0.18400000&quot;],[&quot;94102.58000000&quot;,&quot;0.21381000&quot;],[&quot;94106.36000000&quot;,&quot;0.66943000&quot;],[&quot;94106.71000000&quot;,&quot;0.45148000&quot;],[&quot;94106.72000000&quot;,&quot;0.00000000&quot;],[&quot;94107.96000000&quot;,&quot;0.70109000&quot;],[&quot;94109.09000000&quot;,&quot;2.34755000&quot;],[&quot;94111.01000000&quot;,&quot;0.00000000&quot;],[&quot;94111.77000000&quot;,&quot;0.00010000&quot;],[&quot;94112.08000000&quot;,&quot;0.01355000&quot;],[&quot;94113.44000000&quot;,&quot;0.00000000&quot;],[&quot;94113.75000000&quot;,&quot;0.00000000&quot;],[&quot;94118.98000000&quot;,&quot;0.56692000&quot;],[&quot;94127.41000000&quot;,&quot;0.00000000&quot;],[&quot;94142.09000000&quot;,&quot;0.00720000&quot;],[&quot;94144.49000000&quot;,&quot;0.76453000&quot;],[&quot;94146.28000000&quot;,&quot;1.66929000&quot;],[&quot;94150.62000000&quot;,&quot;0.18352000&quot;],[&quot;94157.39000000&quot;,&quot;0.76443000&quot;],[&quot;94157.73000000&quot;,&quot;0.00000000&quot;],[&quot;94160.73000000&quot;,&quot;0.00000000&quot;],[&quot;94186.11000000&quot;,&quot;0.70935000&quot;],[&quot;94189.48000000&quot;,&quot;0.00000000&quot;],[&quot;94196.47000000&quot;,&quot;0.11499000&quot;],[&quot;94196.49000000&quot;,&quot;0.11499000&quot;],[&quot;94227.76000000&quot;,&quot;0.05797000&quot;],[&quot;94228.32000000&quot;,&quot;0.00000000&quot;],[&quot;94228.57000000&quot;,&quot;0.00124000&quot;],[&quot;94233.65000000&quot;,&quot;0.05497000&quot;],[&quot;94376.00000000&quot;,&quot;0.05560000&quot;],[&quot;95095.00000000&quot;,&quot;0.10879000&quot;],[&quot;95506.67000000&quot;,&quot;0.00100000&quot;]],&quot;b&quot;:[[&quot;94095.23000000&quot;,&quot;7.83867000&quot;],[&quot;94095.22000000&quot;,&quot;1.19802000&quot;],[&quot;94095.20000000&quot;,&quot;0.02018000&quot;],[&quot;94095.10000000&quot;,&quot;0.02018000&quot;],[&quot;94094.71000000&quot;,&quot;0.39186000&quot;],[&quot;94094.00000000&quot;,&quot;0.04314000&quot;],[&quot;94092.01000000&quot;,&quot;0.00006000&quot;],[&quot;94092.00000000&quot;,&quot;0.04256000&quot;],[&quot;94091.53000000&quot;,&quot;0.09415000&quot;],[&quot;94091.46000000&quot;,&quot;0.00052000&quot;],[&quot;94090.56000000&quot;,&quot;0.04632000&quot;],[&quot;94090.54000000&quot;,&quot;0.21381000&quot;],[&quot;94090.21000000&quot;,&quot;0.00006000&quot;],[&quot;94088.90000000&quot;,&quot;0.01103000&quot;],[&quot;94086.95000000&quot;,&quot;0.00000000&quot;],[&quot;94085.06000000&quot;,&quot;0.00000000&quot;],[&quot;94084.66000000&quot;,&quot;0.21381000&quot;],[&quot;94084.65000000&quot;,&quot;0.54241000&quot;],[&quot;94084.55000000&quot;,&quot;0.76903000&quot;],[&quot;94083.76000000&quot;,&quot;1.05334000&quot;],[&quot;94082.78000000&quot;,&quot;1.00000000&quot;],[&quot;94081.91000000&quot;,&quot;0.00013000&quot;],[&quot;94078.92000000&quot;,&quot;0.00000000&quot;],[&quot;94075.25000000&quot;,&quot;0.00013000&quot;],[&quot;94074.89000000&quot;,&quot;0.21381000&quot;],[&quot;94073.03000000&quot;,&quot;0.00000000&quot;],[&quot;94072.84000000&quot;,&quot;0.15900000&quot;],[&quot;94071.78000000&quot;,&quot;0.00000000&quot;],[&quot;94071.21000000&quot;,&quot;0.00000000&quot;],[&quot;94071.11000000&quot;,&quot;0.00000000&quot;],[&quot;94070.33000000&quot;,&quot;2.00000000&quot;],[&quot;94067.00000000&quot;,&quot;0.53153000&quot;],[&quot;94064.75000000&quot;,&quot;0.00000000&quot;],[&quot;94046.31000000&quot;,&quot;0.00000000&quot;],[&quot;94043.48000000&quot;,&quot;0.00000000&quot;],[&quot;94041.27000000&quot;,&quot;1.34962000&quot;],[&quot;94040.02000000&quot;,&quot;0.63736000&quot;],[&quot;94038.76000000&quot;,&quot;0.03998000&quot;],[&quot;94033.31000000&quot;,&quot;0.03422000&quot;],[&quot;94031.71000000&quot;,&quot;0.00000000&quot;],[&quot;94030.97000000&quot;,&quot;0.00000000&quot;],[&quot;94029.19000000&quot;,&quot;0.00720000&quot;],[&quot;94023.23000000&quot;,&quot;0.69814000&quot;],[&quot;94022.83000000&quot;,&quot;0.03998000&quot;],[&quot;94011.48000000&quot;,&quot;0.03998000&quot;],[&quot;94011.08000000&quot;,&quot;0.00000000&quot;],[&quot;93986.84000000&quot;,&quot;0.00106000&quot;],[&quot;93981.15000000&quot;,&quot;0.00006000&quot;],[&quot;93973.76000000&quot;,&quot;0.03998000&quot;],[&quot;93970.78000000&quot;,&quot;0.03998000&quot;],[&quot;93967.95000000&quot;,&quot;0.12000000&quot;],[&quot;93967.09000000&quot;,&quot;0.43063000&quot;],[&quot;93966.09000000&quot;,&quot;0.03998000&quot;],[&quot;93940.09000000&quot;,&quot;0.00000000&quot;],[&quot;93794.54000000&quot;,&quot;0.10633000&quot;],[&quot;93779.11000000&quot;,&quot;0.00000000&quot;],[&quot;93549.48000000&quot;,&quot;0.10633000&quot;],[&quot;93541.27000000&quot;,&quot;0.00000000&quot;],[&quot;92683.80000000&quot;,&quot;0.00000000&quot;],[&quot;92577.49000000&quot;,&quot;0.02106000&quot;],[&quot;92500.00000000&quot;,&quot;20.15475000&quot;],[&quot;89390.47000000&quot;,&quot;0.00010000&quot;],[&quot;89300.00000000&quot;,&quot;0.68201000&quot;],[&quot;85858.57000000&quot;,&quot;0.00007000&quot;],[&quot;85573.99000000&quot;,&quot;0.00007000&quot;],[&quot;85289.41000000&quot;,&quot;0.00007000&quot;],[&quot;85004.82000000&quot;,&quot;0.00007000&quot;],[&quot;84685.00000000&quot;,&quot;0.00000000&quot;],[&quot;79000.00000000&quot;,&quot;27.02843000&quot;],[&quot;75276.19000000&quot;,&quot;0.00052000&quot;],[&quot;33000.00000000&quot;,&quot;2.70601000&quot;]],&quot;s&quot;:&quot;BTCUSDT&quot;,&quot;e&quot;:&quot;depthUpdate&quot;,&quot;E&quot;:1745777408014,&quot;U&quot;:67663542388,&quot;u&quot;:67663542613}
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 2
+Connection: keep-alive
+Date: Sun, 27 Apr 2025 18:10:08 GMT
+Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+x-mbx-uuid: fa1a9f25-7d4b-4fc9-ba80-c402e0ddef36
+x-mbx-used-weight: 28
+x-mbx-used-weight-1m: 28
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'
+X-Content-Security-Policy: default-src 'self'
+X-WebKit-CSP: default-src 'self'
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+Via: 1.1 729399d6290e74ddd43cb2da1cab5266.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+X-Amz-Cf-Id: 592RbZX0LWj-bCtsD9OLjU_U4lFqwTcf9sV-95zORf7Qv0Tw4kR5CQ==
+
+[
+    
+]
+Response Status: 200
+Response Body: []
+Request URL: https://testnet.binance.vision/api/v3/depth?limit=5&amp;symbol=BNBUSDT
+Request method:	GET
+Request URI:	https://testnet.binance.vision/api/v3/depth?limit=5&amp;symbol=BNBUSDT
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 155
+Connection: keep-alive
+Date: Sun, 27 Apr 2025 18:10:08 GMT
+Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+x-mbx-uuid: fa1a9f25-7d4b-4fc9-ba80-c402e0ddef36
+x-mbx-used-weight: 33
+x-mbx-used-weight-1m: 33
+content-encoding: gzip
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'
+X-Content-Security-Policy: default-src 'self'
+X-WebKit-CSP: default-src 'self'
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+Via: 1.1 8b193b33626543d66ce5f5750c8af41a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+X-Amz-Cf-Id: n9gphHp2LzKCjiTM07kAhHEkm2GqB6ekOwFYqd7CvQcPj2EGiXxWNA==
+
+{
+    &quot;lastUpdateId&quot;: 7886342,
+    &quot;bids&quot;: [
+        [
+            &quot;602.66000000&quot;,
+            &quot;16.10400000&quot;
+        ],
+        [
+            &quot;602.65000000&quot;,
+            &quot;14.66100000&quot;
+        ],
+        [
+            &quot;602.64000000&quot;,
+            &quot;13.06800000&quot;
+        ],
+        [
+            &quot;602.60000000&quot;,
+            &quot;16.38000000&quot;
+        ],
+        [
+            &quot;602.58000000&quot;,
+            &quot;13.31000000&quot;
+        ]
+    ],
+    &quot;asks&quot;: [
+        [
+            &quot;602.67000000&quot;,
+            &quot;16.28600000&quot;
+        ],
+        [
+            &quot;602.68000000&quot;,
+            &quot;15.57300000&quot;
+        ],
+        [
+            &quot;602.70000000&quot;,
+            &quot;11.93000000&quot;
+        ],
+        [
+            &quot;602.71000000&quot;,
+            &quot;16.50100000&quot;
+        ],
+        [
+            &quot;602.79000000&quot;,
+            &quot;15.23000000&quot;
+        ]
+    ]
+}
+Response Status: 200
+Response Body: {&quot;lastUpdateId&quot;:7886342,&quot;bids&quot;:[[&quot;602.66000000&quot;,&quot;16.10400000&quot;],[&quot;602.65000000&quot;,&quot;14.66100000&quot;],[&quot;602.64000000&quot;,&quot;13.06800000&quot;],[&quot;602.60000000&quot;,&quot;16.38000000&quot;],[&quot;602.58000000&quot;,&quot;13.31000000&quot;]],&quot;asks&quot;:[[&quot;602.67000000&quot;,&quot;16.28600000&quot;],[&quot;602.68000000&quot;,&quot;15.57300000&quot;],[&quot;602.70000000&quot;,&quot;11.93000000&quot;],[&quot;602.71000000&quot;,&quot;16.50100000&quot;],[&quot;602.79000000&quot;,&quot;15.23000000&quot;]]}
+Query string to sign: limit=10&amp;symbol=BNBUSDT&amp;timestamp=1745777408168
+Secret key length: 64
+Generated signature: 753702985369b1a7deaa3e8b855ab56a84b9a01872d9b74a573f85c57cb73cd3
+Request URL: https://testnet.binance.vision/api/v3/myTrades?limit=10&amp;symbol=BNBUSDT&amp;timestamp=1745777408168&amp;signature=753702985369b1a7deaa3e8b855ab56a84b9a01872d9b74a573f85c57cb73cd3
+Request Headers: {X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI}
+Request method:	GET
+Request URI:	https://testnet.binance.vision/api/v3/myTrades?limit=10&amp;symbol=BNBUSDT&amp;timestamp=1745777408168&amp;signature=753702985369b1a7deaa3e8b855ab56a84b9a01872d9b74a573f85c57cb73cd3
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Received message: {&quot;p&quot;:&quot;94095.23000000&quot;,&quot;a&quot;:3551019193,&quot;q&quot;:&quot;0.00115000&quot;,&quot;s&quot;:&quot;BTCUSDT&quot;,&quot;T&quot;:1745777408360,&quot;e&quot;:&quot;aggTrade&quot;,&quot;E&quot;:1745777408360,&quot;f&quot;:4855242517,&quot;l&quot;:4855242517,&quot;m&quot;:true,&quot;M&quot;:true}
+Received message: {&quot;p&quot;:&quot;94095.23000000&quot;,&quot;a&quot;:3551019193,&quot;q&quot;:&quot;0.00115000&quot;,&quot;s&quot;:&quot;BTCUSDT&quot;,&quot;T&quot;:1745777408360,&quot;e&quot;:&quot;aggTrade&quot;,&quot;E&quot;:1745777408360,&quot;f&quot;:4855242517,&quot;l&quot;:4855242517,&quot;m&quot;:true,&quot;M&quot;:true}
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 417
+Connection: keep-alive
+Date: Sun, 27 Apr 2025 18:10:08 GMT
+Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+x-mbx-uuid: 7d724de9-8f3e-4f37-9f6c-5a45d70c2992
+x-mbx-used-weight: 53
+x-mbx-used-weight-1m: 53
+content-encoding: gzip
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'
+X-Content-Security-Policy: default-src 'self'
+X-WebKit-CSP: default-src 'self'
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+Via: 1.1 37bf70171215d870fd5bb56cab5030c4.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+X-Amz-Cf-Id: chjqOz96ekXLMRphJO4iIdVDhJM-gUCqpIrluCq9oLCG-jETvHXUQA==
+
+[
+    {
+        &quot;symbol&quot;: &quot;BNBUSDT&quot;,
+        &quot;id&quot;: 740867,
+        &quot;orderId&quot;: 4517891,
+        &quot;orderListId&quot;: -1,
+        &quot;price&quot;: &quot;599.69000000&quot;,
+        &quot;qty&quot;: &quot;1.00000000&quot;,
+        &quot;quoteQty&quot;: &quot;599.69000000&quot;,
+        &quot;commission&quot;: &quot;0.00000000&quot;,
+        &quot;commissionAsset&quot;: &quot;BNB&quot;,
+        &quot;time&quot;: 1745772659882,
+        &quot;isBuyer&quot;: true,
+        &quot;isMaker&quot;: false,
+        &quot;isBestMatch&quot;: true
+    },
+    {
+        &quot;symbol&quot;: &quot;BNBUSDT&quot;,
+        &quot;id&quot;: 740869,
+        &quot;orderId&quot;: 4517941,
+        &quot;orderListId&quot;: -1,
+        &quot;price&quot;: &quot;599.68000000&quot;,
+        &quot;qty&quot;: &quot;1.00000000&quot;,
+        &quot;quoteQty&quot;: &quot;599.68000000&quot;,
+        &quot;commission&quot;: &quot;0.00000000&quot;,
+        &quot;commissionAsset&quot;: &quot;USDT&quot;,
+        &quot;time&quot;: 1745772680395,
+        &quot;isBuyer&quot;: false,
+        &quot;isMaker&quot;: false,
+        &quot;isBestMatch&quot;: true
+    },
+    {
+        &quot;symbol&quot;: &quot;BNBUSDT&quot;,
+        &quot;id&quot;: 740870,
+        &quot;orderId&quot;: 4518038,
+        &quot;orderListId&quot;: -1,
+        &quot;price&quot;: &quot;599.62000000&quot;,
+        &quot;qty&quot;: &quot;1.00000000&quot;,
+        &quot;quoteQty&quot;: &quot;599.62000000&quot;,
+        &quot;commission&quot;: &quot;0.00000000&quot;,
+        &quot;commissionAsset&quot;: &quot;USDT&quot;,
+        &quot;time&quot;: 1745772724458,
+        &quot;isBuyer&quot;: false,
+        &quot;isMaker&quot;: false,
+        &quot;isBestMatch&quot;: true
+    },
+    {
+        &quot;symbol&quot;: &quot;BNBUSDT&quot;,
+        &quot;id&quot;: 740884,
+        &quot;orderId&quot;: 4518162,
+        &quot;orderListId&quot;: -1,
+        &quot;price&quot;: &quot;599.69000000&quot;,
+        &quot;qty&quot;: &quot;1.00000000&quot;,
+        &quot;quoteQty&quot;: &quot;599.69000000&quot;,
+        &quot;commission&quot;: &quot;0.00000000&quot;,
+        &quot;commissionAsset&quot;: &quot;USDT&quot;,
+        &quot;time&quot;: 1745772776970,
+        &quot;isBuyer&quot;: false,
+        &quot;isMaker&quot;: false,
+        &quot;isBestMatch&quot;: true
+    },
+    {
+        &quot;symbol&quot;: &quot;BNBUSDT&quot;,
+        &quot;id&quot;: 741540,
+        &quot;orderId&quot;: 4523023,
+        &quot;orderListId&quot;: -1,
+        &quot;price&quot;: &quot;600.96000000&quot;,
+        &quot;qty&quot;: &quot;1.00000000&quot;,
+        &quot;quoteQty&quot;: &quot;600.96000000&quot;,
+        &quot;commission&quot;: &quot;0.00000000&quot;,
+        &quot;commissionAsset&quot;: &quot;BNB&quot;,
+        &quot;time&quot;: 1745775226625,
+        &quot;isBuyer&quot;: true,
+        &quot;isMaker&quot;: false,
+        &quot;isBestMatch&quot;: true
+    },
+    {
+        &quot;symbol&quot;: &quot;BNBUSDT&quot;,
+        &quot;id&quot;: 741584,
+        &quot;orderId&quot;: 4523813,
+        &quot;orderListId&quot;: -1,
+        &quot;price&quot;: &quot;600.88000000&quot;,
+        &quot;qty&quot;: &quot;1.00000000&quot;,
+        &quot;quoteQty&quot;: &quot;600.88000000&quot;,
+        &quot;commission&quot;: &quot;0.00000000&quot;,
+        &quot;commissionAsset&quot;: &quot;BNB&quot;,
+        &quot;time&quot;: 1745775614923,
+        &quot;isBuyer&quot;: true,
+        &quot;isMaker&quot;: false,
+        &quot;isBestMatch&quot;: true
+    },
+    {
+        &quot;symbol&quot;: &quot;BNBUSDT&quot;,
+        &quot;id&quot;: 741654,
+        &quot;orderId&quot;: 4524786,
+        &quot;orderListId&quot;: -1,
+        &quot;price&quot;: &quot;601.10000000&quot;,
+        &quot;qty&quot;: &quot;1.00000000&quot;,
+        &quot;quoteQty&quot;: &quot;601.10000000&quot;,
+        &quot;commission&quot;: &quot;0.00000000&quot;,
+        &quot;commissionAsset&quot;: &quot;BNB&quot;,
+        &quot;time&quot;: 1745776092221,
+        &quot;isBuyer&quot;: true,
+        &quot;isMaker&quot;: false,
+        &quot;isBestMatch&quot;: true
+    },
+    {
+        &quot;symbol&quot;: &quot;BNBUSDT&quot;,
+        &quot;id&quot;: 741688,
+        &quot;orderId&quot;: 4525524,
+        &quot;orderListId&quot;: -1,
+        &quot;price&quot;: &quot;601.24000000&quot;,
+        &quot;qty&quot;: &quot;1.00000000&quot;,
+        &quot;quoteQty&quot;: &quot;601.24000000&quot;,
+        &quot;commission&quot;: &quot;0.00000000&quot;,
+        &quot;commissionAsset&quot;: &quot;USDT&quot;,
+        &quot;time&quot;: 1745776382089,
+        &quot;isBuyer&quot;: false,
+        &quot;isMaker&quot;: false,
+        &quot;isBestMatch&quot;: true
+    },
+    {
+        &quot;symbol&quot;: &quot;BNBUSDT&quot;,
+        &quot;id&quot;: 741786,
+        &quot;orderId&quot;: 4527068,
+        &quot;orderListId&quot;: -1,
+        &quot;price&quot;: &quot;601.79000000&quot;,
+        &quot;qty&quot;: &quot;1.00000000&quot;,
+        &quot;quoteQty&quot;: &quot;601.79000000&quot;,
+        &quot;commission&quot;: &quot;0.00000000&quot;,
+        &quot;commissionAsset&quot;: &quot;USDT&quot;,
+        &quot;time&quot;: 1745777081090,
+        &quot;isBuyer&quot;: false,
+        &quot;isMaker&quot;: false,
+        &quot;isBestMatch&quot;: true
+    },
+    {
+        &quot;symbol&quot;: &quot;BNBUSDT&quot;,
+        &quot;id&quot;: 741787,
+        &quot;orderId&quot;: 4527076,
+        &quot;orderListId&quot;: -1,
+        &quot;price&quot;: &quot;601.80000000&quot;,
+        &quot;qty&quot;: &quot;1.00000000&quot;,
+        &quot;quoteQty&quot;: &quot;601.80000000&quot;,
+        &quot;commission&quot;: &quot;0.00000000&quot;,
+        &quot;commissionAsset&quot;: &quot;BNB&quot;,
+        &quot;time&quot;: 1745777086509,
+        &quot;isBuyer&quot;: true,
+        &quot;isMaker&quot;: false,
+        &quot;isBestMatch&quot;: true
+    }
+]
+Response Status: 200
+Response Body: [{&quot;symbol&quot;:&quot;BNBUSDT&quot;,&quot;id&quot;:740867,&quot;orderId&quot;:4517891,&quot;orderListId&quot;:-1,&quot;price&quot;:&quot;599.69000000&quot;,&quot;qty&quot;:&quot;1.00000000&quot;,&quot;quoteQty&quot;:&quot;599.69000000&quot;,&quot;commission&quot;:&quot;0.00000000&quot;,&quot;commissionAsset&quot;:&quot;BNB&quot;,&quot;time&quot;:1745772659882,&quot;isBuyer&quot;:true,&quot;isMaker&quot;:false,&quot;isBestMatch&quot;:true},{&quot;symbol&quot;:&quot;BNBUSDT&quot;,&quot;id&quot;:740869,&quot;orderId&quot;:4517941,&quot;orderListId&quot;:-1,&quot;price&quot;:&quot;599.68000000&quot;,&quot;qty&quot;:&quot;1.00000000&quot;,&quot;quoteQty&quot;:&quot;599.68000000&quot;,&quot;commission&quot;:&quot;0.00000000&quot;,&quot;commissionAsset&quot;:&quot;USDT&quot;,&quot;time&quot;:1745772680395,&quot;isBuyer&quot;:false,&quot;isMaker&quot;:false,&quot;isBestMatch&quot;:true},{&quot;symbol&quot;:&quot;BNBUSDT&quot;,&quot;id&quot;:740870,&quot;orderId&quot;:4518038,&quot;orderListId&quot;:-1,&quot;price&quot;:&quot;599.62000000&quot;,&quot;qty&quot;:&quot;1.00000000&quot;,&quot;quoteQty&quot;:&quot;599.62000000&quot;,&quot;commission&quot;:&quot;0.00000000&quot;,&quot;commissionAsset&quot;:&quot;USDT&quot;,&quot;time&quot;:1745772724458,&quot;isBuyer&quot;:false,&quot;isMaker&quot;:false,&quot;isBestMatch&quot;:true},{&quot;symbol&quot;:&quot;BNBUSDT&quot;,&quot;id&quot;:740884,&quot;orderId&quot;:4518162,&quot;orderListId&quot;:-1,&quot;price&quot;:&quot;599.69000000&quot;,&quot;qty&quot;:&quot;1.00000000&quot;,&quot;quoteQty&quot;:&quot;599.69000000&quot;,&quot;commission&quot;:&quot;0.00000000&quot;,&quot;commissionAsset&quot;:&quot;USDT&quot;,&quot;time&quot;:1745772776970,&quot;isBuyer&quot;:false,&quot;isMaker&quot;:false,&quot;isBestMatch&quot;:true},{&quot;symbol&quot;:&quot;BNBUSDT&quot;,&quot;id&quot;:741540,&quot;orderId&quot;:4523023,&quot;orderListId&quot;:-1,&quot;price&quot;:&quot;600.96000000&quot;,&quot;qty&quot;:&quot;1.00000000&quot;,&quot;quoteQty&quot;:&quot;600.96000000&quot;,&quot;commission&quot;:&quot;0.00000000&quot;,&quot;commissionAsset&quot;:&quot;BNB&quot;,&quot;time&quot;:1745775226625,&quot;isBuyer&quot;:true,&quot;isMaker&quot;:false,&quot;isBestMatch&quot;:true},{&quot;symbol&quot;:&quot;BNBUSDT&quot;,&quot;id&quot;:741584,&quot;orderId&quot;:4523813,&quot;orderListId&quot;:-1,&quot;price&quot;:&quot;600.88000000&quot;,&quot;qty&quot;:&quot;1.00000000&quot;,&quot;quoteQty&quot;:&quot;600.88000000&quot;,&quot;commission&quot;:&quot;0.00000000&quot;,&quot;commissionAsset&quot;:&quot;BNB&quot;,&quot;time&quot;:1745775614923,&quot;isBuyer&quot;:true,&quot;isMaker&quot;:false,&quot;isBestMatch&quot;:true},{&quot;symbol&quot;:&quot;BNBUSDT&quot;,&quot;id&quot;:741654,&quot;orderId&quot;:4524786,&quot;orderListId&quot;:-1,&quot;price&quot;:&quot;601.10000000&quot;,&quot;qty&quot;:&quot;1.00000000&quot;,&quot;quoteQty&quot;:&quot;601.10000000&quot;,&quot;commission&quot;:&quot;0.00000000&quot;,&quot;commissionAsset&quot;:&quot;BNB&quot;,&quot;time&quot;:1745776092221,&quot;isBuyer&quot;:true,&quot;isMaker&quot;:false,&quot;isBestMatch&quot;:true},{&quot;symbol&quot;:&quot;BNBUSDT&quot;,&quot;id&quot;:741688,&quot;orderId&quot;:4525524,&quot;orderListId&quot;:-1,&quot;price&quot;:&quot;601.24000000&quot;,&quot;qty&quot;:&quot;1.00000000&quot;,&quot;quoteQty&quot;:&quot;601.24000000&quot;,&quot;commission&quot;:&quot;0.00000000&quot;,&quot;commissionAsset&quot;:&quot;USDT&quot;,&quot;time&quot;:1745776382089,&quot;isBuyer&quot;:false,&quot;isMaker&quot;:false,&quot;isBestMatch&quot;:true},{&quot;symbol&quot;:&quot;BNBUSDT&quot;,&quot;id&quot;:741786,&quot;orderId&quot;:4527068,&quot;orderListId&quot;:-1,&quot;price&quot;:&quot;601.79000000&quot;,&quot;qty&quot;:&quot;1.00000000&quot;,&quot;quoteQty&quot;:&quot;601.79000000&quot;,&quot;commission&quot;:&quot;0.00000000&quot;,&quot;commissionAsset&quot;:&quot;USDT&quot;,&quot;time&quot;:1745777081090,&quot;isBuyer&quot;:false,&quot;isMaker&quot;:false,&quot;isBestMatch&quot;:true},{&quot;symbol&quot;:&quot;BNBUSDT&quot;,&quot;id&quot;:741787,&quot;orderId&quot;:4527076,&quot;orderListId&quot;:-1,&quot;price&quot;:&quot;601.80000000&quot;,&quot;qty&quot;:&quot;1.00000000&quot;,&quot;quoteQty&quot;:&quot;601.80000000&quot;,&quot;commission&quot;:&quot;0.00000000&quot;,&quot;commissionAsset&quot;:&quot;BNB&quot;,&quot;time&quot;:1745777086509,&quot;isBuyer&quot;:true,&quot;isMaker&quot;:false,&quot;isBestMatch&quot;:true}]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at Apr 28, 2025, 1:11:10 AM</p>
+</div>
+</div>
+</body>
+</html>

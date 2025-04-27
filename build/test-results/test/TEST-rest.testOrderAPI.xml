@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rest.testOrderAPI" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-27T18:10:08" hostname="Tio-Hizbullah.local" time="0.313">
+  <properties/>
+  <testcase name="testPlaceMarketOrder" classname="rest.testOrderAPI" time="0.313"/>
+  <system-out><![CDATA[Query string to sign: quantity=1.0&side=BUY&symbol=BNBUSDT&timestamp=1745777408318&type=MARKET
+Secret key length: 64
+Generated signature: cc3327539efeced322cd50c594a2fc5531ce6ecae6550240be38a73db2b907b4
+Request URL: https://testnet.binance.vision/api/v3/order?quantity=1.0&side=BUY&symbol=BNBUSDT&timestamp=1745777408318&type=MARKET&signature=cc3327539efeced322cd50c594a2fc5531ce6ecae6550240be38a73db2b907b4
+Request Headers: {X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI}
+Request method:	POST
+Request URI:	https://testnet.binance.vision/api/v3/order?quantity=1.0&side=BUY&symbol=BNBUSDT&timestamp=1745777408318&type=MARKET&signature=cc3327539efeced322cd50c594a2fc5531ce6ecae6550240be38a73db2b907b4
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Received message: {"p":"94095.23000000","a":3551019194,"q":"0.00093000","s":"BTCUSDT","T":1745777408459,"e":"aggTrade","E":1745777408459,"f":4855242518,"l":4855242518,"m":true,"M":true}
+Received message: {"p":"94095.23000000","a":3551019194,"q":"0.00093000","s":"BTCUSDT","T":1745777408459,"e":"aggTrade","E":1745777408459,"f":4855242518,"l":4855242518,"m":true,"M":true}
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 322
+Connection: keep-alive
+Date: Sun, 27 Apr 2025 18:10:08 GMT
+Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+x-mbx-uuid: 7d724de9-8f3e-4f37-9f6c-5a45d70c2992
+x-mbx-used-weight: 54
+x-mbx-used-weight-1m: 54
+x-mbx-order-count-10s: 1
+x-mbx-order-count-1d: 1
+content-encoding: gzip
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'
+X-Content-Security-Policy: default-src 'self'
+X-WebKit-CSP: default-src 'self'
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+Via: 1.1 688d077d459126044c73cddb0faa7b3c.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+X-Amz-Cf-Id: pouJmYtIZFrvCi_XM6QA6hcuAb-uDeljhIIi0Ptyl-UIzxpM7-B-yQ==
+
+{
+    "symbol": "BNBUSDT",
+    "orderId": 4527797,
+    "orderListId": -1,
+    "clientOrderId": "KHbl3XEPHWIu3BPZANA0Jp",
+    "transactTime": 1745777408510,
+    "price": "0.00000000",
+    "origQty": "1.00000000",
+    "executedQty": "1.00000000",
+    "origQuoteOrderQty": "0.00000000",
+    "cummulativeQuoteQty": "602.67000000",
+    "status": "FILLED",
+    "timeInForce": "GTC",
+    "type": "MARKET",
+    "side": "BUY",
+    "workingTime": 1745777408510,
+    "fills": [
+        {
+            "price": "602.67000000",
+            "qty": "1.00000000",
+            "commission": "0.00000000",
+            "commissionAsset": "BNB",
+            "tradeId": 741861
+        }
+    ],
+    "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+Response Status: 200
+Response Body: {"symbol":"BNBUSDT","orderId":4527797,"orderListId":-1,"clientOrderId":"KHbl3XEPHWIu3BPZANA0Jp","transactTime":1745777408510,"price":"0.00000000","origQty":"1.00000000","executedQty":"1.00000000","origQuoteOrderQty":"0.00000000","cummulativeQuoteQty":"602.67000000","status":"FILLED","timeInForce":"GTC","type":"MARKET","side":"BUY","workingTime":1745777408510,"fills":[{"price":"602.67000000","qty":"1.00000000","commission":"0.00000000","commissionAsset":"BNB","tradeId":741861}],"selfTradePreventionMode":"EXPIRE_MAKER"}
+Query string to sign: orderId=4527797&symbol=BNBUSDT&timestamp=1745777408466
+Secret key length: 64
+Generated signature: 2f3ea4030191d4210cecdbd9e25e622cece3738c78143f22b1377f3cc2f1468a
+Request URL: https://testnet.binance.vision/api/v3/order?orderId=4527797&symbol=BNBUSDT&timestamp=1745777408466&signature=2f3ea4030191d4210cecdbd9e25e622cece3738c78143f22b1377f3cc2f1468a
+Request Headers: {X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI}
+Request method:	GET
+Request URI:	https://testnet.binance.vision/api/v3/order?orderId=4527797&symbol=BNBUSDT&timestamp=1745777408466&signature=2f3ea4030191d4210cecdbd9e25e622cece3738c78143f22b1377f3cc2f1468a
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Received message: {"p":"94095.24000000","a":3551019195,"q":"0.00021000","s":"BTCUSDT","T":1745777408602,"e":"aggTrade","E":1745777408602,"f":4855242519,"l":4855242519,"m":false,"M":true}
+Received message: {"p":"94095.24000000","a":3551019195,"q":"0.00021000","s":"BTCUSDT","T":1745777408602,"e":"aggTrade","E":1745777408602,"f":4855242519,"l":4855242519,"m":false,"M":true}
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 297
+Connection: keep-alive
+Date: Sun, 27 Apr 2025 18:10:08 GMT
+Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+x-mbx-uuid: 7d724de9-8f3e-4f37-9f6c-5a45d70c2992
+x-mbx-used-weight: 58
+x-mbx-used-weight-1m: 58
+content-encoding: gzip
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'
+X-Content-Security-Policy: default-src 'self'
+X-WebKit-CSP: default-src 'self'
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+Via: 1.1 8d08de7fce6cdb6f648bade508fa2926.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+X-Amz-Cf-Id: iRacQU1irRoGLQzYcq4AYJIDBMHguOReI1y_kE0JlzUjQgKQGZXtyA==
+
+{
+    "symbol": "BNBUSDT",
+    "orderId": 4527797,
+    "orderListId": -1,
+    "clientOrderId": "KHbl3XEPHWIu3BPZANA0Jp",
+    "price": "0.00000000",
+    "origQty": "1.00000000",
+    "executedQty": "1.00000000",
+    "cummulativeQuoteQty": "602.67000000",
+    "status": "FILLED",
+    "timeInForce": "GTC",
+    "type": "MARKET",
+    "side": "BUY",
+    "stopPrice": "0.00000000",
+    "icebergQty": "0.00000000",
+    "time": 1745777408510,
+    "updateTime": 1745777408510,
+    "isWorking": true,
+    "workingTime": 1745777408510,
+    "origQuoteOrderQty": "0.00000000",
+    "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+Response Status: 200
+Response Body: {"symbol":"BNBUSDT","orderId":4527797,"orderListId":-1,"clientOrderId":"KHbl3XEPHWIu3BPZANA0Jp","price":"0.00000000","origQty":"1.00000000","executedQty":"1.00000000","cummulativeQuoteQty":"602.67000000","status":"FILLED","timeInForce":"GTC","type":"MARKET","side":"BUY","stopPrice":"0.00000000","icebergQty":"0.00000000","time":1745777408510,"updateTime":1745777408510,"isWorking":true,"workingTime":1745777408510,"origQuoteOrderQty":"0.00000000","selfTradePreventionMode":"EXPIRE_MAKER"}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
