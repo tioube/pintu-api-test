@@ -1,642 +1,190 @@
-Request method:	GET
-8Request URI:	https://jsonplaceholder.typicode.com/posts
+Request method:	POST
+BRequest URI:	https://testnet.binance.vision/api/v3/userDataStream
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Accept=*/*
+XHeaders:		X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI
+				Accept=*/*
 "				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-$Date: Wed, 07 Aug 2024 12:42:39 GMT
-.Content-Type: application/json; charset=utf-8
-Transfer-Encoding: chunked
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 76
 Connection: keep-alive
-÷Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722983524&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=BRa%2BJN%2FuEGvK%2F6k8kAgqsqwbcniGqotBIsNmr8qYdKg%3D"}]}
-≠Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1722983524&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=BRa%2BJN%2FuEGvK%2F6k8kAgqsqwbcniGqotBIsNmr8qYdKg%3D
-{Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
-X-Powered-By: Express
-X-Ratelimit-Limit: 1000
-X-Ratelimit-Remaining: 999
-X-Ratelimit-Reset: 1722983563
-Vary: Origin, Accept-Encoding
-'Access-Control-Allow-Credentials: true
-Cache-Control: max-age=43200
-Pragma: no-cache
-Expires: -1
+$Date: Sun, 27 Apr 2025 17:24:47 GMT
+1Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+1x-mbx-uuid: fa1a9f25-7d4b-4fc9-ba80-c402e0ddef36
+x-mbx-used-weight: 8
+x-mbx-used-weight-1m: 8
+?Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+ X-Xss-Protection: 1; mode=block
  X-Content-Type-Options: nosniff
-+Etag: W/"6b80-Ybsq/K6GwwqrYkAsFxqDXGC7DoM"
-Content-Encoding: gzip
-Via: 1.1 vegur
-CF-Cache-Status: HIT
-Age: 22234
-Server: cloudflare
-CF-RAY: 8af7590efe17fa56-SJC
-alt-svc: h3=":443"; ma=86400
+,Content-Security-Policy: default-src 'self'
+.X-Content-Security-Policy: default-src 'self'
+!X-WebKit-CSP: default-src 'self'
+3Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+FVia: 1.1 446026fb3dafe55d3602866eda0c744a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+FX-Amz-Cf-Id: g2_AsIUV2JMC15mAJ2qkM7eul8wNTQTP05tgwb72uLtaj_dNnQJ1Tw==
 
-[
-    {
-        "userId": 1,
-        "id": 1,
-_        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-¥        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-    },
-    {
-        "userId": 1,
-        "id": 2,
-!        "title": "qui est esse",
-‰        "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
-    },
-    {
-        "userId": 1,
-        "id": 3,
-P        "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
-∫        "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
-    },
-    {
-        "userId": 1,
-        "id": 4,
-)        "title": "eum et est occaecati",
-‘        "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
-    },
-    {
-        "userId": 1,
-        "id": 5,
-'        "title": "nesciunt quas odio",
-©        "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
-    },
-    {
-        "userId": 1,
-        "id": 6,
-7        "title": "dolorem eum magni eos aperiam quia",
-ÿ        "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
-    },
-    {
-        "userId": 1,
-        "id": 7,
-)        "title": "magnam facilis autem",
-ß        "body": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
-    },
-    {
-        "userId": 1,
-        "id": 8,
--        "title": "dolorem dolore est ipsam",
-∆        "body": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
-    },
-    {
-        "userId": 1,
-        "id": 9,
-G        "title": "nesciunt iure omnis dolorem tempora et accusantium",
-û        "body": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas"
-    },
-    {
-        "userId": 1,
-        "id": 10,
-0        "title": "optio molestias id quia eum",
-ó        "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
-    },
-    {
-        "userId": 2,
-        "id": 11,
-5        "title": "et ea vero quia laudantium autem",
-ø        "body": "delectus reiciendis molestiae occaecati non minima eveniet qui voluptatibus\naccusamus in eum beatae sit\nvel qui neque voluptates ut commodi qui incidunt\nut animi commodi"
-    },
-    {
-        "userId": 2,
-        "id": 12,
-:        "title": "in quibusdam tempore odit est dolorem",
-Æ        "body": "itaque id aut magnam\npraesentium quia et ea odit et ea voluptas et\nsapiente quia nihil amet occaecati quia id voluptatem\nincidunt ea est distinctio odio"
-    },
-    {
-        "userId": 2,
-        "id": 13,
-G        "title": "dolorum ut in voluptas mollitia et saepe quo animi",
-˜        "body": "aut dicta possimus sint mollitia voluptas commodi quo doloremque\niste corrupti reiciendis voluptatem eius rerum\nsit cumque quod eligendi laborum minima\nperferendis recusandae assumenda consectetur porro architecto ipsum ipsam"
-    },
-    {
-        "userId": 2,
-        "id": 14,
-.        "title": "voluptatem eligendi optio",
-¶        "body": "fuga et accusamus dolorum perferendis illo voluptas\nnon doloremque neque facere\nad qui dolorum molestiae beatae\nsed aut voluptas totam sit illum"
-    },
-    {
-        "userId": 2,
-        "id": 15,
-,        "title": "eveniet quod temporibus",
-≠        "body": "reprehenderit quos placeat\nvelit minima officia dolores impedit repudiandae molestiae nam\nvoluptas recusandae quis delectus\nofficiis harum fugiat vitae"
-    },
-    {
-        "userId": 2,
-        "id": 16,
-X        "title": "sint suscipit perspiciatis velit dolorum rerum ipsa laboriosam odio",
-œ        "body": "suscipit nam nisi quo aperiam aut\nasperiores eos fugit maiores voluptatibus quia\nvoluptatem quis ullam qui in alias quia est\nconsequatur magni mollitia accusamus ea nisi voluptate dicta"
-    },
-    {
-        "userId": 2,
-        "id": 17,
-F        "title": "fugit voluptas sed molestias voluptatem provident",
-û        "body": "eos voluptas et aut odit natus earum\naspernatur fuga molestiae ullam\ndeserunt ratione qui eos\nqui nihil ratione nemo velit ut aut id quo"
-    },
-    {
-        "userId": 2,
-        "id": 18,
-?        "title": "voluptate et itaque vero tempora molestiae",
-Ö        "body": "eveniet quo quis\nlaborum totam consequatur non dolor\nut et est repudiandae\nest voluptatem vel debitis et magnam"
-    },
-    {
-        "userId": 2,
-        "id": 19,
->        "title": "adipisci placeat illum aut reiciendis qui",
-•        "body": "illum quis cupiditate provident sit magnam\nea sed aut omnis\nveniam maiores ullam consequatur atque\nadipisci quo iste expedita sit quos voluptas"
-    },
-    {
-        "userId": 2,
-        "id": 20,
-7        "title": "doloribus ad provident suscipit at",
-Î        "body": "qui consequuntur ducimus possimus quisquam amet similique\nsuscipit porro ipsam amet\neos veritatis officiis exercitationem vel fugit aut necessitatibus totam\nomnis rerum consequatur expedita quidem cumque explicabo"
-    },
-    {
-        "userId": 3,
-        "id": 21,
-K        "title": "asperiores ea ipsam voluptatibus modi minima quia sint",
-∫        "body": "repellat aliquid praesentium dolorem quo\nsed totam minus non itaque\nnihil labore molestiae sunt dolor eveniet hic recusandae veniam\ntempora et tenetur expedita sunt"
-    },
-    {
-        "userId": 3,
-        "id": 22,
->        "title": "dolor sint quo a velit explicabo quia nam",
-ñ        "body": "eos qui et ipsum ipsam suscipit aut\nsed omnis non odio\nexpedita earum mollitia molestiae aut atque rem suscipit\nnam impedit esse"
-    },
-    {
-        "userId": 3,
-        "id": 23,
-2        "title": "maxime id vitae nihil numquam",
-π        "body": "veritatis unde neque eligendi\nquae quod architecto quo neque vitae\nest illo sit tempora doloremque fugit quod\net et vel beatae sequi ullam sed tenetur perspiciatis"
-    },
-    {
-        "userId": 3,
-        "id": 24,
-;        "title": "autem hic labore sunt dolores incidunt",
-¶        "body": "enim et ex nulla\nomnis voluptas quia qui\nvoluptatem consequatur numquam aliquam sunt\ntotam recusandae id dignissimos aut sed asperiores deserunt"
-    },
-    {
-        "userId": 3,
-        "id": 25,
-2        "title": "rem alias distinctio quo quis",
-©        "body": "ullam consequatur ut\nomnis quis sit vel consequuntur\nipsa eligendi ipsum molestiae et omnis error nostrum\nmolestiae illo tempore quia et distinctio"
-    },
-    {
-        "userId": 3,
-        "id": 26,
--        "title": "est et quae odit qui non",
-ƒ        "body": "similique esse doloribus nihil accusamus\nomnis dolorem fuga consequuntur reprehenderit fugit recusandae temporibus\nperspiciatis cum ut laudantium\nomnis aut molestiae vel vero"
-    },
-    {
-        "userId": 3,
-        "id": 27,
-:        "title": "quasi id et eos tenetur aut quo autem",
-‘        "body": "eum sed dolores ipsam sint possimus debitis occaecati\ndebitis qui qui et\nut placeat enim earum aut odit facilis\nconsequatur suscipit necessitatibus rerum sed inventore temporibus consequatur"
-    },
-    {
-        "userId": 3,
-        "id": 28,
-D        "title": "delectus ullam et corporis nulla voluptas sequi",
-£        "body": "non et quaerat ex quae ad maiores\nmaiores recusandae totam aut blanditiis mollitia quas illo\nut voluptatibus voluptatem\nsimilique nostrum eum"
-    },
-    {
-        "userId": 3,
-        "id": 29,
-<        "title": "iusto eius quod necessitatibus culpa ea",
-©        "body": "odit magnam ut saepe sed non qui\ntempora atque nihil\naccusamus illum doloribus illo dolor\neligendi repudiandae odit magni similique sed cum maiores"
-    },
-    {
-        "userId": 3,
-        "id": 30,
-6        "title": "a quo magni similique perferendis",
-¢        "body": "alias dolor cumque\nimpedit blanditiis non eveniet odio maxime\nblanditiis amet eius quis tempora quia autem rem\na provident perspiciatis quia"
-    },
-    {
-        "userId": 4,
-        "id": 31,
-<        "title": "ullam ut quidem id aut vel consequuntur",
-∆        "body": "debitis eius sed quibusdam non quis consectetur vitae\nimpedit ut qui consequatur sed aut in\nquidem sit nostrum et maiores adipisci atque\nquaerat voluptatem adipisci repudiandae"
-    },
-    {
-        "userId": 4,
-        "id": 32,
-2        "title": "doloremque illum aliquid sunt",
-‘        "body": "deserunt eos nobis asperiores et hic\nest debitis repellat molestiae optio\nnihil ratione ut eos beatae quibusdam distinctio maiores\nearum voluptates et aut adipisci ea maiores voluptas maxime"
-    },
-    {
-        "userId": 4,
-        "id": 33,
-4        "title": "qui explicabo molestiae dolorem",
-û        "body": "rerum ut et numquam laborum odit est sit\nid qui sint in\nquasi tenetur tempore aperiam et quaerat qui in\nrerum officiis sequi cumque quod"
-    },
-    {
-        "userId": 4,
-        "id": 34,
-)        "title": "magnam ut rerum iure",
-Í        "body": "ea velit perferendis earum ut voluptatem voluptate itaque iusto\ntotam pariatur in\nnemo voluptatem voluptatem autem magni tempora minima in\nest distinctio qui assumenda accusamus dignissimos officia nesciunt nobis"
-    },
-    {
-        "userId": 4,
-        "id": 35,
-C        "title": "id nihil consequatur molestias animi provident",
-∆        "body": "nisi error delectus possimus ut eligendi vitae\nplaceat eos harum cupiditate facilis reprehenderit voluptatem beatae\nmodi ducimus quo illum voluptas eligendi\net nobis quia fugit"
-    },
-    {
-        "userId": 4,
-        "id": 36,
-B        "title": "fuga nam accusamus voluptas reiciendis itaque",
-„        "body": "ad mollitia et omnis minus architecto odit\nvoluptas doloremque maxime aut non ipsa qui alias veniam\nblanditiis culpa aut quia nihil cumque facere et occaecati\nqui aspernatur quia eaque ut aperiam inventore"
-    },
-    {
-        "userId": 4,
-        "id": 37,
-5        "title": "provident vel ut sit ratione est",
-∆        "body": "debitis et eaque non officia sed nesciunt pariatur vel\nvoluptatem iste vero et ea\nnumquam aut expedita ipsum nulla in\nvoluptates omnis consequatur aut enim officiis in quam qui"
-    },
-    {
-        "userId": 4,
-        "id": 38,
-H        "title": "explicabo et eos deleniti nostrum ab id repellendus",
-‡        "body": "animi esse sit aut sit nesciunt assumenda eum voluptas\nquia voluptatibus provident quia necessitatibus ea\nrerum repudiandae quia voluptatem delectus fugit aut id quia\nratione optio eos iusto veniam iure"
-    },
-    {
-        "userId": 4,
-        "id": 39,
-@        "title": "eos dolorem iste accusantium est eaque quam",
-Ã        "body": "corporis rerum ducimus vel eum accusantium\nmaxime aspernatur a porro possimus iste omnis\nest in deleniti asperiores fuga aut\nvoluptas sapiente vel dolore minus voluptatem incidunt ex"
-    },
-    {
-        "userId": 4,
-        "id": 40,
-$        "title": "enim quo cumque",
-æ        "body": "ut voluptatum aliquid illo tenetur nemo sequi quo facilis\nipsum rem optio mollitia quas\nvoluptatem eum voluptas qui\nunde omnis voluptatem iure quasi maxime voluptas nam"
-    },
-    {
-        "userId": 5,
-        "id": 41,
-#        "title": "non est facere",
-À        "body": "molestias id nostrum\nexcepturi molestiae dolore omnis repellendus quaerat saepe\nconsectetur iste quaerat tenetur asperiores accusamus ex ut\nnam quidem est ducimus sunt debitis saepe"
-    },
-    {
-        "userId": 5,
-        "id": 42,
-Y        "title": "commodi ullam sint et excepturi error explicabo praesentium voluptas",
-∆        "body": "odio fugit voluptatum ducimus earum autem est incidunt voluptatem\nodit reiciendis aliquam sunt sequi nulla dolorem\nnon facere repellendus voluptates quia\nratione harum vitae ut"
-    },
-    {
-        "userId": 5,
-        "id": 43,
-c        "title": "eligendi iste nostrum consequuntur adipisci praesentium sit beatae perferendis",
-‘        "body": "similique fugit est\nillum et dolorum harum et voluptate eaque quidem\nexercitationem quos nam commodi possimus cum odio nihil nulla\ndolorum exercitationem magnam ex et a et distinctio debitis"
-    },
-    {
-        "userId": 5,
-        "id": 44,
-.        "title": "optio dolor molestias sit",
-π        "body": "temporibus est consectetur dolore\net libero debitis vel velit laboriosam quia\nipsum quibusdam qui itaque fuga rem aut\nea et iure quam sed maxime ut distinctio quae"
-    },
-    {
-        "userId": 5,
-        "id": 45,
-L        "title": "ut numquam possimus omnis eius suscipit laudantium iure",
-è        "body": "est natus reiciendis nihil possimus aut provident\nex et dolor\nrepellat pariatur est\nnobis rerum repellendus dolorem autem"
-    },
-    {
-        "userId": 5,
-        "id": 46,
-7        "title": "aut quo modi neque nostrum ducimus",
-á        "body": "voluptatem quisquam iste\nvoluptatibus natus officiis facilis dolorem\nquis quas ipsam\nvel et voluptatum in aliquid"
-    },
-    {
-        "userId": 5,
-        "id": 47,
-6        "title": "quibusdam cumque rem aut deserunt",
-¡        "body": "voluptatem assumenda ut qui ut cupiditate aut impedit veniam\noccaecati nemo illum voluptatem laudantium\nmolestiae beatae rerum ea iure soluta nostrum\neligendi et voluptate"
-    },
-    {
-        "userId": 5,
-        "id": 48,
-@        "title": "ut voluptatem illum ea doloribus itaque eos",
-µ        "body": "voluptates quo voluptatem facilis iure occaecati\nvel assumenda rerum officia et\nillum perspiciatis ab deleniti\nlaudantium repellat ad ut et autem reprehenderit"
-    },
-    {
-        "userId": 5,
-        "id": 49,
-L        "title": "laborum non sunt aut ut assumenda perspiciatis voluptas",
-¥        "body": "inventore ab sint\nnatus fugit id nulla sequi architecto nihil quaerat\neos tenetur in in eum veritatis non\nquibusdam officiis aspernatur cumque aut commodi aut"
-    },
-    {
-        "userId": 5,
-        "id": 50,
-d        "title": "repellendus qui recusandae incidunt voluptates tenetur qui omnis exercitationem",
-◊        "body": "error suscipit maxime adipisci consequuntur recusandae\nvoluptas eligendi et est et voluptates\nquia distinctio ab amet quaerat molestiae et vitae\nadipisci impedit sequi nesciunt quis consectetur"
-    },
-    {
-        "userId": 6,
-        "id": 51,
-J        "title": "soluta aliquam aperiam consequatur illo quis voluptas",
-ê        "body": "sunt dolores aut doloribus\ndolore doloribus voluptates tempora et\ndoloremque et quo\ncum asperiores sit consectetur dolorem"
-    },
-    {
-        "userId": 6,
-        "id": 52,
-Q        "title": "qui enim et consequuntur quia animi quis voluptate quibusdam",
-∫        "body": "iusto est quibusdam fuga quas quaerat molestias\na enim ut sit accusamus enim\ntemporibus iusto accusantium provident architecto\nsoluta esse reprehenderit qui laborum"
-    },
-    {
-        "userId": 6,
-        "id": 53,
--        "title": "ut quo aut ducimus alias",
-æ        "body": "minima harum praesentium eum rerum illo dolore\nquasi exercitationem rerum nam\nporro quis neque quo\nconsequatur minus dolor quidem veritatis sunt non explicabo similique"
-    },
-    {
-        "userId": 6,
-        "id": 54,
-?        "title": "sit asperiores ipsam eveniet odio non quia",
-ô        "body": "totam corporis dignissimos\nvitae dolorem ut occaecati accusamus\nex velit deserunt\net exercitationem vero incidunt corrupti mollitia"
-    },
-    {
-        "userId": 6,
-        "id": 55,
-5        "title": "sit vel voluptatem et non libero",
-©        "body": "debitis excepturi ea perferendis harum libero optio\neos accusamus cum fuga ut sapiente repudiandae\net ut incidunt omnis molestiae\nnihil ut eum odit"
-    },
-    {
-        "userId": 6,
-        "id": 56,
-3        "title": "qui et at rerum necessitatibus",
-≤        "body": "aut est omnis dolores\nneque rerum quod ea rerum velit pariatur beatae excepturi\net provident voluptas corrupti\ncorporis harum reprehenderit dolores eligendi"
-    },
-    {
-        "userId": 6,
-        "id": 57,
-#        "title": "sed ab est est",
-ô        "body": "at pariatur consequuntur earum quidem\nquo est laudantium soluta voluptatem\nqui ullam et est\net cum voluptas voluptatum repellat est"
-    },
-    {
-        "userId": 6,
-        "id": 58,
-<        "title": "voluptatum itaque dolores nisi et quasi",
-ë        "body": "veniam voluptatum quae adipisci id\net id quia eos ad et dolorem\naliquam quo nisi sunt eos impedit error\nad similique veniam"
-    },
-    {
-        "userId": 6,
-        "id": 59,
-H        "title": "qui commodi dolor at maiores et quis id accusantium",
-€        "body": "perspiciatis et quam ea autem temporibus non voluptatibus qui\nbeatae a earum officia nesciunt dolores suscipit voluptas et\nanimi doloribus cum rerum quas et magni\net hic ut ut commodi expedita sunt"
-    },
-    {
-        "userId": 6,
-        "id": 60,
-a        "title": "consequatur placeat omnis quisquam quia reprehenderit fugit veritatis facere",
-ô        "body": "asperiores sunt ab assumenda cumque modi velit\nqui esse omnis\nvoluptate et fuga perferendis voluptas\nillo ratione amet aut et omnis"
-    },
-    {
-        "userId": 7,
-        "id": 61,
-D        "title": "voluptatem doloribus consectetur est ut ducimus",
-¡        "body": "ab nemo optio odio\ndelectus tenetur corporis similique nobis repellendus rerum omnis facilis\nvero blanditiis debitis in nesciunt doloribus dicta dolores\nmagnam minus velit"
-    },
-    {
-        "userId": 7,
-        "id": 62,
-)        "title": "beatae enim quia vel",
-¡        "body": "enim aspernatur illo distinctio quae praesentium\nbeatae alias amet delectus qui voluptate distinctio\nodit sint accusantium autem omnis\nquo molestiae omnis ea eveniet optio"
-    },
-    {
-        "userId": 7,
-        "id": 63,
-]        "title": "voluptas blanditiis repellendus animi ducimus error sapiente et suscipit",
-Â        "body": "enim adipisci aspernatur nemo\nnumquam omnis facere dolorem dolor ex quis temporibus incidunt\nab delectus culpa quo reprehenderit blanditiis asperiores\naccusantium ut quam in voluptatibus voluptas ipsam dicta"
-    },
-    {
-        "userId": 7,
-        "id": 64,
-9        "title": "et fugit quas eum in in aperiam quod",
-ñ        "body": "id velit blanditiis\neum ea voluptatem\nmolestiae sint occaecati est eos perspiciatis\nincidunt a error provident eaque aut aut qui"
-    },
-    {
-        "userId": 7,
-        "id": 65,
-3        "title": "consequatur id enim sunt et et",
-√        "body": "voluptatibus ex esse\nsint explicabo est aliquid cumque adipisci fuga repellat labore\nmolestiae corrupti ex saepe at asperiores et perferendis\nnatus id esse incidunt pariatur"
-    },
-    {
-        "userId": 7,
-        "id": 66,
-/        "title": "repudiandae ea animi iusto",
-©        "body": "officia veritatis tenetur vero qui itaque\nsint non ratione\nsed et ut asperiores iusto eos molestiae nostrum\nveritatis quibusdam et nemo iusto saepe"
-    },
-    {
-        "userId": 7,
-        "id": 67,
-@        "title": "aliquid eos sed fuga est maxime repellendus",
-∏        "body": "reprehenderit id nostrum\nvoluptas doloremque pariatur sint et accusantium quia quod aspernatur\net fugiat amet\nnon sapiente et consequatur necessitatibus molestiae"
-    },
-    {
-        "userId": 7,
-        "id": 68,
-A        "title": "odio quis facere architecto reiciendis optio",
-ô        "body": "magnam molestiae perferendis quisquam\nqui cum reiciendis\nquaerat animi amet hic inventore\nea quia deleniti quidem saepe porro velit"
-    },
-    {
-        "userId": 7,
-        "id": 69,
-5        "title": "fugiat quod pariatur odit minima",
-        "body": "officiis error culpa consequatur modi asperiores et\ndolorum assumenda voluptas et vel qui aut vel rerum\nvoluptatum quisquam perspiciatis quia rerum consequatur totam quas\nsequi commodi repudiandae asperiores et saepe a"
-    },
-    {
-        "userId": 7,
-        "id": 70,
--        "title": "voluptatem laborum magni",
-ï        "body": "sunt repellendus quae\nest asperiores aut deleniti esse accusamus repellendus quia aut\nquia dolorem unde\neum tempora esse dolore"
-    },
-    {
-        "userId": 8,
-        "id": 71,
-6        "title": "et iusto veniam et illum aut fuga",
-†        "body": "occaecati a doloribus\niste saepe consectetur placeat eum voluptate dolorem et\nqui quo quia voluptas\nrerum ut id enim velit est perferendis"
-    },
-    {
-        "userId": 8,
-        "id": 72,
->        "title": "sint hic doloribus consequatur eos non id",
-∆        "body": "quam occaecati qui deleniti consectetur\nconsequatur aut facere quas exercitationem aliquam hic voluptas\nneque id sunt ut aut accusamus\nsunt consectetur expedita inventore velit"
-    },
-    {
-        "userId": 8,
-        "id": 73,
-L        "title": "consequuntur deleniti eos quia temporibus ab aliquid at",
-¡        "body": "voluptatem cumque tenetur consequatur expedita ipsum nemo quia explicabo\naut eum minima consequatur\ntempore cumque quae est et\net in consequuntur voluptatem voluptates aut"
-    },
-    {
-        "userId": 8,
-        "id": 74,
-J        "title": "enim unde ratione doloribus quas enim ut sit sapiente",
-Ã        "body": "odit qui et et necessitatibus sint veniam\nmollitia amet doloremque molestiae commodi similique magnam et quam\nblanditiis est itaque\nquo et tenetur ratione occaecati molestiae tempora"
-    },
-    {
-        "userId": 8,
-        "id": 75,
-A        "title": "dignissimos eum dolor ut enim et delectus in",
-⁄        "body": "commodi non non omnis et voluptas sit\nautem aut nobis magnam et sapiente voluptatem\net laborum repellat qui delectus facilis temporibus\nrerum amet et nemo voluptate expedita adipisci error dolorem"
-    },
-    {
-        "userId": 8,
-        "id": 76,
->        "title": "doloremque officiis ad et non perferendis",
-|        "body": "ut animi facere\ntotam iusto tempore\nmolestiae eum aut et dolorem aperiam\nquaerat recusandae totam odio"
-    },
-    {
-        "userId": 8,
-        "id": 77,
-=        "title": "necessitatibus quasi exercitationem odio",
-–        "body": "modi ut in nulla repudiandae dolorum nostrum eos\naut consequatur omnis\nut incidunt est omnis iste et quam\nvoluptates sapiente aliquam asperiores nobis amet corrupti repudiandae provident"
-    },
-    {
-        "userId": 8,
-        "id": 78,
-6        "title": "quam voluptatibus rerum veritatis",
-ã        "body": "nobis facilis odit tempore cupiditate quia\nassumenda doloribus rerum qui ea\nillum et qui totam\naut veniam repellendus"
-    },
-    {
-        "userId": 8,
-        "id": 79,
-J        "title": "pariatur consequatur quia magnam autem omnis non amet",
-¥        "body": "libero accusantium et et facere incidunt sit dolorem\nnon excepturi qui quia sed laudantium\nquisquam molestiae ducimus est\nofficiis esse molestiae iste et quos"
-    },
-    {
-        "userId": 8,
-        "id": 80,
-@        "title": "labore in ex et explicabo corporis aut quas",
-         "body": "ex quod dolorem ea eum iure qui provident amet\nquia qui facere excepturi et repudiandae\nasperiores molestias provident\nminus incidunt vero fugit rerum sint sunt excepturi provident"
-    },
-    {
-        "userId": 9,
-        "id": 81,
-D        "title": "tempora rem veritatis voluptas quo dolores vero",
-‹        "body": "facere qui nesciunt est voluptatum voluptatem nisi\nsequi eligendi necessitatibus ea at rerum itaque\nharum non ratione velit laboriosam quis consequuntur\nex officiis minima doloremque voluptas ut aut"
-    },
-    {
-        "userId": 9,
-        "id": 82,
-A        "title": "laudantium voluptate suscipit sunt enim enim",
-…        "body": "ut libero sit aut totam inventore sunt\nporro sint qui sunt molestiae\nconsequatur cupiditate qui iste ducimus adipisci\ndolor enim assumenda soluta laboriosam amet iste delectus hic"
-    },
-    {
-        "userId": 9,
-        "id": 83,
-?        "title": "odit et voluptates doloribus alias odio et",
-Ã        "body": "est molestiae facilis quis tempora numquam nihil qui\nvoluptate sapiente consequatur est qui\nnecessitatibus autem aut ipsa aperiam modi dolore numquam\nreprehenderit eius rem quibusdam"
-    },
-    {
-        "userId": 9,
-        "id": 84,
-a        "title": "optio ipsam molestias necessitatibus occaecati facilis veritatis dolores aut",
-ú        "body": "sint molestiae magni a et quos\neaque et quasi\nut rerum debitis similique veniam\nrecusandae dignissimos dolor incidunt consequatur odio"
-    },
-    {
-        "userId": 9,
-        "id": 85,
-Q        "title": "dolore veritatis porro provident adipisci blanditiis et sunt",
-Ω        "body": "similique sed nisi voluptas iusto omnis\nmollitia et quo\nassumenda suscipit officia magnam sint sed tempora\nenim provident pariatur praesentium atque animi amet ratione"
-    },
-    {
-        "userId": 9,
-        "id": 86,
-/        "title": "placeat quia et porro iste",
-¡        "body": "quasi excepturi consequatur iste autem temporibus sed molestiae beatae\net quaerat et esse ut\nvoluptatem occaecati et vel explicabo autem\nasperiores pariatur deserunt optio"
-    },
-    {
-        "userId": 9,
-        "id": 87,
-/        "title": "nostrum quis quasi placeat",
-Ä        "body": "eos et molestiae\nnesciunt ut a\ndolores perspiciatis repellendus repellat aliquid\nmagnam sint rem ipsum est"
-    },
-    {
-        "userId": 9,
-        "id": 88,
--        "title": "sapiente omnis fugit eos",
-Ä        "body": "consequatur omnis est praesentium\nducimus non iste\nneque hic deserunt\nvoluptatibus veniam cum et rerum sed"
-    },
-    {
-        "userId": 9,
-        "id": 89,
-=        "title": "sint soluta et vel magnam aut ut sed qui",
-Æ        "body": "repellat aut aperiam totam temporibus autem et\narchitecto magnam ut\nconsequatur qui cupiditate rerum quia soluta dignissimos nihil iure\ntempore quas est"
-    },
-    {
-        "userId": 9,
-        "id": 90,
-;        "title": "ad iusto omnis odit dolor voluptatibus",
-≠        "body": "minus omnis soluta quia\nqui sed adipisci voluptates illum ipsam voluptatem\neligendi officia ut in\neos soluta similique molestias praesentium blanditiis"
-    },
-    {
-        "userId": 10,
-        "id": 91,
-!        "title": "aut amet sed",
-±        "body": "libero voluptate eveniet aperiam sed\nsunt placeat suscipit molestias\nsimilique fugit nam natus\nexpedita consequatur consequatur dolores quia eos et placeat"
-    },
-    {
-        "userId": 10,
-        "id": 92,
-3        "title": "ratione ex tenetur perferendis",
-ù        "body": "aut et excepturi dicta laudantium sint rerum nihil\nlaudantium et at\na neque minima officia et similique libero et\ncommodi voluptate qui"
-    },
-    {
-        "userId": 10,
-        "id": 93,
--        "title": "beatae soluta recusandae",
-«        "body": "dolorem quibusdam ducimus consequuntur dicta aut quo laboriosam\nvoluptatem quis enim recusandae ut sed sunt\nnostrum est odit totam\nsit error sed sunt eveniet provident qui nulla"
-    },
-    {
-        "userId": 10,
-        "id": 94,
-8        "title": "qui qui voluptates illo iste minima",
-Ω        "body": "aspernatur expedita soluta quo ab ut similique\nexpedita dolores amet\nsed temporibus distinctio magnam saepe deleniti\nomnis facilis nam ipsum natus sint similique omnis"
-    },
-    {
-        "userId": 10,
-        "id": 95,
-:        "title": "id minus libero illum nam ad officiis",
-Ÿ        "body": "earum voluptatem facere provident blanditiis velit laboriosam\npariatur accusamus odio saepe\ncumque dolor qui a dicta ab doloribus consequatur omnis\ncorporis cupiditate eaque assumenda ad nesciunt"
-    },
-    {
-        "userId": 10,
-        "id": 96,
-N        "title": "quaerat velit veniam amet cupiditate aut numquam ut sequi",
-ñ        "body": "in non odio excepturi sint eum\nlabore voluptates vitae quia qui et\ninventore itaque rerum\nveniam non exercitationem delectus aut"
-    },
-    {
-        "userId": 10,
-        "id": 97,
-?        "title": "quas fugiat ut perspiciatis vero provident",
-Ì        "body": "eum non blanditiis soluta porro quibusdam voluptas\nvel voluptatem qui placeat dolores qui velit aut\nvel inventore aut cumque culpa explicabo aliquid at\nperspiciatis est et voluptatem dignissimos dolor itaque sit nam"
-    },
-    {
-        "userId": 10,
-        "id": 98,
-0        "title": "laboriosam dolor voluptates",
-é        "body": "doloremque ex facilis sit sint culpa\nsoluta assumenda eligendi non ut eius\nsequi ducimus vel quasi\nveritatis est dolores"
-    },
-    {
-        "userId": 10,
-        "id": 99,
-J        "title": "temporibus sit alias delectus eligendi possimus magni",
-É        "body": "quo deleniti praesentium dicta non quod\naut est molestias\nmolestias et officia quis nihil\nitaque dolorem quia"
-    },
-    {
-        "userId": 10,
-        "id": 100,
-:        "title": "at nam consequatur ea labore ea harum",
-®        "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
-    }
-]
-Checking Schema Should be True
+{
+P    "listenKey": "rU6XMu4W6ppTA350ecwutDMeq38IisOPVhlRSrRfg4ignLlsIVTeHLulx3dY"
+}
+QCreated listen key: rU6XMu4W6ppTA350ecwutDMeq38IisOPVhlRSrRfg4ignLlsIVTeHLulx3dY
+Request method:	PUT
+âRequest URI:	https://testnet.binance.vision/api/v3/userDataStream?listenKey=rU6XMu4W6ppTA350ecwutDMeq38IisOPVhlRSrRfg4ignLlsIVTeHLulx3dY
+Proxy:			<none>
+Request params:	<none>
+UQuery params:	listenKey=rU6XMu4W6ppTA350ecwutDMeq38IisOPVhlRSrRfg4ignLlsIVTeHLulx3dY
+Form params:	<none>
+Path params:	<none>
+XHeaders:		X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI
+				Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 2
+Connection: keep-alive
+$Date: Sun, 27 Apr 2025 17:24:48 GMT
+1Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+1x-mbx-uuid: 7d724de9-8f3e-4f37-9f6c-5a45d70c2992
+x-mbx-used-weight: 10
+x-mbx-used-weight-1m: 10
+?Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+ X-Xss-Protection: 1; mode=block
+ X-Content-Type-Options: nosniff
+,Content-Security-Policy: default-src 'self'
+.X-Content-Security-Policy: default-src 'self'
+!X-WebKit-CSP: default-src 'self'
+3Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+FVia: 1.1 54d4d00f5a92073c1a23e29f92000462.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+FX-Amz-Cf-Id: 7Zddnc3ozHh_YDi4N29Vpagbcv5L4eyk8YY73ZesWUKeT8CIYP1fqw==
+
+{
+    
+}
+RExtended listen key: rU6XMu4W6ppTA350ecwutDMeq38IisOPVhlRSrRfg4ignLlsIVTeHLulx3dY
+~Subscribed to User Data stream: wss://stream.binance.com:9443/ws/rU6XMu4W6ppTA350ecwutDMeq38IisOPVhlRSrRfg4ignLlsIVTeHLulx3dY
+{WebSocket connection opened: wss://stream.binance.com:9443/ws/rU6XMu4W6ppTA350ecwutDMeq38IisOPVhlRSrRfg4ignLlsIVTeHLulx3dY
+WebSocket response code: 101
+0WebSocket response message: Switching Protocols
+-Sending subscription message to websocket...
+Message sent: {
+  "method": "SUBSCRIBE",
+  "params": [
+    "btcusdt@aggTrade",
+    "btcusdt@depth"
+  ],
+
+  "id": 1
+}
+Subscription message sent: {
+  "method": "SUBSCRIBE",
+  "params": [
+    "btcusdt@aggTrade",
+    "btcusdt@depth"
+  ],
+
+  "id": 1
+}
+)Received message: {"result":null,"id":1}
+)Received message: {"result":null,"id":1}
+“Received message: {"a":[["94075.01000000","4.54625000"],["94076.25000000","0.02233000"],["94076.30000000","0.00000000"],["94079.20000000","0.04256000"],["94080.00000000","0.06316000"],["94085.32000000","0.41548000"],["94089.49000000","0.00000000"],["94090.23000000","0.00531000"],["94091.72000000","0.00000000"],["94092.40000000","0.00000000"],["94095.67000000","0.00000000"],["94096.54000000","0.00531000"],["94106.49000000","0.01661000"],["94127.20000000","0.46340000"],["94128.62000000","0.00000000"],["94172.89000000","0.00000000"],["94174.16000000","0.00000000"],["94180.57000000","0.13886000"],["94181.61000000","0.04251000"],["94194.99000000","0.00000000"],["94199.76000000","0.00000000"],["94203.31000000","0.05797000"],["94204.34000000","0.05897000"],["94204.55000000","0.00000000"],["94207.06000000","0.05997000"],["94207.47000000","0.00014000"],["94208.55000000","0.05897000"],["94211.67000000","0.05997000"],["94214.67000000","0.05997000"],["94242.46000000","0.00036000"],["94252.89000000","0.00400000"],["94259.16000000","0.00000000"],["95486.14000000","0.00000000"]],"b":[["94075.00000000","3.44158000"],["94074.99000000","0.00192000"],["94073.50000000","0.00012000"],["94073.49000000","0.02272000"],["94073.09000000","0.00006000"],["94069.40000000","0.38670000"],["94069.39000000","0.70144000"],["94068.93000000","0.21258000"],["94068.92000000","0.33236000"],["94068.00000000","0.02060000"],["94064.17000000","0.00007000"],["94060.12000000","0.21381000"],["94055.83000000","0.00531000"],["94048.72000000","0.21381000"],["94046.55000000","0.00000000"],["94033.36000000","0.00000000"],["94032.50000000","0.15900000"],["94027.95000000","1.32481000"],["94024.85000000","0.01661000"],["94016.01000000","0.00000000"],["94014.29000000","0.05597000"],["93951.78000000","0.05897000"],["93947.31000000","0.05897000"],["93916.01000000","0.00106000"],["93914.59000000","0.00106000"],["93906.67000000","0.00000000"],["93905.08000000","0.00000000"],["93237.39000000","0.00000000"],["93143.31000000","0.00000000"],["93049.22000000","0.00000000"],["92663.87000000","0.00100000"],["89300.00000000","0.58201000"],["84667.00000000","0.00000000"],["75260.00000000","0.00065000"],["42000.00000000","3.70583000"],["33000.00000000","2.68783000"],["20002.00000000","0.00000000"],["20001.00000000","0.03474000"]],"s":"BTCUSDT","e":"depthUpdate","E":1745774699014,"U":67662912190,"u":67662912304}
+“Received message: {"a":[["94075.01000000","4.54625000"],["94076.25000000","0.02233000"],["94076.30000000","0.00000000"],["94079.20000000","0.04256000"],["94080.00000000","0.06316000"],["94085.32000000","0.41548000"],["94089.49000000","0.00000000"],["94090.23000000","0.00531000"],["94091.72000000","0.00000000"],["94092.40000000","0.00000000"],["94095.67000000","0.00000000"],["94096.54000000","0.00531000"],["94106.49000000","0.01661000"],["94127.20000000","0.46340000"],["94128.62000000","0.00000000"],["94172.89000000","0.00000000"],["94174.16000000","0.00000000"],["94180.57000000","0.13886000"],["94181.61000000","0.04251000"],["94194.99000000","0.00000000"],["94199.76000000","0.00000000"],["94203.31000000","0.05797000"],["94204.34000000","0.05897000"],["94204.55000000","0.00000000"],["94207.06000000","0.05997000"],["94207.47000000","0.00014000"],["94208.55000000","0.05897000"],["94211.67000000","0.05997000"],["94214.67000000","0.05997000"],["94242.46000000","0.00036000"],["94252.89000000","0.00400000"],["94259.16000000","0.00000000"],["95486.14000000","0.00000000"]],"b":[["94075.00000000","3.44158000"],["94074.99000000","0.00192000"],["94073.50000000","0.00012000"],["94073.49000000","0.02272000"],["94073.09000000","0.00006000"],["94069.40000000","0.38670000"],["94069.39000000","0.70144000"],["94068.93000000","0.21258000"],["94068.92000000","0.33236000"],["94068.00000000","0.02060000"],["94064.17000000","0.00007000"],["94060.12000000","0.21381000"],["94055.83000000","0.00531000"],["94048.72000000","0.21381000"],["94046.55000000","0.00000000"],["94033.36000000","0.00000000"],["94032.50000000","0.15900000"],["94027.95000000","1.32481000"],["94024.85000000","0.01661000"],["94016.01000000","0.00000000"],["94014.29000000","0.05597000"],["93951.78000000","0.05897000"],["93947.31000000","0.05897000"],["93916.01000000","0.00106000"],["93914.59000000","0.00106000"],["93906.67000000","0.00000000"],["93905.08000000","0.00000000"],["93237.39000000","0.00000000"],["93143.31000000","0.00000000"],["93049.22000000","0.00000000"],["92663.87000000","0.00100000"],["89300.00000000","0.58201000"],["84667.00000000","0.00000000"],["75260.00000000","0.00065000"],["42000.00000000","3.70583000"],["33000.00000000","2.68783000"],["20002.00000000","0.00000000"],["20001.00000000","0.03474000"]],"s":"BTCUSDT","e":"depthUpdate","E":1745774699014,"U":67662912190,"u":67662912304}
+”Received message: {"a":[["94075.01000000","4.54626000"],["94075.33000000","0.27225000"],["94076.25000000","0.02233000"],["94076.30000000","0.00000000"],["94076.50000000","0.04256000"],["94077.33000000","0.00000000"],["94077.80000000","0.00000000"],["94079.20000000","0.04256000"],["94080.00000000","0.06322000"],["94106.49000000","0.00000000"],["94138.11000000","0.00057000"],["94195.80000000","0.00000000"],["94203.68000000","0.05797000"],["94205.97000000","0.00000000"],["94214.29000000","0.05997000"],["94219.64000000","0.00000000"],["94252.89000000","0.00000000"],["94255.29000000","0.00400000"],["94260.53000000","0.00000000"],["95486.14000000","0.00100000"]],"b":[["94075.00000000","3.44152000"],["94073.50000000","0.00000000"],["94073.49000000","0.00000000"],["94073.09000000","0.00000000"],["94069.62000000","0.00007000"],["94069.40000000","0.38676000"],["94068.92000000","0.33242000"],["94057.25000000","0.00000000"],["94046.66000000","0.05951000"],["94042.51000000","0.00000000"],["94038.61000000","0.15900000"],["94037.50000000","0.00000000"],["94033.58000000","0.00000000"],["94032.50000000","0.00000000"],["94024.85000000","0.00000000"],["94009.95000000","0.01661000"],["93831.05000000","0.00553000"],["93826.09000000","0.00000000"],["93537.67000000","0.10635000"],["93526.61000000","0.00000000"],["92955.14000000","0.00000000"],["92861.06000000","0.00000000"],["92766.97000000","0.00000000"],["92672.89000000","0.00000000"],["92663.87000000","0.00000000"],["86549.01000000","0.00000000"],["84667.00000000","0.00000000"],["75260.00000000","0.00065000"],["60000.00000000","88.75209000"],["33867.00000000","0.00234000"],["33000.00000000","2.68783000"]],"s":"BTCUSDT","e":"depthUpdate","E":1745774700014,"U":67662912305,"u":67662912393}
+”Received message: {"a":[["94075.01000000","4.54626000"],["94075.33000000","0.27225000"],["94076.25000000","0.02233000"],["94076.30000000","0.00000000"],["94076.50000000","0.04256000"],["94077.33000000","0.00000000"],["94077.80000000","0.00000000"],["94079.20000000","0.04256000"],["94080.00000000","0.06322000"],["94106.49000000","0.00000000"],["94138.11000000","0.00057000"],["94195.80000000","0.00000000"],["94203.68000000","0.05797000"],["94205.97000000","0.00000000"],["94214.29000000","0.05997000"],["94219.64000000","0.00000000"],["94252.89000000","0.00000000"],["94255.29000000","0.00400000"],["94260.53000000","0.00000000"],["95486.14000000","0.00100000"]],"b":[["94075.00000000","3.44152000"],["94073.50000000","0.00000000"],["94073.49000000","0.00000000"],["94073.09000000","0.00000000"],["94069.62000000","0.00007000"],["94069.40000000","0.38676000"],["94068.92000000","0.33242000"],["94057.25000000","0.00000000"],["94046.66000000","0.05951000"],["94042.51000000","0.00000000"],["94038.61000000","0.15900000"],["94037.50000000","0.00000000"],["94033.58000000","0.00000000"],["94032.50000000","0.00000000"],["94024.85000000","0.00000000"],["94009.95000000","0.01661000"],["93831.05000000","0.00553000"],["93826.09000000","0.00000000"],["93537.67000000","0.10635000"],["93526.61000000","0.00000000"],["92955.14000000","0.00000000"],["92861.06000000","0.00000000"],["92766.97000000","0.00000000"],["92672.89000000","0.00000000"],["92663.87000000","0.00000000"],["86549.01000000","0.00000000"],["84667.00000000","0.00000000"],["75260.00000000","0.00065000"],["60000.00000000","88.75209000"],["33867.00000000","0.00234000"],["33000.00000000","2.68783000"]],"s":"BTCUSDT","e":"depthUpdate","E":1745774700014,"U":67662912305,"u":67662912393}
+∫Received message: {"p":"94075.00000000","a":3551008517,"q":"0.00023000","s":"BTCUSDT","T":1745774700265,"e":"aggTrade","E":1745774700266,"f":4855212382,"l":4855212382,"m":true,"M":true}
+∫Received message: {"p":"94075.00000000","a":3551008517,"q":"0.00023000","s":"BTCUSDT","T":1745774700265,"e":"aggTrade","E":1745774700266,"f":4855212382,"l":4855212382,"m":true,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008518,"q":"0.00017000","s":"BTCUSDT","T":1745774700335,"e":"aggTrade","E":1745774700335,"f":4855212383,"l":4855212383,"m":false,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008518,"q":"0.00017000","s":"BTCUSDT","T":1745774700335,"e":"aggTrade","E":1745774700335,"f":4855212383,"l":4855212383,"m":false,"M":true}
+“Received message: {"a":[["94075.01000000","4.54629000"],["94075.02000000","0.00096000"],["94076.25000000","0.02233000"],["94076.38000000","0.02100000"],["94078.63000000","0.01362000"],["94079.10000000","0.04006000"],["94079.20000000","0.04250000"],["94080.00000000","0.06316000"],["94090.23000000","0.00000000"],["94091.72000000","0.00000000"],["94092.40000000","0.00531000"],["94092.75000000","1.00000000"],["94092.76000000","1.68472000"],["94095.70000000","0.00531000"],["94096.54000000","0.00000000"],["94118.37000000","0.00212000"],["94125.56000000","0.00000000"],["94169.54000000","0.04251000"],["94189.61000000","0.00000000"],["94191.76000000","0.00000000"],["94194.44000000","0.00000000"],["94198.84000000","0.00218000"],["94201.11000000","0.05897000"],["94204.38000000","0.05897000"],["94208.56000000","0.05897000"],["94211.64000000","0.05997000"],["94214.57000000","0.05997000"],["95486.14000000","0.00000000"]],"b":[["94075.00000000","3.45038000"],["94051.04000000","0.31581000"],["94048.24000000","0.84757000"],["94041.30000000","0.00000000"],["94039.62000000","0.00000000"],["94038.61000000","0.00000000"],["94038.06000000","0.00000000"],["94034.93000000","0.00017000"],["94034.20000000","0.30605000"],["94033.70000000","0.15900000"],["94032.06000000","1.41951000"],["94032.05000000","1.71033000"],["94031.45000000","0.00000000"],["94027.95000000","0.92927000"],["94027.91000000","0.00000000"],["94022.13000000","0.00000000"],["94022.12000000","0.00000000"],["94022.02000000","0.03500000"],["94017.04000000","0.00000000"],["94016.03000000","0.00000000"],["94015.25000000","0.00000000"],["94014.29000000","0.00000000"],["94013.87000000","0.02126000"],["94012.79000000","0.00000000"],["94012.01000000","0.00000000"],["94010.86000000","0.00000000"],["94004.72000000","0.03988000"],["93999.36000000","0.04251000"],["93997.84000000","0.04251000"],["93993.62000000","0.13302000"],["93990.81000000","0.08503000"],["93989.18000000","0.00000000"],["93988.03000000","0.04251000"],["93987.26000000","0.00000000"],["93985.81000000","0.09491000"],["93985.40000000","0.93030000"],["93984.45000000","0.11473000"],["93984.01000000","0.14101000"],["93982.59000000","0.04429000"],["93981.70000000","0.18245000"],["93978.61000000","0.04251000"],["93978.40000000","0.36900000"],["93976.01000000","0.33591000"],["93972.76000000","0.00000000"],["93969.90000000","0.18035000"],["93968.65000000","0.35868000"],["93963.45000000","0.21385000"],["93961.93000000","0.09643000"],["93960.06000000","0.05497000"],["93958.33000000","0.05497000"],["93956.65000000","0.23088000"],["93955.09000000","0.17091000"],["93953.83000000","0.05497000"],["93952.19000000","0.05497000"],["93949.19000000","0.05497000"],["93947.73000000","0.09086000"],["93946.16000000","0.00000000"],["93945.99000000","0.05497000"],["93943.49000000","0.00000000"],["93943.32000000","0.05497000"],["93940.46000000","0.00000000"],["93937.45000000","0.00000000"],["92663.87000000","0.00100000"],["92578.80000000","0.00000000"],["92484.72000000","0.00000000"],["92390.64000000","0.00000000"],["92296.55000000","0.00000000"],["92202.47000000","0.00000000"],["84667.00000000","0.00000000"],["75260.00000000","0.00065000"],["33000.00000000","2.68783000"]],"s":"BTCUSDT","e":"depthUpdate","E":1745774701014,"U":67662912394,"u":67662912524}
+“Received message: {"a":[["94075.01000000","4.54629000"],["94075.02000000","0.00096000"],["94076.25000000","0.02233000"],["94076.38000000","0.02100000"],["94078.63000000","0.01362000"],["94079.10000000","0.04006000"],["94079.20000000","0.04250000"],["94080.00000000","0.06316000"],["94090.23000000","0.00000000"],["94091.72000000","0.00000000"],["94092.40000000","0.00531000"],["94092.75000000","1.00000000"],["94092.76000000","1.68472000"],["94095.70000000","0.00531000"],["94096.54000000","0.00000000"],["94118.37000000","0.00212000"],["94125.56000000","0.00000000"],["94169.54000000","0.04251000"],["94189.61000000","0.00000000"],["94191.76000000","0.00000000"],["94194.44000000","0.00000000"],["94198.84000000","0.00218000"],["94201.11000000","0.05897000"],["94204.38000000","0.05897000"],["94208.56000000","0.05897000"],["94211.64000000","0.05997000"],["94214.57000000","0.05997000"],["95486.14000000","0.00000000"]],"b":[["94075.00000000","3.45038000"],["94051.04000000","0.31581000"],["94048.24000000","0.84757000"],["94041.30000000","0.00000000"],["94039.62000000","0.00000000"],["94038.61000000","0.00000000"],["94038.06000000","0.00000000"],["94034.93000000","0.00017000"],["94034.20000000","0.30605000"],["94033.70000000","0.15900000"],["94032.06000000","1.41951000"],["94032.05000000","1.71033000"],["94031.45000000","0.00000000"],["94027.95000000","0.92927000"],["94027.91000000","0.00000000"],["94022.13000000","0.00000000"],["94022.12000000","0.00000000"],["94022.02000000","0.03500000"],["94017.04000000","0.00000000"],["94016.03000000","0.00000000"],["94015.25000000","0.00000000"],["94014.29000000","0.00000000"],["94013.87000000","0.02126000"],["94012.79000000","0.00000000"],["94012.01000000","0.00000000"],["94010.86000000","0.00000000"],["94004.72000000","0.03988000"],["93999.36000000","0.04251000"],["93997.84000000","0.04251000"],["93993.62000000","0.13302000"],["93990.81000000","0.08503000"],["93989.18000000","0.00000000"],["93988.03000000","0.04251000"],["93987.26000000","0.00000000"],["93985.81000000","0.09491000"],["93985.40000000","0.93030000"],["93984.45000000","0.11473000"],["93984.01000000","0.14101000"],["93982.59000000","0.04429000"],["93981.70000000","0.18245000"],["93978.61000000","0.04251000"],["93978.40000000","0.36900000"],["93976.01000000","0.33591000"],["93972.76000000","0.00000000"],["93969.90000000","0.18035000"],["93968.65000000","0.35868000"],["93963.45000000","0.21385000"],["93961.93000000","0.09643000"],["93960.06000000","0.05497000"],["93958.33000000","0.05497000"],["93956.65000000","0.23088000"],["93955.09000000","0.17091000"],["93953.83000000","0.05497000"],["93952.19000000","0.05497000"],["93949.19000000","0.05497000"],["93947.73000000","0.09086000"],["93946.16000000","0.00000000"],["93945.99000000","0.05497000"],["93943.49000000","0.00000000"],["93943.32000000","0.05497000"],["93940.46000000","0.00000000"],["93937.45000000","0.00000000"],["92663.87000000","0.00100000"],["92578.80000000","0.00000000"],["92484.72000000","0.00000000"],["92390.64000000","0.00000000"],["92296.55000000","0.00000000"],["92202.47000000","0.00000000"],["84667.00000000","0.00000000"],["75260.00000000","0.00065000"],["33000.00000000","2.68783000"]],"s":"BTCUSDT","e":"depthUpdate","E":1745774701014,"U":67662912394,"u":67662912524}
+ªReceived message: {"p":"94075.01000000","a":3551008519,"q":"0.00339000","s":"BTCUSDT","T":1745774701191,"e":"aggTrade","E":1745774701191,"f":4855212384,"l":4855212384,"m":false,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008519,"q":"0.00339000","s":"BTCUSDT","T":1745774701191,"e":"aggTrade","E":1745774701191,"f":4855212384,"l":4855212384,"m":false,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008520,"q":"0.17962000","s":"BTCUSDT","T":1745774701242,"e":"aggTrade","E":1745774701243,"f":4855212385,"l":4855212385,"m":false,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008520,"q":"0.17962000","s":"BTCUSDT","T":1745774701242,"e":"aggTrade","E":1745774701243,"f":4855212385,"l":4855212385,"m":false,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008521,"q":"0.00065000","s":"BTCUSDT","T":1745774701249,"e":"aggTrade","E":1745774701250,"f":4855212386,"l":4855212386,"m":false,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008521,"q":"0.00065000","s":"BTCUSDT","T":1745774701249,"e":"aggTrade","E":1745774701250,"f":4855212386,"l":4855212386,"m":false,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008522,"q":"0.00033000","s":"BTCUSDT","T":1745774701861,"e":"aggTrade","E":1745774701861,"f":4855212387,"l":4855212387,"m":false,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008522,"q":"0.00033000","s":"BTCUSDT","T":1745774701861,"e":"aggTrade","E":1745774701861,"f":4855212387,"l":4855212387,"m":false,"M":true}
+íAReceived message: {"a":[["94075.01000000","2.69798000"],["94075.02000000","0.00102000"],["94075.33000000","0.27213000"],["94075.34000000","0.00006000"],["94075.65000000","0.00006000"],["94075.66000000","0.00012000"],["94075.69000000","0.00000000"],["94076.25000000","0.02233000"],["94076.38000000","0.00000000"],["94078.00000000","0.02072000"],["94078.31000000","0.00012000"],["94078.32000000","0.70137000"],["94078.63000000","0.00000000"],["94079.20000000","0.04256000"],["94079.26000000","0.00000000"],["94080.00000000","0.06322000"],["94080.21000000","0.21381000"],["94080.46000000","0.00106000"],["94082.97000000","0.30010000"],["94085.01000000","0.00000000"],["94090.23000000","0.00000000"],["94091.73000000","1.69770000"],["94092.40000000","0.00000000"],["94092.75000000","0.00000000"],["94094.98000000","0.00531000"],["94095.70000000","0.00000000"],["94095.74000000","0.00000000"],["94096.54000000","0.00000000"],["94097.25000000","0.00000000"],["94097.94000000","0.00000000"],["94098.82000000","0.00531000"],["94099.54000000","1.00000000"],["94110.49000000","0.00000000"],["94111.43000000","0.05000000"],["94113.23000000","0.00000000"],["94116.47000000","0.00000000"],["94118.37000000","0.00000000"],["94120.40000000","0.00000000"],["94120.87000000","0.00000000"],["94122.95000000","0.00212000"],["94123.23000000","1.32674000"],["94123.98000000","0.04262000"],["94124.07000000","2.00000000"],["94129.87000000","0.03677000"],["94147.25000000","0.04800000"],["94153.87000000","0.00000000"],["94179.15000000","0.00000000"],["94182.09000000","0.00000000"],["94182.40000000","0.00000000"],["94183.72000000","0.00000000"],["94184.19000000","0.34660000"],["94184.44000000","0.00000000"],["94186.17000000","0.00000000"],["94187.23000000","0.00000000"],["94188.22000000","0.00000000"],["94188.66000000","0.00000000"],["94188.70000000","0.00000000"],["94189.80000000","0.05497000"],["94190.75000000","0.00000000"],["94190.99000000","0.00000000"],["94191.46000000","0.00000000"],["94191.86000000","0.09748000"],["94192.43000000","0.15445000"],["94194.06000000","0.00011000"],["94194.10000000","0.05497000"],["94194.70000000","0.00000000"],["94194.72000000","0.00000000"],["94194.76000000","0.11594000"],["94196.48000000","0.05497000"],["94197.72000000","0.00000000"],["94198.03000000","0.05797000"],["94198.04000000","0.05497000"],["94198.53000000","0.00009000"],["94198.82000000","0.11994000"],["94199.63000000","0.00000000"],["94199.74000000","0.05497000"],["94200.60000000","0.05997000"],["94200.72000000","0.05797000"],["94200.73000000","0.00051000"],["94202.42000000","0.05497000"],["94202.46000000","0.17272000"],["94203.06000000","0.05997000"],["94203.26000000","0.00000000"],["94204.35000000","0.00000000"],["94204.53000000","0.05797000"],["94204.55000000","0.05897000"],["94204.94000000","0.05497000"],["94205.95000000","0.00000000"],["94207.60000000","0.05997000"],["94207.63000000","0.05997000"],["94208.39000000","0.05497000"],["94208.94000000","0.05897000"],["94211.24000000","0.05497000"],["94212.50000000","0.05997000"],["94212.60000000","0.05997000"],["94214.76000000","0.05597000"],["94215.57000000","0.05997000"],["94215.65000000","0.05997000"],["94215.71000000","0.03998000"],["94255.29000000","0.00000000"],["94280.09000000","0.00400000"],["95486.14000000","0.00100000"]],"b":[["94075.00000000","4.60975000"],["94074.99000000","0.00000000"],["94073.50000000","0.00012000"],["94073.49000000","0.02256000"],["94073.09000000","0.00006000"],["94073.01000000","0.25845000"],["94073.00000000","0.04256000"],["94072.13000000","0.00000000"],["94072.12000000","0.00012000"],["94072.11000000","0.70142000"],["94071.18000000","0.00052000"],["94070.93000000","0.00000000"],["94070.88000000","0.21257000"],["94070.87000000","0.14006000"],["94070.10000000","0.00000000"],["94070.09000000","0.00000000"],["94070.08000000","0.02245000"],["94069.54000000","0.05711000"],["94069.53000000","0.00000000"],["94069.52000000","0.00000000"],["94069.51000000","0.00000000"],["94069.50000000","0.04256000"],["94069.41000000","0.00000000"],["94069.40000000","0.00000000"],["94069.39000000","0.00000000"],["94068.93000000","0.00000000"],["94068.92000000","0.00000000"],["94068.00000000","0.02060000"],["94066.19000000","0.00000000"],["94065.61000000","0.78210000"],["94064.43000000","0.00000000"],["94064.34000000","1.01587000"],["94064.12000000","0.00000000"],["94063.92000000","0.00000000"],["94062.74000000","0.00000000"],["94061.64000000","0.00106000"],["94060.54000000","0.00000000"],["94059.26000000","0.40617000"],["94059.01000000","0.00531000"],["94056.97000000","0.00000000"],["94056.25000000","1.72340000"],["94056.24000000","1.71052000"],["94056.22000000","0.00000000"],["94055.83000000","0.00000000"],["94055.20000000","0.00000000"],["94053.68000000","2.00000000"],["94050.48000000","0.00000000"],["94046.08000000","0.00000000"],["94045.32000000","0.00000000"],["94044.16000000","0.00000000"],["94043.27000000","0.00000000"],["94042.58000000","0.00212000"],["94038.94000000","0.00000000"],["94037.79000000","0.00000000"],["94037.32000000","0.76540000"],["94035.12000000","0.00000000"],["94033.70000000","0.00000000"],["94032.06000000","0.00000000"],["94032.05000000","0.00000000"],["94022.02000000","0.00000000"],["94021.72000000","0.03500000"],["94021.65000000","0.03988000"],["94014.94000000","0.05000000"],["94012.79000000","0.00000000"],["94012.37000000","0.00000000"],["94012.19000000","0.00000000"],["94009.83000000","0.00000000"],["94004.72000000","0.00000000"],["93999.37000000","0.04251000"],["93997.84000000","0.08502000"],["93996.01000000","0.04251000"],["93995.82000000","0.03404000"],["93993.62000000","0.17553000"],["93992.01000000","0.04251000"],["93991.58000000","0.04251000"],["93990.81000000","0.04251000"],["93990.25000000","0.04251000"],["93988.04000000","0.12647000"],["93988.02000000","0.10055000"],["93988.01000000","0.00000000"],["93985.81000000","0.22138000"],["93985.40000000","0.88778000"],["93984.45000000","0.15724000"],["93984.04000000","0.04251000"],["93984.01000000","0.09849000"],["93983.39000000","0.04145000"],["93982.01000000","0.16581000"],["93982.00000000","0.00000000"],["93981.70000000","0.18244000"],["93980.97000000","0.00000000"],["93980.90000000","0.09849000"],["93980.01000000","1.34327000"],["93978.62000000","0.04251000"],["93978.40000000","0.28289000"],["93977.43000000","0.10043000"],["93976.01000000","0.29125000"],["93974.12000000","0.47355000"],["93974.11000000","0.00000000"],["93972.84000000","0.52014000"],["93971.68000000","0.05497000"],["93970.98000000","0.19879000"],["93970.97000000","0.00000000"],["93970.59000000","0.08504000"],["93970.58000000","0.00000000"],["93969.90000000","0.18034000"],["93969.31000000","0.09849000"],["93968.65000000","0.27470000"],["93967.01000000","0.09943000"],["93966.81000000","0.00000000"],["93966.23000000","0.25878000"],["93965.56000000","0.24325000"],["93964.73000000","0.11902000"],["93964.53000000","0.00000000"],["93963.45000000","0.17239000"],["93962.79000000","1.92495000"],["93961.26000000","0.11400000"],["93961.09000000","0.11394000"],["93960.06000000","0.11494000"],["93960.01000000","0.29133000"],["93959.51000000","0.17673000"],["93958.34000000","0.05997000"],["93957.73000000","0.00000000"],["93956.65000000","1.04633000"],["93956.62000000","0.00000000"],["93954.90000000","0.05997000"],["93954.89000000","0.02126000"],["93954.20000000","0.21389000"],["93953.56000000","0.15391000"],["93952.84000000","0.09943000"],["93952.70000000","0.05997000"],["93952.43000000","0.17561000"],["93950.15000000","0.15740000"],["93949.31000000","0.00000000"],["93948.48000000","0.15392000"],["93948.21000000","0.05997000"],["93947.73000000","0.03189000"],["93947.30000000","0.00000000"],["93945.80000000","0.00000000"],["93945.77000000","0.00000000"],["93945.61000000","0.00000000"],["93943.74000000","0.05997000"],["93940.75000000","0.00000000"],["93940.66000000","0.05997000"],["93940.60000000","0.00000000"],["93940.54000000","0.05896000"],["93938.11000000","1.75932000"],["93935.91000000","0.00008000"],["93935.85000000","0.00007000"],["93747.41000000","0.00000000"],["92663.87000000","0.00000000"],["92108.38000000","0.00307000"],["84667.00000000","0.00000000"],["75260.00000000","0.00065000"],["33867.00000000","0.00252000"],["33000.00000000","2.68783000"]],"s":"BTCUSDT","e":"depthUpdate","E":1745774702014,"U":67662912525,"u":67662913038}
+íAReceived message: {"a":[["94075.01000000","2.69798000"],["94075.02000000","0.00102000"],["94075.33000000","0.27213000"],["94075.34000000","0.00006000"],["94075.65000000","0.00006000"],["94075.66000000","0.00012000"],["94075.69000000","0.00000000"],["94076.25000000","0.02233000"],["94076.38000000","0.00000000"],["94078.00000000","0.02072000"],["94078.31000000","0.00012000"],["94078.32000000","0.70137000"],["94078.63000000","0.00000000"],["94079.20000000","0.04256000"],["94079.26000000","0.00000000"],["94080.00000000","0.06322000"],["94080.21000000","0.21381000"],["94080.46000000","0.00106000"],["94082.97000000","0.30010000"],["94085.01000000","0.00000000"],["94090.23000000","0.00000000"],["94091.73000000","1.69770000"],["94092.40000000","0.00000000"],["94092.75000000","0.00000000"],["94094.98000000","0.00531000"],["94095.70000000","0.00000000"],["94095.74000000","0.00000000"],["94096.54000000","0.00000000"],["94097.25000000","0.00000000"],["94097.94000000","0.00000000"],["94098.82000000","0.00531000"],["94099.54000000","1.00000000"],["94110.49000000","0.00000000"],["94111.43000000","0.05000000"],["94113.23000000","0.00000000"],["94116.47000000","0.00000000"],["94118.37000000","0.00000000"],["94120.40000000","0.00000000"],["94120.87000000","0.00000000"],["94122.95000000","0.00212000"],["94123.23000000","1.32674000"],["94123.98000000","0.04262000"],["94124.07000000","2.00000000"],["94129.87000000","0.03677000"],["94147.25000000","0.04800000"],["94153.87000000","0.00000000"],["94179.15000000","0.00000000"],["94182.09000000","0.00000000"],["94182.40000000","0.00000000"],["94183.72000000","0.00000000"],["94184.19000000","0.34660000"],["94184.44000000","0.00000000"],["94186.17000000","0.00000000"],["94187.23000000","0.00000000"],["94188.22000000","0.00000000"],["94188.66000000","0.00000000"],["94188.70000000","0.00000000"],["94189.80000000","0.05497000"],["94190.75000000","0.00000000"],["94190.99000000","0.00000000"],["94191.46000000","0.00000000"],["94191.86000000","0.09748000"],["94192.43000000","0.15445000"],["94194.06000000","0.00011000"],["94194.10000000","0.05497000"],["94194.70000000","0.00000000"],["94194.72000000","0.00000000"],["94194.76000000","0.11594000"],["94196.48000000","0.05497000"],["94197.72000000","0.00000000"],["94198.03000000","0.05797000"],["94198.04000000","0.05497000"],["94198.53000000","0.00009000"],["94198.82000000","0.11994000"],["94199.63000000","0.00000000"],["94199.74000000","0.05497000"],["94200.60000000","0.05997000"],["94200.72000000","0.05797000"],["94200.73000000","0.00051000"],["94202.42000000","0.05497000"],["94202.46000000","0.17272000"],["94203.06000000","0.05997000"],["94203.26000000","0.00000000"],["94204.35000000","0.00000000"],["94204.53000000","0.05797000"],["94204.55000000","0.05897000"],["94204.94000000","0.05497000"],["94205.95000000","0.00000000"],["94207.60000000","0.05997000"],["94207.63000000","0.05997000"],["94208.39000000","0.05497000"],["94208.94000000","0.05897000"],["94211.24000000","0.05497000"],["94212.50000000","0.05997000"],["94212.60000000","0.05997000"],["94214.76000000","0.05597000"],["94215.57000000","0.05997000"],["94215.65000000","0.05997000"],["94215.71000000","0.03998000"],["94255.29000000","0.00000000"],["94280.09000000","0.00400000"],["95486.14000000","0.00100000"]],"b":[["94075.00000000","4.60975000"],["94074.99000000","0.00000000"],["94073.50000000","0.00012000"],["94073.49000000","0.02256000"],["94073.09000000","0.00006000"],["94073.01000000","0.25845000"],["94073.00000000","0.04256000"],["94072.13000000","0.00000000"],["94072.12000000","0.00012000"],["94072.11000000","0.70142000"],["94071.18000000","0.00052000"],["94070.93000000","0.00000000"],["94070.88000000","0.21257000"],["94070.87000000","0.14006000"],["94070.10000000","0.00000000"],["94070.09000000","0.00000000"],["94070.08000000","0.02245000"],["94069.54000000","0.05711000"],["94069.53000000","0.00000000"],["94069.52000000","0.00000000"],["94069.51000000","0.00000000"],["94069.50000000","0.04256000"],["94069.41000000","0.00000000"],["94069.40000000","0.00000000"],["94069.39000000","0.00000000"],["94068.93000000","0.00000000"],["94068.92000000","0.00000000"],["94068.00000000","0.02060000"],["94066.19000000","0.00000000"],["94065.61000000","0.78210000"],["94064.43000000","0.00000000"],["94064.34000000","1.01587000"],["94064.12000000","0.00000000"],["94063.92000000","0.00000000"],["94062.74000000","0.00000000"],["94061.64000000","0.00106000"],["94060.54000000","0.00000000"],["94059.26000000","0.40617000"],["94059.01000000","0.00531000"],["94056.97000000","0.00000000"],["94056.25000000","1.72340000"],["94056.24000000","1.71052000"],["94056.22000000","0.00000000"],["94055.83000000","0.00000000"],["94055.20000000","0.00000000"],["94053.68000000","2.00000000"],["94050.48000000","0.00000000"],["94046.08000000","0.00000000"],["94045.32000000","0.00000000"],["94044.16000000","0.00000000"],["94043.27000000","0.00000000"],["94042.58000000","0.00212000"],["94038.94000000","0.00000000"],["94037.79000000","0.00000000"],["94037.32000000","0.76540000"],["94035.12000000","0.00000000"],["94033.70000000","0.00000000"],["94032.06000000","0.00000000"],["94032.05000000","0.00000000"],["94022.02000000","0.00000000"],["94021.72000000","0.03500000"],["94021.65000000","0.03988000"],["94014.94000000","0.05000000"],["94012.79000000","0.00000000"],["94012.37000000","0.00000000"],["94012.19000000","0.00000000"],["94009.83000000","0.00000000"],["94004.72000000","0.00000000"],["93999.37000000","0.04251000"],["93997.84000000","0.08502000"],["93996.01000000","0.04251000"],["93995.82000000","0.03404000"],["93993.62000000","0.17553000"],["93992.01000000","0.04251000"],["93991.58000000","0.04251000"],["93990.81000000","0.04251000"],["93990.25000000","0.04251000"],["93988.04000000","0.12647000"],["93988.02000000","0.10055000"],["93988.01000000","0.00000000"],["93985.81000000","0.22138000"],["93985.40000000","0.88778000"],["93984.45000000","0.15724000"],["93984.04000000","0.04251000"],["93984.01000000","0.09849000"],["93983.39000000","0.04145000"],["93982.01000000","0.16581000"],["93982.00000000","0.00000000"],["93981.70000000","0.18244000"],["93980.97000000","0.00000000"],["93980.90000000","0.09849000"],["93980.01000000","1.34327000"],["93978.62000000","0.04251000"],["93978.40000000","0.28289000"],["93977.43000000","0.10043000"],["93976.01000000","0.29125000"],["93974.12000000","0.47355000"],["93974.11000000","0.00000000"],["93972.84000000","0.52014000"],["93971.68000000","0.05497000"],["93970.98000000","0.19879000"],["93970.97000000","0.00000000"],["93970.59000000","0.08504000"],["93970.58000000","0.00000000"],["93969.90000000","0.18034000"],["93969.31000000","0.09849000"],["93968.65000000","0.27470000"],["93967.01000000","0.09943000"],["93966.81000000","0.00000000"],["93966.23000000","0.25878000"],["93965.56000000","0.24325000"],["93964.73000000","0.11902000"],["93964.53000000","0.00000000"],["93963.45000000","0.17239000"],["93962.79000000","1.92495000"],["93961.26000000","0.11400000"],["93961.09000000","0.11394000"],["93960.06000000","0.11494000"],["93960.01000000","0.29133000"],["93959.51000000","0.17673000"],["93958.34000000","0.05997000"],["93957.73000000","0.00000000"],["93956.65000000","1.04633000"],["93956.62000000","0.00000000"],["93954.90000000","0.05997000"],["93954.89000000","0.02126000"],["93954.20000000","0.21389000"],["93953.56000000","0.15391000"],["93952.84000000","0.09943000"],["93952.70000000","0.05997000"],["93952.43000000","0.17561000"],["93950.15000000","0.15740000"],["93949.31000000","0.00000000"],["93948.48000000","0.15392000"],["93948.21000000","0.05997000"],["93947.73000000","0.03189000"],["93947.30000000","0.00000000"],["93945.80000000","0.00000000"],["93945.77000000","0.00000000"],["93945.61000000","0.00000000"],["93943.74000000","0.05997000"],["93940.75000000","0.00000000"],["93940.66000000","0.05997000"],["93940.60000000","0.00000000"],["93940.54000000","0.05896000"],["93938.11000000","1.75932000"],["93935.91000000","0.00008000"],["93935.85000000","0.00007000"],["93747.41000000","0.00000000"],["92663.87000000","0.00000000"],["92108.38000000","0.00307000"],["84667.00000000","0.00000000"],["75260.00000000","0.00065000"],["33867.00000000","0.00252000"],["33000.00000000","2.68783000"]],"s":"BTCUSDT","e":"depthUpdate","E":1745774702014,"U":67662912525,"u":67662913038}
+∫Received message: {"p":"94075.00000000","a":3551008523,"q":"0.00162000","s":"BTCUSDT","T":1745774702071,"e":"aggTrade","E":1745774702072,"f":4855212388,"l":4855212388,"m":true,"M":true}
+∫Received message: {"p":"94075.00000000","a":3551008523,"q":"0.00162000","s":"BTCUSDT","T":1745774702071,"e":"aggTrade","E":1745774702072,"f":4855212388,"l":4855212388,"m":true,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008524,"q":"0.00051000","s":"BTCUSDT","T":1745774702738,"e":"aggTrade","E":1745774702738,"f":4855212389,"l":4855212389,"m":false,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008524,"q":"0.00051000","s":"BTCUSDT","T":1745774702738,"e":"aggTrade","E":1745774702738,"f":4855212389,"l":4855212389,"m":false,"M":true}
+∫Received message: {"p":"94075.00000000","a":3551008525,"q":"0.00017000","s":"BTCUSDT","T":1745774703003,"e":"aggTrade","E":1745774703003,"f":4855212390,"l":4855212390,"m":true,"M":true}
+∫Received message: {"p":"94075.00000000","a":3551008525,"q":"0.00017000","s":"BTCUSDT","T":1745774703003,"e":"aggTrade","E":1745774703003,"f":4855212390,"l":4855212390,"m":true,"M":true}
+í@Received message: {"a":[["94075.01000000","4.69911000"],["94075.02000000","0.00126000"],["94075.67000000","0.22730000"],["94075.77000000","0.00012000"],["94075.78000000","0.70139000"],["94077.80000000","0.00000000"],["94077.99000000","0.00000000"],["94078.00000000","0.02066000"],["94078.31000000","0.00000000"],["94078.32000000","0.00000000"],["94079.07000000","0.00000000"],["94079.20000000","0.04256000"],["94079.38000000","0.00383000"],["94079.42000000","0.01362000"],["94080.00000000","0.06316000"],["94080.21000000","0.21381000"],["94082.97000000","0.00000000"],["94089.54000000","0.00000000"],["94090.53000000","0.00000000"],["94091.72000000","0.00531000"],["94092.54000000","1.00000000"],["94093.14000000","0.00000000"],["94094.63000000","0.00000000"],["94094.64000000","0.00000000"],["94094.98000000","0.00000000"],["94095.18000000","0.00531000"],["94097.64000000","0.00000000"],["94098.82000000","0.00000000"],["94099.54000000","0.00000000"],["94110.07000000","2.00000000"],["94111.27000000","0.00000000"],["94114.25000000","0.00000000"],["94114.27000000","0.00000000"],["94120.27000000","0.00000000"],["94123.23000000","0.84704000"],["94124.07000000","0.00000000"],["94156.39000000","0.00000000"],["94174.28000000","0.00000000"],["94181.60000000","0.04251000"],["94188.92000000","0.00000000"],["94191.14000000","0.00000000"],["94191.56000000","0.00000000"],["94192.43000000","0.09848000"],["94192.50000000","0.00000000"],["94194.13000000","0.00000000"],["94194.76000000","0.05797000"],["94194.79000000","0.00000000"],["94195.13000000","0.00000000"],["94197.90000000","0.00000000"],["94198.16000000","0.00000000"],["94198.82000000","0.05997000"],["94199.35000000","0.05897000"],["94199.69000000","0.05997000"],["94199.80000000","0.05897000"],["94200.88000000","0.04251000"],["94200.89000000","0.11552000"],["94200.92000000","0.10860000"],["94202.45000000","0.05797000"],["94202.89000000","0.06424000"],["94203.29000000","0.00000000"],["94204.15000000","0.05897000"],["94204.64000000","0.00000000"],["94205.11000000","0.11594000"],["94205.42000000","0.05597000"],["94206.07000000","0.00000000"],["94206.48000000","0.05497000"],["94207.23000000","0.05997000"],["94208.68000000","0.05597000"],["94208.71000000","0.05897000"],["94210.12000000","0.05497000"],["94211.69000000","0.06003000"],["94212.84000000","0.05597000"],["94214.49000000","0.03998000"],["94214.66000000","0.05997000"],["94255.24000000","0.00400000"],["94263.77000000","0.00000000"],["94280.09000000","0.00000000"]],"b":[["94075.00000000","3.45762000"],["94074.99000000","0.00024000"],["94073.50000000","0.00000000"],["94073.49000000","0.00000000"],["94073.09000000","0.00000000"],["94073.01000000","0.05592000"],["94073.00000000","0.04256000"],["94072.12000000","0.00000000"],["94072.11000000","0.00000000"],["94070.88000000","0.00012000"],["94069.55000000","0.00012000"],["94069.54000000","0.41702000"],["94069.50000000","0.04256000"],["94069.32000000","0.00012000"],["94069.31000000","0.70144000"],["94068.32000000","0.33242000"],["94068.01000000","0.21258000"],["94068.00000000","0.02060000"],["94067.46000000","0.01739000"],["94066.98000000","0.00052000"],["94065.61000000","0.47939000"],["94064.75000000","0.00096000"],["94064.50000000","0.00092000"],["94064.34000000","0.01587000"],["94064.21000000","0.00421000"],["94062.44000000","0.00000000"],["94060.79000000","0.00052000"],["94060.12000000","0.00000000"],["94059.01000000","0.00000000"],["94057.76000000","0.00000000"],["94057.34000000","1.00000000"],["94056.83000000","0.00000000"],["94056.82000000","0.00000000"],["94056.76000000","0.00000000"],["94056.25000000","0.61024000"],["94056.24000000","0.00000000"],["94055.78000000","0.00000000"],["94055.76000000","0.00000000"],["94054.84000000","0.00531000"],["94054.76000000","0.00000000"],["94054.21000000","0.00000000"],["94053.76000000","0.00000000"],["94053.68000000","0.00000000"],["94049.88000000","0.00000000"],["94044.03000000","1.65720000"],["94042.58000000","0.00000000"],["94040.67000000","0.00000000"],["94040.02000000","0.00000000"],["94039.68000000","2.00000000"],["94038.64000000","0.00000000"],["94038.54000000","0.00000000"],["94038.37000000","0.00000000"],["94037.61000000","0.00212000"],["94036.56000000","0.00000000"],["94034.90000000","0.00000000"],["94033.42000000","0.00000000"],["94031.45000000","0.90596000"],["94021.65000000","0.00000000"],["94009.95000000","0.00000000"],["94007.31000000","0.03988000"],["93993.62000000","0.21698000"],["93992.98000000","0.30145000"],["93991.59000000","0.04145000"],["93990.81000000","0.08290000"],["93990.26000000","0.04251000"],["93989.89000000","0.18438000"],["93988.04000000","0.29333000"],["93988.02000000","0.00000000"],["93985.81000000","0.38824000"],["93984.98000000","0.06165000"],["93984.45000000","0.19975000"],["93984.01000000","0.05597000"],["93983.62000000","0.40776000"],["93983.40000000","0.04251000"],["93983.03000000","0.04039000"],["93982.59000000","0.08680000"],["93982.01000000","0.14087000"],["93981.34000000","0.04251000"],["93980.90000000","0.05597000"],["93980.73000000","0.95348000"],["93980.01000000","1.36295000"],["93978.51000000","2.43474000"],["93978.40000000","0.19785000"],["93977.43000000","0.05897000"],["93976.01000000","0.22378000"],["93975.84000000","0.11494000"],["93974.12000000","0.38956000"],["93973.18000000","0.10193000"],["93972.84000000","0.29634000"],["93972.65000000","0.04251000"],["93972.53000000","0.00000000"],["93971.01000000","0.00242000"],["93971.00000000","0.05797000"],["93970.99000000","0.03798000"],["93970.98000000","0.05897000"],["93970.59000000","0.04252000"],["93969.90000000","0.12289000"],["93969.31000000","0.15646000"],["93968.68000000","0.05597000"],["93968.67000000","0.04145000"],["93968.65000000","0.15033000"],["93967.51000000","0.18931000"],["93967.29000000","0.15292000"],["93967.01000000","0.00000000"],["93966.23000000","0.13547000"],["93965.56000000","0.19779000"],["93965.29000000","0.00000000"],["93964.73000000","0.27394000"],["93964.54000000","0.13982000"],["93964.34000000","0.05497000"],["93963.45000000","0.09295000"],["93963.12000000","0.21689000"],["93962.54000000","0.09695000"],["93962.26000000","0.00000000"],["93961.93000000","0.05497000"],["93961.26000000","0.16997000"],["93961.09000000","0.00000000"],["93960.06000000","0.25087000"],["93960.05000000","0.11693000"],["93960.01000000","0.20989000"],["93959.50000000","0.00000000"],["93959.06000000","0.05797000"],["93958.34000000","0.11894000"],["93958.32000000","0.11194000"],["93958.23000000","0.09995000"],["93957.34000000","0.15540000"],["93956.65000000","1.08431000"],["93956.64000000","0.00000000"],["93956.01000000","0.05997000"],["93955.09000000","0.17191000"],["93954.65000000","0.11942000"],["93954.20000000","0.05797000"],["93953.64000000","0.05897000"],["93953.20000000","0.00000000"],["93952.49000000","0.03998000"],["93952.43000000","0.11564000"],["93952.08000000","0.00000000"],["93951.87000000","0.03798000"],["93950.87000000","0.05897000"],["93950.61000000","0.00000000"],["93950.59000000","0.00000000"],["93950.15000000","0.15440000"],["93948.81000000","0.00000000"],["93948.60000000","0.03998000"],["93948.48000000","0.09395000"],["93947.87000000","0.00000000"],["93947.21000000","0.03798000"],["93946.23000000","0.00000000"],["93946.22000000","0.00000000"],["93946.06000000","0.05897000"],["93946.05000000","0.05497000"],["93945.64000000","0.00000000"],["93944.46000000","0.00000000"],["93944.04000000","0.03998000"],["93943.63000000","0.00000000"],["93943.27000000","0.05497000"],["93942.84000000","0.03798000"],["93942.67000000","0.00000000"],["93941.63000000","0.00000000"],["93941.54000000","0.00000000"],["93941.16000000","0.00000000"],["93939.08000000","0.00000000"],["93938.37000000","0.03798000"],["93938.12000000","0.88066000"],["93938.11000000","1.79930000"],["93937.80000000","0.00000000"],["93937.46000000","0.00000000"],["93937.33000000","0.00000000"],["93936.41000000","0.00000000"],["93934.33000000","0.00000000"],["93931.08000000","0.00000000"],["93928.77000000","0.00000000"],["84667.00000000","0.00000000"],["75260.00000000","0.00065000"],["33867.00000000","0.00288000"],["33000.00000000","2.68783000"]],"s":"BTCUSDT","e":"depthUpdate","E":1745774703014,"U":67662913039,"u":67662913480}
+í@Received message: {"a":[["94075.01000000","4.69911000"],["94075.02000000","0.00126000"],["94075.67000000","0.22730000"],["94075.77000000","0.00012000"],["94075.78000000","0.70139000"],["94077.80000000","0.00000000"],["94077.99000000","0.00000000"],["94078.00000000","0.02066000"],["94078.31000000","0.00000000"],["94078.32000000","0.00000000"],["94079.07000000","0.00000000"],["94079.20000000","0.04256000"],["94079.38000000","0.00383000"],["94079.42000000","0.01362000"],["94080.00000000","0.06316000"],["94080.21000000","0.21381000"],["94082.97000000","0.00000000"],["94089.54000000","0.00000000"],["94090.53000000","0.00000000"],["94091.72000000","0.00531000"],["94092.54000000","1.00000000"],["94093.14000000","0.00000000"],["94094.63000000","0.00000000"],["94094.64000000","0.00000000"],["94094.98000000","0.00000000"],["94095.18000000","0.00531000"],["94097.64000000","0.00000000"],["94098.82000000","0.00000000"],["94099.54000000","0.00000000"],["94110.07000000","2.00000000"],["94111.27000000","0.00000000"],["94114.25000000","0.00000000"],["94114.27000000","0.00000000"],["94120.27000000","0.00000000"],["94123.23000000","0.84704000"],["94124.07000000","0.00000000"],["94156.39000000","0.00000000"],["94174.28000000","0.00000000"],["94181.60000000","0.04251000"],["94188.92000000","0.00000000"],["94191.14000000","0.00000000"],["94191.56000000","0.00000000"],["94192.43000000","0.09848000"],["94192.50000000","0.00000000"],["94194.13000000","0.00000000"],["94194.76000000","0.05797000"],["94194.79000000","0.00000000"],["94195.13000000","0.00000000"],["94197.90000000","0.00000000"],["94198.16000000","0.00000000"],["94198.82000000","0.05997000"],["94199.35000000","0.05897000"],["94199.69000000","0.05997000"],["94199.80000000","0.05897000"],["94200.88000000","0.04251000"],["94200.89000000","0.11552000"],["94200.92000000","0.10860000"],["94202.45000000","0.05797000"],["94202.89000000","0.06424000"],["94203.29000000","0.00000000"],["94204.15000000","0.05897000"],["94204.64000000","0.00000000"],["94205.11000000","0.11594000"],["94205.42000000","0.05597000"],["94206.07000000","0.00000000"],["94206.48000000","0.05497000"],["94207.23000000","0.05997000"],["94208.68000000","0.05597000"],["94208.71000000","0.05897000"],["94210.12000000","0.05497000"],["94211.69000000","0.06003000"],["94212.84000000","0.05597000"],["94214.49000000","0.03998000"],["94214.66000000","0.05997000"],["94255.24000000","0.00400000"],["94263.77000000","0.00000000"],["94280.09000000","0.00000000"]],"b":[["94075.00000000","3.45762000"],["94074.99000000","0.00024000"],["94073.50000000","0.00000000"],["94073.49000000","0.00000000"],["94073.09000000","0.00000000"],["94073.01000000","0.05592000"],["94073.00000000","0.04256000"],["94072.12000000","0.00000000"],["94072.11000000","0.00000000"],["94070.88000000","0.00012000"],["94069.55000000","0.00012000"],["94069.54000000","0.41702000"],["94069.50000000","0.04256000"],["94069.32000000","0.00012000"],["94069.31000000","0.70144000"],["94068.32000000","0.33242000"],["94068.01000000","0.21258000"],["94068.00000000","0.02060000"],["94067.46000000","0.01739000"],["94066.98000000","0.00052000"],["94065.61000000","0.47939000"],["94064.75000000","0.00096000"],["94064.50000000","0.00092000"],["94064.34000000","0.01587000"],["94064.21000000","0.00421000"],["94062.44000000","0.00000000"],["94060.79000000","0.00052000"],["94060.12000000","0.00000000"],["94059.01000000","0.00000000"],["94057.76000000","0.00000000"],["94057.34000000","1.00000000"],["94056.83000000","0.00000000"],["94056.82000000","0.00000000"],["94056.76000000","0.00000000"],["94056.25000000","0.61024000"],["94056.24000000","0.00000000"],["94055.78000000","0.00000000"],["94055.76000000","0.00000000"],["94054.84000000","0.00531000"],["94054.76000000","0.00000000"],["94054.21000000","0.00000000"],["94053.76000000","0.00000000"],["94053.68000000","0.00000000"],["94049.88000000","0.00000000"],["94044.03000000","1.65720000"],["94042.58000000","0.00000000"],["94040.67000000","0.00000000"],["94040.02000000","0.00000000"],["94039.68000000","2.00000000"],["94038.64000000","0.00000000"],["94038.54000000","0.00000000"],["94038.37000000","0.00000000"],["94037.61000000","0.00212000"],["94036.56000000","0.00000000"],["94034.90000000","0.00000000"],["94033.42000000","0.00000000"],["94031.45000000","0.90596000"],["94021.65000000","0.00000000"],["94009.95000000","0.00000000"],["94007.31000000","0.03988000"],["93993.62000000","0.21698000"],["93992.98000000","0.30145000"],["93991.59000000","0.04145000"],["93990.81000000","0.08290000"],["93990.26000000","0.04251000"],["93989.89000000","0.18438000"],["93988.04000000","0.29333000"],["93988.02000000","0.00000000"],["93985.81000000","0.38824000"],["93984.98000000","0.06165000"],["93984.45000000","0.19975000"],["93984.01000000","0.05597000"],["93983.62000000","0.40776000"],["93983.40000000","0.04251000"],["93983.03000000","0.04039000"],["93982.59000000","0.08680000"],["93982.01000000","0.14087000"],["93981.34000000","0.04251000"],["93980.90000000","0.05597000"],["93980.73000000","0.95348000"],["93980.01000000","1.36295000"],["93978.51000000","2.43474000"],["93978.40000000","0.19785000"],["93977.43000000","0.05897000"],["93976.01000000","0.22378000"],["93975.84000000","0.11494000"],["93974.12000000","0.38956000"],["93973.18000000","0.10193000"],["93972.84000000","0.29634000"],["93972.65000000","0.04251000"],["93972.53000000","0.00000000"],["93971.01000000","0.00242000"],["93971.00000000","0.05797000"],["93970.99000000","0.03798000"],["93970.98000000","0.05897000"],["93970.59000000","0.04252000"],["93969.90000000","0.12289000"],["93969.31000000","0.15646000"],["93968.68000000","0.05597000"],["93968.67000000","0.04145000"],["93968.65000000","0.15033000"],["93967.51000000","0.18931000"],["93967.29000000","0.15292000"],["93967.01000000","0.00000000"],["93966.23000000","0.13547000"],["93965.56000000","0.19779000"],["93965.29000000","0.00000000"],["93964.73000000","0.27394000"],["93964.54000000","0.13982000"],["93964.34000000","0.05497000"],["93963.45000000","0.09295000"],["93963.12000000","0.21689000"],["93962.54000000","0.09695000"],["93962.26000000","0.00000000"],["93961.93000000","0.05497000"],["93961.26000000","0.16997000"],["93961.09000000","0.00000000"],["93960.06000000","0.25087000"],["93960.05000000","0.11693000"],["93960.01000000","0.20989000"],["93959.50000000","0.00000000"],["93959.06000000","0.05797000"],["93958.34000000","0.11894000"],["93958.32000000","0.11194000"],["93958.23000000","0.09995000"],["93957.34000000","0.15540000"],["93956.65000000","1.08431000"],["93956.64000000","0.00000000"],["93956.01000000","0.05997000"],["93955.09000000","0.17191000"],["93954.65000000","0.11942000"],["93954.20000000","0.05797000"],["93953.64000000","0.05897000"],["93953.20000000","0.00000000"],["93952.49000000","0.03998000"],["93952.43000000","0.11564000"],["93952.08000000","0.00000000"],["93951.87000000","0.03798000"],["93950.87000000","0.05897000"],["93950.61000000","0.00000000"],["93950.59000000","0.00000000"],["93950.15000000","0.15440000"],["93948.81000000","0.00000000"],["93948.60000000","0.03998000"],["93948.48000000","0.09395000"],["93947.87000000","0.00000000"],["93947.21000000","0.03798000"],["93946.23000000","0.00000000"],["93946.22000000","0.00000000"],["93946.06000000","0.05897000"],["93946.05000000","0.05497000"],["93945.64000000","0.00000000"],["93944.46000000","0.00000000"],["93944.04000000","0.03998000"],["93943.63000000","0.00000000"],["93943.27000000","0.05497000"],["93942.84000000","0.03798000"],["93942.67000000","0.00000000"],["93941.63000000","0.00000000"],["93941.54000000","0.00000000"],["93941.16000000","0.00000000"],["93939.08000000","0.00000000"],["93938.37000000","0.03798000"],["93938.12000000","0.88066000"],["93938.11000000","1.79930000"],["93937.80000000","0.00000000"],["93937.46000000","0.00000000"],["93937.33000000","0.00000000"],["93936.41000000","0.00000000"],["93934.33000000","0.00000000"],["93931.08000000","0.00000000"],["93928.77000000","0.00000000"],["84667.00000000","0.00000000"],["75260.00000000","0.00065000"],["33867.00000000","0.00288000"],["33000.00000000","2.68783000"]],"s":"BTCUSDT","e":"depthUpdate","E":1745774703014,"U":67662913039,"u":67662913480}
+ªReceived message: {"p":"94075.01000000","a":3551008526,"q":"0.01034000","s":"BTCUSDT","T":1745774703027,"e":"aggTrade","E":1745774703027,"f":4855212391,"l":4855212391,"m":false,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008526,"q":"0.01034000","s":"BTCUSDT","T":1745774703027,"e":"aggTrade","E":1745774703027,"f":4855212391,"l":4855212391,"m":false,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008527,"q":"0.00053000","s":"BTCUSDT","T":1745774703391,"e":"aggTrade","E":1745774703391,"f":4855212392,"l":4855212392,"m":false,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008527,"q":"0.00053000","s":"BTCUSDT","T":1745774703391,"e":"aggTrade","E":1745774703391,"f":4855212392,"l":4855212392,"m":false,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008528,"q":"0.00096000","s":"BTCUSDT","T":1745774703782,"e":"aggTrade","E":1745774703782,"f":4855212393,"l":4855212393,"m":false,"M":true}
+ªReceived message: {"p":"94075.01000000","a":3551008528,"q":"0.00096000","s":"BTCUSDT","T":1745774703782,"e":"aggTrade","E":1745774703782,"f":4855212393,"l":4855212393,"m":false,"M":true}
+Request method:	DELETE
+âRequest URI:	https://testnet.binance.vision/api/v3/userDataStream?listenKey=rU6XMu4W6ppTA350ecwutDMeq38IisOPVhlRSrRfg4ignLlsIVTeHLulx3dY
+Proxy:			<none>
+Request params:	<none>
+UQuery params:	listenKey=rU6XMu4W6ppTA350ecwutDMeq38IisOPVhlRSrRfg4ignLlsIVTeHLulx3dY
+Form params:	<none>
+Path params:	<none>
+XHeaders:		X-MBX-APIKEY=YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI
+				Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+íReceived message: {"a":[["94075.01000000","4.74596000"],["94076.25000000","0.02233000"],["94076.38000000","0.02157000"],["94079.42000000","0.01356000"],["94080.46000000","0.00000000"],["94089.06000000","0.00106000"],["94092.76000000","0.00000000"],["94096.80000000","1.60834000"],["94130.96000000","0.00000000"],["94149.19000000","0.07680000"],["94178.02000000","0.04866000"],["94192.52000000","0.00061000"],["94195.16000000","0.00000000"],["94195.24000000","0.00000000"],["94197.92000000","0.00000000"],["94199.80000000","0.00000000"],["94200.92000000","0.05263000"],["94200.94000000","0.05903000"],["94203.51000000","0.05897000"],["94204.68000000","0.05797000"],["94206.35000000","0.05497000"],["94207.91000000","1.31203000"],["94208.69000000","0.05897000"],["94209.15000000","0.05497000"],["94214.12000000","0.00000000"],["94217.70000000","0.03798000"],["94242.46000000","0.00036000"],["94700.00000000","1.20646000"],["95486.14000000","0.00000000"]],"b":[["94075.00000000","3.45762000"],["94073.50000000","0.00000000"],["94073.49000000","0.00000000"],["94073.44000000","0.00000000"],["94073.43000000","0.00000000"],["94070.24000000","0.00106000"],["94069.32000000","0.00006000"],["94068.01000000","0.21258000"],["94066.98000000","0.00000000"],["94061.64000000","0.00000000"],["94060.79000000","0.00000000"],["94060.12000000","0.21381000"],["94051.38000000","1.77243000"],["94049.09000000","1.10000000"],["94044.03000000","0.00000000"],["94042.45000000","1.62552000"],["94036.88000000","0.00000000"],["94035.61000000","0.00000000"],["94012.79000000","0.21431000"],["93831.05000000","0.00000000"],["93829.60000000","0.00553000"],["93777.00000000","0.00074000"],["92663.87000000","0.00100000"],["84667.00000000","0.00000000"],["75260.00000000","0.00065000"],["33000.00000000","2.68783000"],["20002.00000000","0.00000000"],["20001.00000000","0.03474000"]],"s":"BTCUSDT","e":"depthUpdate","E":1745774704014,"U":67662913481,"u":67662913604}
+íReceived message: {"a":[["94075.01000000","4.74596000"],["94076.25000000","0.02233000"],["94076.38000000","0.02157000"],["94079.42000000","0.01356000"],["94080.46000000","0.00000000"],["94089.06000000","0.00106000"],["94092.76000000","0.00000000"],["94096.80000000","1.60834000"],["94130.96000000","0.00000000"],["94149.19000000","0.07680000"],["94178.02000000","0.04866000"],["94192.52000000","0.00061000"],["94195.16000000","0.00000000"],["94195.24000000","0.00000000"],["94197.92000000","0.00000000"],["94199.80000000","0.00000000"],["94200.92000000","0.05263000"],["94200.94000000","0.05903000"],["94203.51000000","0.05897000"],["94204.68000000","0.05797000"],["94206.35000000","0.05497000"],["94207.91000000","1.31203000"],["94208.69000000","0.05897000"],["94209.15000000","0.05497000"],["94214.12000000","0.00000000"],["94217.70000000","0.03798000"],["94242.46000000","0.00036000"],["94700.00000000","1.20646000"],["95486.14000000","0.00000000"]],"b":[["94075.00000000","3.45762000"],["94073.50000000","0.00000000"],["94073.49000000","0.00000000"],["94073.44000000","0.00000000"],["94073.43000000","0.00000000"],["94070.24000000","0.00106000"],["94069.32000000","0.00006000"],["94068.01000000","0.21258000"],["94066.98000000","0.00000000"],["94061.64000000","0.00000000"],["94060.79000000","0.00000000"],["94060.12000000","0.21381000"],["94051.38000000","1.77243000"],["94049.09000000","1.10000000"],["94044.03000000","0.00000000"],["94042.45000000","1.62552000"],["94036.88000000","0.00000000"],["94035.61000000","0.00000000"],["94012.79000000","0.21431000"],["93831.05000000","0.00000000"],["93829.60000000","0.00553000"],["93777.00000000","0.00074000"],["92663.87000000","0.00100000"],["84667.00000000","0.00000000"],["75260.00000000","0.00065000"],["33000.00000000","2.68783000"],["20002.00000000","0.00000000"],["20001.00000000","0.03474000"]],"s":"BTCUSDT","e":"depthUpdate","E":1745774704014,"U":67662913481,"u":67662913604}
+HTTP/1.1 200 OK
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 2
+Connection: keep-alive
+$Date: Sun, 27 Apr 2025 17:25:04 GMT
+1Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Server: nginx
+1x-mbx-uuid: 7d724de9-8f3e-4f37-9f6c-5a45d70c2992
+x-mbx-used-weight: 2
+x-mbx-used-weight-1m: 2
+?Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+ X-Xss-Protection: 1; mode=block
+ X-Content-Type-Options: nosniff
+,Content-Security-Policy: default-src 'self'
+.X-Content-Security-Policy: default-src 'self'
+!X-WebKit-CSP: default-src 'self'
+3Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: *
+X-Cache: Miss from cloudfront
+FVia: 1.1 75d57b6f1d28b9be49fef8fc0aa4a23c.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P1
+FX-Amz-Cf-Id: c2WywJvY5wwwoTQskHhw9gC70seheODMpRZbqvCnNRMpg-w82QB8pw==
+
+{
+    
+}
+PClosed listen key: rU6XMu4W6ppTA350ecwutDMeq38IisOPVhlRSrRfg4ignLlsIVTeHLulx3dY

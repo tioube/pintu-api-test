@@ -21,7 +21,7 @@ cucumber {
         println "using environment $env"
     }
     main = 'io.cucumber.core.cli.Main'
-    glue = 'classpath:com.capitalx.automation'
+    glue = 'classpath:com.pintu.automation'
     plugin = ['pretty', "json:build/cucumber.json", "html:build/result"]
 //    threads = 2
 }
@@ -102,6 +102,9 @@ dependencies {
 
     // curl logger
     implementation group: 'com.github.dzieciou.testing', name: 'curl-logger', version: '2.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.10.0'
+
+
 
     // testng
     implementation group: "org.testng", name: "testng", version: "7.0.0"
@@ -111,6 +114,9 @@ dependencies {
 
     // postgress sql
     implementation group: 'org.postgresql', name: 'postgresql', version: '42.5.0'
+
+    // spot-connector
+    implementation 'io.github.binance:binance-spot:1.0.0'
 
     // spring
 //    implementation 'org.springframework.boot:spring-boot-starter'
@@ -157,9 +163,12 @@ tasks.withType(Javadoc) {
 
 test {
     useTestNG() {
-//        if (System.properties.containsKey("suiteXmlFile")) {
-//            suites System.properties.get("suiteXmlFile")
-//        }
+        if (System.properties.containsKey("suiteXmlFile")) {
+            suites System.properties.get("suiteXmlFile")
+        } else {
+            // Default to the rest suite if no suite is specified
+            suites file('src/test/resources/testng-rest-suite.xml')
+        }
     }
     testLogging {
         exceptionFormat "full"

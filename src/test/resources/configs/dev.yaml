@@ -6,6 +6,11 @@ selenium:
   browser: "chrome"
   headless: true
 
+spot:
+  apiKey: "YKDYeVSCeO99aGCQFtJ04P3sFBQO4HEmrbVeOHSHzyGZnHMLDDtNT85eDWdtg7WI"
+  apiSecret: "RY3kglpYpRiz76Ps47QgHIIu8G9UVX70QXZc7lfw6bFImd2B17pdlGxWScPj83c7"
+
+
 redis:
   host: ""
   port: 6379
