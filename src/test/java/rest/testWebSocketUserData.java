@@ -17,9 +17,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
-/**
- * Test class for Binance WebSocket User Data stream
- */
 @Epic("Binance WebSocket Tests")
 @Feature("User Data Stream")
 public class testWebSocketUserData extends TestMasterConfigurations {
@@ -33,12 +30,7 @@ public class testWebSocketUserData extends TestMasterConfigurations {
         // Create WebSocket client
         userDataClient = new WebSocketUserDataClient();
     }
-    
-    /**
-     * Test to create a listen key for the User Data stream
-     * 
-     * This test verifies that we can successfully create a listen key.
-     */
+
     @Test(description = "Test creating a listen key for User Data stream")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Create listen key")
@@ -56,12 +48,7 @@ public class testWebSocketUserData extends TestMasterConfigurations {
             Allure.addAttachment("Listen Key", "text/plain", listenKey);
         });
     }
-    
-    /**
-     * Test to extend the validity of a listen key
-     * 
-     * This test verifies that we can successfully extend the validity of a listen key.
-     */
+
     @Test(description = "Test extending a listen key", dependsOnMethods = "testCreateListenKey")
     @Severity(SeverityLevel.NORMAL)
     @Story("Extend listen key")
@@ -74,23 +61,11 @@ public class testWebSocketUserData extends TestMasterConfigurations {
             // No assertion needed, the method will throw an exception if it fails
         });
     }
-    
-    /**
-     * Test to subscribe to the User Data stream
-     * 
-     * This test verifies that we can successfully subscribe to the User Data stream
-     * and receive updates.
-     * 
-     * @throws InterruptedException if the thread is interrupted
-     */
+
     @Test(description = "Test subscribing to User Data stream", dependsOnMethods = "testExtendListenKey")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Subscribe to User Data stream")
     @Description("This test subscribes to the User Data stream and verifies that updates are received.")
-    @Issue("BINANCE-123")
-    @TmsLink("TC-456")
-    @Owner("QA Team")
-    @Lead("Automation Team")
     public void testSubscribeToUserDataStream() throws InterruptedException {
         // Create a latch to wait for the test completion
         CountDownLatch testCompletionLatch = new CountDownLatch(1);
@@ -168,12 +143,7 @@ public class testWebSocketUserData extends TestMasterConfigurations {
         });
 
     }
-    
-    /**
-     * Test to close a listen key
-     * 
-     * This test verifies that we can successfully close a listen key.
-     */
+
     @Test(description = "Test closing a listen key", dependsOnMethods = "testSubscribeToUserDataStream")
     @Severity(SeverityLevel.NORMAL)
     @Story("Close listen key")

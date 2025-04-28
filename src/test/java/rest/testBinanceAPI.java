@@ -6,20 +6,12 @@ import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-/**
- * Test class for Binance API endpoints
- */
 @Epic("Binance REST API Tests")
 @Feature("Binance API")
 public class testBinanceAPI extends TestMasterConfigurations {
     
     private String testSymbol = "BNBUSDT";
-    
-    /**
-     * Test to fetch order book from Binance
-     * 
-     * This test verifies that we can successfully fetch the order book for a symbol.
-     */
+
     @Test(description = "Test fetching order book via Binance API")
     @Severity(SeverityLevel.NORMAL)
     @Story("Fetch Order Book")
@@ -40,12 +32,7 @@ public class testBinanceAPI extends TestMasterConfigurations {
             Allure.addAttachment("Order Book Details", "application/json", response.asString());
         });
     }
-    
-    /**
-     * Test to fetch open orders from Binance
-     * 
-     * This test verifies that we can successfully fetch open orders for a symbol.
-     */
+
     @Test(description = "Test fetching open orders via Binance API")
     @Severity(SeverityLevel.NORMAL)
     @Story("Fetch Open Orders")
@@ -62,12 +49,7 @@ public class testBinanceAPI extends TestMasterConfigurations {
             Allure.addAttachment("Open Orders Details", "application/json", response.asString());
         });
     }
-    
-    /**
-     * Test to fetch trade history from Binance
-     * 
-     * This test verifies that we can successfully fetch trade history for a symbol.
-     */
+
     @Test(description = "Test fetching trade history via Binance API")
     @Severity(SeverityLevel.NORMAL)
     @Story("Fetch Trade History")
@@ -84,12 +66,7 @@ public class testBinanceAPI extends TestMasterConfigurations {
             Allure.addAttachment("Trade History Details", "application/json", response.asString());
         });
     }
-    
-    /**
-     * Test to fetch account balance from Binance
-     * 
-     * This test verifies that we can successfully fetch account balance.
-     */
+
     @Test(description = "Test fetching account balance via Binance API")
     @Severity(SeverityLevel.NORMAL)
     @Story("Fetch Account Balance")

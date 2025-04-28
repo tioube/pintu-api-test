@@ -10,32 +10,20 @@ import org.json.simple.parser.ParseException;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 
-/**
- * Client for interacting with Binance WebSocket Trade stream
- */
 public class WebSocketTradeClient {
     
     private static final String WS_BASE_URL = Globals.getSpotWssUrl();
     private OkHttpClient client;
     private WebSocket webSocket;
     private final JSONParser jsonParser = new JSONParser();
-    
-    /**
-     * Constructor that initializes the OkHttp client
-     */
+
     public WebSocketTradeClient() {
         // Initialize OkHttp client
         client = new OkHttpClient.Builder()
                 .readTimeout(30, TimeUnit.SECONDS)
                 .build();
     }
-    
-    /**
-     * Subscribe to the Trade stream for a symbol
-     * 
-     * @param symbol Trading pair symbol (e.g., bnbusdt)
-     * @param callback Callback to handle the received data
-     */
+
     @Step("Subscribe to Trade stream for {symbol}")
     public void subscribeToTradeStream(String symbol, Consumer<JSONObject> callback) {
         // Create the WebSocket URL
@@ -90,10 +78,7 @@ public class WebSocketTradeClient {
         
         System.out.println("Subscribed to Trade stream: " + url);
     }
-    
-    /**
-     * Close the WebSocket connection
-     */
+
     @Step("Close WebSocket connection")
     public void close() {
         if (webSocket != null) {

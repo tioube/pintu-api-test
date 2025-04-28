@@ -16,9 +16,6 @@ import java.util.function.Consumer;
 
 import static io.restassured.RestAssured.given;
 
-/**
- * Client for interacting with Binance WebSocket User Data stream
- */
 public class WebSocketUserDataClient {
     
     private static final String REST_BASE_URL = Globals.getSpotRestUrl();
@@ -28,10 +25,7 @@ public class WebSocketUserDataClient {
     private final JSONParser jsonParser = new JSONParser();
     private String listenKey;
     private CountDownLatch connectionLatch;
-    
-    /**
-     * Constructor that initializes the OkHttp client
-     */
+
     public WebSocketUserDataClient() {
         // Initialize OkHttp client
         client = new OkHttpClient.Builder()
@@ -39,12 +33,7 @@ public class WebSocketUserDataClient {
                 .build();
         connectionLatch = new CountDownLatch(1);
     }
-    
-    /**
-     * Create a listen key for the User Data stream
-     * 
-     * @return The listen key
-     */
+
     @Step("Create listen key")
     public String createListenKey() {
         // Create the URL
@@ -72,12 +61,7 @@ public class WebSocketUserDataClient {
         
         return listenKey;
     }
-    
-    /**
-     * Extend the validity of a listen key
-     * 
-     * @param listenKey The listen key to extend
-     */
+
     @Step("Extend listen key: {listenKey}")
     public void extendListenKey(String listenKey) {
         // Create the URL
@@ -105,12 +89,7 @@ public class WebSocketUserDataClient {
         
         System.out.println("Extended listen key: " + listenKey);
     }
-    
-    /**
-     * Close a listen key
-     * 
-     * @param listenKey The listen key to close
-     */
+
     @Step("Close listen key: {listenKey}")
     public void closeListenKey(String listenKey) {
         // Create the URL
@@ -139,11 +118,7 @@ public class WebSocketUserDataClient {
         System.out.println("Closed listen key: " + listenKey);
     }
     
-    /**
-     * Subscribe to the User Data stream
-     * 
-     * @param callback Callback to handle the received data
-     */
+
     @Step("Subscribe to User Data stream")
     public void subscribeToUserDataStream(Consumer<JSONObject> callback) {
         // Create a listen key if not already created
@@ -208,26 +183,12 @@ public class WebSocketUserDataClient {
         
         System.out.println("Subscribed to User Data stream: " + url);
     }
-    
-    /**
-     * Wait for the WebSocket connection to be established
-     *
-     * @param timeout The maximum time to wait
-     * @param unit The time unit of the timeout
-     * @return true if the connection was established within the timeout, false otherwise
-     * @throws InterruptedException if the thread is interrupted while waiting
-     */
+
     @Step("Wait for WebSocket connection")
     public boolean waitForConnection(long timeout, TimeUnit unit) throws InterruptedException {
         return connectionLatch.await(timeout, unit);
     }
-    
-    /**
-     * Send a message to the WebSocket
-     *
-     * @param message The message to send
-     * @return true if the message was sent successfully, false otherwise
-     */
+
     @Step("Send message to WebSocket")
     public boolean sendMessage(String message) {
         if (webSocket != null) {
@@ -243,10 +204,7 @@ public class WebSocketUserDataClient {
             return false;
         }
     }
-    
-    /**
-     * Close the WebSocket connection
-     */
+
     @Step("Close WebSocket connection")
     public void close() {
         if (webSocket != null) {

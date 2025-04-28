@@ -13,22 +13,10 @@ import java.util.TreeMap;
 
 import static io.restassured.RestAssured.given;
 
-/**
- * Client for interacting with Binance Order API
- * Based on the official Binance signature examples
- */
 public class OrderClient {
     
     private static final String BASE_URL = Globals.getSpotRestUrl(); // Using testnet as specified by the user
-    
-    /**
-     * Place a market order on Binance
-     * 
-     * @param symbol Trading pair symbol (e.g., BNBUSDT)
-     * @param side Order side (BUY or SELL)
-     * @param quantity Order quantity
-     * @return The response from the API
-     */
+
     @Step("Place market order: {0} {1} {2}")
     public static Response placeMarketOrder(String symbol, String side, String quantity) {
         // Create the URL
@@ -80,14 +68,7 @@ public class OrderClient {
         
         return response;
     }
-    
-    /**
-     * Get order status from Binance
-     * 
-     * @param symbol Trading pair symbol
-     * @param orderId Order ID
-     * @return The response from the API
-     */
+
     @Step("Get order status: {0} orderId={1}")
     public static Response getOrderStatus(String symbol, long orderId) {
         // Create the URL
@@ -137,14 +118,7 @@ public class OrderClient {
         
         return response;
     }
-    
-    /**
-     * Cancel an order on Binance
-     * 
-     * @param symbol Trading pair symbol
-     * @param orderId Order ID
-     * @return The response from the API
-     */
+
     @Step("Cancel order: {0} orderId={1}")
     public static Response cancelOrder(String symbol, long orderId) {
         // Create the URL
@@ -194,14 +168,7 @@ public class OrderClient {
         
         return response;
     }
-    
-    /**
-     * Fetch Order Book from Binance
-     * 
-     * @param symbol Trading pair symbol
-     * @param limit Number of entries to return (optional)
-     * @return The response from the API
-     */
+
     @Step("Fetch Order Book: {0} limit={1}")
     public static Response fetchOrderBook(String symbol, Integer limit) {
         // Create the URL
@@ -237,13 +204,7 @@ public class OrderClient {
         
         return response;
     }
-    
-    /**
-     * Fetch Open Orders from Binance
-     * 
-     * @param symbol Trading pair symbol (optional)
-     * @return The response from the API
-     */
+
     @Step("Fetch Open Orders: {0}")
     public static Response fetchOpenOrders(String symbol) {
         // Create the URL
@@ -295,13 +256,7 @@ public class OrderClient {
         return response;
     }
     
-    /**
-     * Fetch Trade History from Binance
-     * 
-     * @param symbol Trading pair symbol
-     * @param limit Number of entries to return (optional)
-     * @return The response from the API
-     */
+
     @Step("Fetch Trade History: {0} limit={1}")
     public static Response fetchTradeHistory(String symbol, Integer limit) {
         // Create the URL
@@ -353,12 +308,7 @@ public class OrderClient {
         
         return response;
     }
-    
-    /**
-     * Fetch Account Balance from Binance
-     * 
-     * @return The response from the API
-     */
+
     @Step("Fetch Account Balance")
     public static Response fetchAccountBalance() {
         // Create the URL
@@ -406,15 +356,7 @@ public class OrderClient {
         
         return response;
     }
-    
-    /**
-     * Generate a signature for the request using HMAC-SHA256
-     * Based on the official Binance signature examples
-     * 
-     * @param queryString The query string to sign
-     * @param secretKey The secret key to use for signing
-     * @return The signature
-     */
+
     private static String generateSignature(String queryString, String secretKey) {
         try {
             // Log the query string and secret key for debugging

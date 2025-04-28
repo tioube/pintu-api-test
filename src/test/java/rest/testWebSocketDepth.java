@@ -17,9 +17,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
-/**
- * Test class for Binance WebSocket Order Book stream
- */
 @Epic("Binance WebSocket Tests")
 @Feature("Order Book Stream")
 public class testWebSocketDepth extends TestMasterConfigurations {
@@ -34,22 +31,11 @@ public class testWebSocketDepth extends TestMasterConfigurations {
         depthClient = new WebSocketDepthClient();
     }
     
-    /**
-     * Test to subscribe to the Order Book stream
-     * 
-     * This test verifies that we can successfully subscribe to the Order Book stream
-     * and receive updates for a symbol.
-     * 
-     * @throws InterruptedException if the thread is interrupted
-     */
+
     @Test(description = "Test subscribing to Order Book stream via WebSocket")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Subscribe to Order Book stream")
     @Description("This test subscribes to the Order Book stream for a symbol and verifies that updates are received.")
-    @Issue("BINANCE-124")
-    @TmsLink("TC-457")
-    @Owner("QA Team")
-    @Lead("Automation Team")
     public void testSubscribeToOrderBookStream() throws InterruptedException {
         // Create a latch to wait for the test completion
         CountDownLatch testCompletionLatch = new CountDownLatch(1);

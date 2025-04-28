@@ -20,9 +20,6 @@ public class WebScoketTradeClient {
     private WebSocket webSocket;
     private final JSONParser jsonParser = new JSONParser();
 
-    /**
-     * Constructor that initializes the OkHttp client
-     */
     public WebScoketTradeClient() {
         // Initialize OkHttp client
         client = new OkHttpClient.Builder()
@@ -30,12 +27,6 @@ public class WebScoketTradeClient {
                 .build();
     }
 
-    /**
-     * Subscribe to the Trade stream for a symbol
-     *
-     * @param symbol Trading pair symbol (e.g., bnbusdt)
-     * @param callback Callback to handle the received data
-     */
     @Step("Subscribe to Trade stream for {symbol}")
     public void subscribeToTradeStream(String symbol, Consumer<JSONObject> callback) {
         // Create the WebSocket URL
@@ -91,9 +82,6 @@ public class WebScoketTradeClient {
         System.out.println("Subscribed to Trade stream: " + url);
     }
 
-    /**
-     * Close the WebSocket connection
-     */
     @Step("Close WebSocket connection")
     public void close() {
         if (webSocket != null) {

@@ -7,9 +7,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-/**
- * Test class for Binance Order API
- */
 @Epic("Binance REST API Tests")
 @Feature("Order API")
 public class testOrderAPI extends TestMasterConfigurations {
@@ -17,13 +14,7 @@ public class testOrderAPI extends TestMasterConfigurations {
     private static String testSymbol = "BNBUSDT"; // Using BNBUSDT as per the curl example
     private static Response orderResponse;
     private static long orderId;
-    
-    /**
-     * Test to place a market order on Binance
-     * 
-     * This test verifies that we can successfully place a market order using the Binance API.
-     * It places a market order, verifies the order was created successfully, and then gets the order status.
-     */
+
     @Test(description = "Test placing a market order via Binance API")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Place market order and verify order details")
